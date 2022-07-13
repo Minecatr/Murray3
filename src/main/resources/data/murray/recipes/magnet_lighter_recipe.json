@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:magnet_a"
+    },
+    "1": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "2": {
+      "item": "murray:magnet_b"
+    }
+  },
+  "result": {
+    "item": "murray:venus",
+    "count": 1
+  }
+}

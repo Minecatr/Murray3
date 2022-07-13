@@ -1,0 +1,67 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "electristeel_helmet",
+    "enableBody": true,
+    "textureBody": "electristeel_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "electristeel_leggings",
+    "enableBoots": true,
+    "textureBoots": "electristeel_boots",
+    "onHelmetTick": {
+      "name": "PlasmasteelHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "ElectristeelBodyTickEvent"
+    },
+    "onBootsTick": {
+      "name": "ElectristeelBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "electristeel_",
+    "helmetName": "Electristeel Helmet",
+    "bodyName": "Electristeel Body",
+    "leggingsName": "Electristeel Leggings",
+    "bootsName": "Electristeel Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 8,
+    "damageValueBody": 8,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 8,
+    "enchantability": 20,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "block.beacon.activate"
+    },
+    "repairItems": []
+  }
+}

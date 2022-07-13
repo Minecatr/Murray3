@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:quartz"
+    },
+    "2": {
+      "item": "minecraft:nether_star"
+    },
+    "3": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "4": {
+      "item": "murray:fire_chip"
+    },
+    "5": {
+      "item": "minecraft:gold_ingot"
+    },
+    "6": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "7": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "8": {
+      "item": "minecraft:crossbow"
+    }
+  },
+  "result": {
+    "item": "murray:lightning_plasma",
+    "count": 1
+  }
+}

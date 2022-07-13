@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tree_in_a_box"
+      },
+      "name": "default"
+    }
+  }
+}

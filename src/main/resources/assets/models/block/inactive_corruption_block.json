@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "utility:blocks/dirt",
+    "up": "utility:blocks/corruption_top",
+    "north": "utility:blocks/corruption_sides",
+    "east": "utility:blocks/corruption_sides",
+    "south": "utility:blocks/corruption_sides",
+    "west": "utility:blocks/corruption_sides",
+    "particle": "utility:blocks/dirt"
+  }
+}

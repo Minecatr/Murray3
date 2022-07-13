@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "murray:blocks/poorly_made_ladder",
+    "particle": "murray:blocks/poorly_made_ladder"
+  }
+}

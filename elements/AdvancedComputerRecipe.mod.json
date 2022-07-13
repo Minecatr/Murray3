@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Computer"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHERITE_INGOT"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:AdvancedComputer"
+    },
+    "name": "advanced_computer_recipe",
+    "namespace": "mod"
+  }
+}

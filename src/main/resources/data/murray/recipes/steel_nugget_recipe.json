@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_ingot"
+  },
+  "addition": {
+    "tag": "minecraft:coals"
+  },
+  "result": {
+    "item": "murray:steel_nugget"
+  }
+}

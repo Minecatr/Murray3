@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chainmail_chestplate"
+    },
+    {
+      "item": "minecraft:iron_chestplate"
+    },
+    {
+      "item": "minecraft:golden_chestplate"
+    },
+    {
+      "item": "minecraft:leather_chestplate"
+    },
+    {
+      "item": "murray:energy_chip"
+    },
+    {
+      "item": "minecraft:diamond_chestplate"
+    },
+    {
+      "item": "minecraft:netherite_chestplate"
+    }
+  ],
+  "result": {
+    "item": "murray:rainbow_chestplate",
+    "count": 1
+  }
+}

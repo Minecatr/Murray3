@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "murray:blocks/magnetite_machine_top",
+    "up": "murray:blocks/magnetite_machine_top",
+    "north": "murray:blocks/magnetic_dissasembler",
+    "east": "murray:blocks/magnetite_machine",
+    "south": "murray:blocks/magnetite_machine",
+    "west": "murray:blocks/magnetite_machine",
+    "particle": "murray:blocks/magnetite_machine_top"
+  }
+}

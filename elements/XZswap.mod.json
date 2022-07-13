@@ -1,0 +1,22 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_xzswap",
+    "name": "XZswap",
+    "description": "entropy starts",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:xzswap"
+    },
+    "specialInfo": [
+      "swaps x and z position"
+    ],
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "XZswapRightClickedInAir"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "vexxesgun",
+    "customModelName": "Normal",
+    "name": "Vexxes Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "block.beacon.deactivate"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "CooldownFast"
+    },
+    "bulletPower": 5.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modellaser_v2",
+    "customBulletModelTexture": "purple_laser.png"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "murray:custom/model_glaive",
+  "textures": {
+    "layer0": "murray:items/venom_glaive"
+  }
+}

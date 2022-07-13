@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "34 ",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:ender_gem"
+    },
+    "1": {
+      "item": "murray:enderium_ingot"
+    },
+    "3": {
+      "item": "murray:enderium_ingot"
+    },
+    "4": {
+      "item": "minecraft:crossbow"
+    },
+    "8": {
+      "item": "murray:enderium_ingot"
+    }
+  },
+  "result": {
+    "item": "murray:ultra_end_bow",
+    "count": 1
+  }
+}

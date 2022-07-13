@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blaze_rod"
+    },
+    "1": {
+      "item": "murray:steel_armor_helmet"
+    },
+    "2": {
+      "item": "minecraft:blaze_rod"
+    },
+    "3": {
+      "tag": "minecraft:wool"
+    },
+    "4": {
+      "item": "murray:energy_chip"
+    },
+    "5": {
+      "tag": "minecraft:wool"
+    },
+    "7": {
+      "item": "murray:attack_chip"
+    }
+  },
+  "result": {
+    "item": "murray:ninja_helmet",
+    "count": 1
+  }
+}

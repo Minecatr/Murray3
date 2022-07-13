@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "magnetite",
+        "1": "carbonfiberpng",
+        "2": "magnet2",
+        "3": "magnet1"
+      },
+      "name": "default"
+    }
+  }
+}

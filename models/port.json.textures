@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "port",
+        "1": "port_top"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "murray:block/computer"
+    },
+    "facing=east": {
+      "model": "murray:block/computer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "murray:block/computer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "murray:block/computer",
+      "y": 270
+    }
+  }
+}

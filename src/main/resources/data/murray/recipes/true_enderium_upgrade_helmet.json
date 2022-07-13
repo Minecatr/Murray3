@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "murray:enderium_armor_helmet"
+  },
+  "addition": {
+    "item": "murray:ender_gem"
+  },
+  "result": {
+    "item": "murray:true_enderium_helmet"
+  }
+}

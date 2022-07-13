@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "CUSTOM:DefenseChip"
+      },
+      {
+        "value": "CUSTOM:SteelArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DefenseChip"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DIAMOND"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Heartsteel.legs"
+    },
+    "name": "heartsteel_leggings_recipe",
+    "namespace": "mod"
+  }
+}

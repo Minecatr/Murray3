@@ -1,0 +1,70 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "true_enderium_helmet",
+    "enableBody": true,
+    "textureBody": "true_enderium_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "true_enderium_leggings",
+    "enableBoots": true,
+    "textureBoots": "true_enderium_boots",
+    "onHelmetTick": {
+      "name": "TrueEnderiumEvent"
+    },
+    "onBodyTick": {
+      "name": "TrueEnderiumEvent"
+    },
+    "onLeggingsTick": {
+      "name": "TrueEnderiumEvent"
+    },
+    "onBootsTick": {
+      "name": "TrueEnderiumEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "true_enderium_",
+    "helmetName": "True Enderium Helmet",
+    "bodyName": "True Enderium Body",
+    "leggingsName": "True Enderium Leggings",
+    "bootsName": "True Enderium Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 5,
+    "damageValueBody": 8,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 5,
+    "enchantability": 20,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "entity.zombie.attack_iron_door"
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "utility:custom/rift",
+  "textures": {
+    "all": "utility:blocks/black",
+    "particle": "utility:blocks/black",
+    "0": "utility:blocks/rift",
+    "1": "utility:blocks/black"
+  }
+}

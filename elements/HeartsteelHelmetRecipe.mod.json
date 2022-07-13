@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "CUSTOM:DefenseChip"
+      },
+      {
+        "value": "CUSTOM:SteelArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:DefenseChip"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Heartsteel.helmet"
+    },
+    "name": "heartsteel_helmet_recipe",
+    "namespace": "mod"
+  }
+}

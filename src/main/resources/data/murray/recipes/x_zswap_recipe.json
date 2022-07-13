@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:magnet_b"
+    },
+    "1": {
+      "item": "murray:speed_chip"
+    },
+    "2": {
+      "item": "murray:speed_chip"
+    },
+    "3": {
+      "item": "murray:magnet_b"
+    },
+    "4": {
+      "item": "murray:steel_ingot"
+    },
+    "5": {
+      "item": "murray:magnet_a"
+    },
+    "6": {
+      "item": "murray:speed_chip"
+    },
+    "7": {
+      "item": "murray:speed_chip"
+    },
+    "8": {
+      "item": "murray:magnet_a"
+    }
+  },
+  "result": {
+    "item": "murray:x_zswap",
+    "count": 1
+  }
+}

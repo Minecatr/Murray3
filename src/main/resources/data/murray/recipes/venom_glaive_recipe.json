@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "34 ",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:emerald"
+    },
+    "2": {
+      "item": "murray:energy_chip"
+    },
+    "3": {
+      "item": "minecraft:slime_ball"
+    },
+    "4": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "6": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "murray:venom_glaive",
+    "count": 1
+  }
+}

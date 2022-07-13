@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "addition": {
+    "item": "murray:steel_ingot"
+  },
+  "result": {
+    "item": "murray:steel_armor_boots"
+  }
+}

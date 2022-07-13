@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "2": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "4": {
+      "item": "minecraft:diamond"
+    },
+    "6": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "8": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "item": "murray:rift",
+    "count": 1
+  }
+}

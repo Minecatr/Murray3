@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:blaze_rod"
+    },
+    "3": {
+      "item": "minecraft:tnt"
+    },
+    "4": {
+      "item": "minecraft:netherite_block"
+    },
+    "5": {
+      "item": "minecraft:tnt"
+    },
+    "6": {
+      "item": "murray:attack_chip"
+    },
+    "7": {
+      "item": "murray:energy_chip"
+    },
+    "8": {
+      "item": "murray:attack_chip"
+    }
+  },
+  "result": {
+    "item": "murray:mech_strike",
+    "count": 1
+  }
+}

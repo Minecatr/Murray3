@@ -1,0 +1,39 @@
+{
+  "copicat": {
+    "category": "music",
+    "subtitle": "subtitles.copicat",
+    "sounds": [
+      {
+        "name": "murray:copicat",
+        "stream": true
+      }
+    ]
+  },
+  "corruption_fields": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "murray:corruptiontheme",
+        "stream": true
+      }
+    ]
+  },
+  "xzswap": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "murray:entropy",
+        "stream": false
+      }
+    ]
+  },
+  "forcefield": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "murray:we_can_dream",
+        "stream": false
+      }
+    ]
+  }
+}

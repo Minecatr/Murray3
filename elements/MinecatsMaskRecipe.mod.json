@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:CorruptParticle"
+      },
+      {
+        "value": "CUSTOM:SteelArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "CUSTOM:DefenseChip"
+      },
+      {
+        "value": "Blocks.WOOL#7"
+      },
+      {
+        "value": "CUSTOM:SpeedChip"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Minecat.helmet"
+    },
+    "name": "minecats_mask_recipe",
+    "namespace": "mod"
+  }
+}

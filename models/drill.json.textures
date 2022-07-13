@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "smooth_stone",
+        "1": "iron_block",
+        "2": "drill"
+      },
+      "name": "default"
+    }
+  }
+}

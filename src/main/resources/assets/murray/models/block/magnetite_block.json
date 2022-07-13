@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "murray:blocks/magnetite_block",
+    "particle": "murray:blocks/magnetite_block"
+  }
+}

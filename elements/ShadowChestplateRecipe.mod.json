@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "CUSTOM:AttackChip"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:SteelArmor.body"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Shadow.body"
+    },
+    "name": "shadow_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

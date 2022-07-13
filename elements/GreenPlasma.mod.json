@@ -1,0 +1,43 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "plasma_cannon_2",
+    "customModelName": "Normal",
+    "name": "Green Plasma",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "block.beacon.deactivate"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "Cooldown"
+    },
+    "bulletPower": 2.0,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modellaser_v2",
+    "customBulletModelTexture": "green_laser.png",
+    "onBulletHitsEntity": {
+      "name": "GreenPlasmaBulletHitsLivingEntity"
+    }
+  }
+}

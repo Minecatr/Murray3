@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:energy_chip"
+    },
+    "1": {
+      "item": "murray:speed_chip"
+    },
+    "2": {
+      "item": "murray:energy_chip"
+    },
+    "3": {
+      "item": "murray:magnetite_ingot"
+    },
+    "4": {
+      "item": "murray:flight_chip"
+    },
+    "5": {
+      "item": "murray:magnetite_ingot"
+    },
+    "6": {
+      "item": "murray:energy_chip"
+    },
+    "7": {
+      "item": "murray:computer"
+    },
+    "8": {
+      "item": "murray:energy_chip"
+    }
+  },
+  "result": {
+    "item": "murray:flight_enabler",
+    "count": 1
+  }
+}

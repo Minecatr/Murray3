@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "utility:block/tree_in_a_box"
+    }
+  }
+}

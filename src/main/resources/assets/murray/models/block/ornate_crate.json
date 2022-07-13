@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "murray:blocks/ornate_crate",
+    "particle": "murray:blocks/ornate_crate"
+  }
+}

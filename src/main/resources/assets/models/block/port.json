@@ -1,0 +1,9 @@
+{
+  "parent": "utility:custom/port",
+  "textures": {
+    "all": "utility:blocks/port_top",
+    "particle": "utility:blocks/port_top",
+    "0": "utility:blocks/port",
+    "1": "utility:blocks/port_top"
+  }
+}

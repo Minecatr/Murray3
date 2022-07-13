@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "3": {
+      "item": "murray:attack_chip"
+    },
+    "4": {
+      "item": "murray:energy_chip"
+    },
+    "6": {
+      "item": "minecraft:netherite_sword"
+    },
+    "7": {
+      "item": "murray:attack_chip"
+    }
+  },
+  "result": {
+    "item": "murray:heartstealer",
+    "count": 1
+  }
+}

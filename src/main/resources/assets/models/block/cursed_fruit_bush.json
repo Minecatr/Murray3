@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "utility:blocks/cursed_fruit_plant",
+    "particle": "utility:blocks/cursed_fruit_plant"
+  }
+}

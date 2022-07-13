@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "murray:blocks/vex_crate",
+    "particle": "murray:blocks/vex_crate"
+  }
+}

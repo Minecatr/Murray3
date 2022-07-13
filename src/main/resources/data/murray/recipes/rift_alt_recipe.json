@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "murray:corruption_grass"
+    },
+    "3": {
+      "item": "murray:corruption_grass"
+    },
+    "4": {
+      "item": "minecraft:diamond"
+    },
+    "5": {
+      "item": "murray:corruption_grass"
+    },
+    "7": {
+      "item": "murray:corruption_grass"
+    }
+  },
+  "result": {
+    "item": "murray:rift",
+    "count": 1
+  }
+}

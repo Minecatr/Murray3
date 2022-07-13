@@ -1,0 +1,10 @@
+{
+  "parent": "utility:custom/coin_press",
+  "textures": {
+    "all": "utility:blocks/smooth_stone",
+    "particle": "utility:blocks/smooth_stone",
+    "0": "utility:blocks/smooth_stone",
+    "1": "utility:blocks/press_part",
+    "missing": "utility:blocks/"
+  }
+}

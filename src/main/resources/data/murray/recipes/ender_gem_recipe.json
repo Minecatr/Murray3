@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "1": {
+      "item": "minecraft:shulker_shell"
+    },
+    "2": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "3": {
+      "item": "minecraft:shulker_shell"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "minecraft:shulker_shell"
+    },
+    "6": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "7": {
+      "item": "minecraft:shulker_shell"
+    },
+    "8": {
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  },
+  "result": {
+    "item": "murray:ender_gem",
+    "count": 1
+  }
+}

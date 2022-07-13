@@ -1,0 +1,64 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "heartsteel_helmet",
+    "enableBody": true,
+    "textureBody": "heartsteel_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "heartsteel_leggings",
+    "enableBoots": true,
+    "textureBoots": "heartsteel_boots",
+    "onHelmetTick": {
+      "name": "PlasmasteelHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "HeartsteelBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "heartsteel_",
+    "helmetName": "Heartsteel Helmet",
+    "bodyName": "Heartsteel Body",
+    "leggingsName": "Heartsteel Leggings",
+    "bootsName": "Heartsteel Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 12,
+    "damageValueBody": 12,
+    "damageValueLeggings": 12,
+    "damageValueBoots": 12,
+    "enchantability": 20,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "block.beacon.activate"
+    },
+    "repairItems": []
+  }
+}

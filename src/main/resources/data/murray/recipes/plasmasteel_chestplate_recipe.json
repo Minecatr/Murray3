@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "minecraft:diamond"
+    },
+    "4": {
+      "item": "murray:steel_armor_chestplate"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "6": {
+      "item": "murray:fire_chip"
+    },
+    "7": {
+      "item": "murray:energy_chip"
+    },
+    "8": {
+      "item": "murray:fire_chip"
+    }
+  },
+  "result": {
+    "item": "murray:plasmasteel_chestplate",
+    "count": 1
+  }
+}

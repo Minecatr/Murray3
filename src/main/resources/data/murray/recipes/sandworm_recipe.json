@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "murray:chip"
+    }
+  ],
+  "result": {
+    "item": "murray:sandworm",
+    "count": 1
+  }
+}

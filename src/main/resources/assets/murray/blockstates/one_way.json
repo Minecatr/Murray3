@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "murray:block/one_way"
+    },
+    "facing=east": {
+      "model": "murray:block/one_way",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "murray:block/one_way",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "murray:block/one_way",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "murray:block/one_way",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "murray:block/one_way",
+      "x": 90
+    }
+  }
+}

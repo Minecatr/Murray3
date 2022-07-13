@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "murray:items/frost_pickaxe"
+  }
+}

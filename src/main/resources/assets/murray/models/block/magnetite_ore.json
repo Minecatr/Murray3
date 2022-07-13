@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "murray:blocks/magnetite_ore",
+    "particle": "murray:blocks/magnetite_ore"
+  }
+}

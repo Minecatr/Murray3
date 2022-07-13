@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:EnderiumArmor.body"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EnderGem"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:TrueEnderium.body"
+    },
+    "name": "true_enderium_upgrade_chestplate",
+    "namespace": "mod"
+  }
+}

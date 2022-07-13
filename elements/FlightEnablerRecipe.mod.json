@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "CUSTOM:SpeedChip"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": "CUSTOM:FlightChip"
+      },
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "CUSTOM:Computer"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FlightEnabler"
+    },
+    "name": "flight_enabler_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "utility:custom/pot",
+  "textures": {
+    "all": "utility:blocks/terracotta",
+    "particle": "utility:blocks/terracotta",
+    "0": "utility:blocks/terracotta"
+  }
+}

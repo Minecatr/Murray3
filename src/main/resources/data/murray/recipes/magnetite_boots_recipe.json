@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:attack_chip"
+    },
+    "2": {
+      "item": "murray:attack_chip"
+    },
+    "3": {
+      "item": "murray:magnet_a"
+    },
+    "5": {
+      "item": "murray:magnet_a"
+    }
+  },
+  "result": {
+    "item": "murray:magnetite_armor_boots",
+    "count": 1
+  }
+}

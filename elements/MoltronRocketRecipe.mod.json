@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FlightChip"
+      },
+      {
+        "value": "Blocks.CONCRETE"
+      },
+      {
+        "value": "CUSTOM:SpeedChip"
+      },
+      {
+        "value": "CUSTOM:DefenseChip"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:FireChip"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MoltronRocketItem"
+    },
+    "name": "moltron_rocket_recipe",
+    "namespace": "mod"
+  }
+}

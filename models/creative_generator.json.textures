@@ -1,0 +1,74 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "generator_center",
+        "2": "port_glass"
+      },
+      "name": "default"
+    },
+    "cobblestonemine": {
+      "map": {
+        "1": "cobblestone",
+        "2": "port_glass"
+      },
+      "name": "cobblestonemine"
+    },
+    "coalmine": {
+      "map": {
+        "1": "coal_block",
+        "2": "port_glass"
+      },
+      "name": "coalmine"
+    },
+    "coppermine": {
+      "map": {
+        "1": "copper_block",
+        "2": "port_glass"
+      },
+      "name": "coppermine"
+    },
+    "ironmine": {
+      "map": {
+        "1": "iron_block",
+        "2": "port_glass"
+      },
+      "name": "ironmine"
+    },
+    "silvermine": {
+      "map": {
+        "1": "silver_block",
+        "2": "port_glass"
+      },
+      "name": "silvermine"
+    },
+    "goldmine": {
+      "map": {
+        "1": "gold_block",
+        "2": "port_glass"
+      },
+      "name": "goldmine"
+    },
+    "diamondmine": {
+      "map": {
+        "1": "diamond_block",
+        "2": "port_glass"
+      },
+      "name": "diamondmine"
+    },
+    "emeraldmine": {
+      "map": {
+        "1": "emerald_block",
+        "2": "port_glass"
+      },
+      "name": "emeraldmine"
+    },
+    "netheritemine": {
+      "map": {
+        "1": "netherite_block",
+        "2": "port_glass"
+      },
+      "name": "netheritemine"
+    }
+  }
+}

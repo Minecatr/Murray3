@@ -1,0 +1,6 @@
+{
+  "parent": "murray:custom/model_claymore",
+  "textures": {
+    "layer0": "murray:items/heartstealer"
+  }
+}

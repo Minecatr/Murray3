@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:hot_matter"
+    },
+    "1": {
+      "item": "murray:hot_matter"
+    },
+    "2": {
+      "item": "murray:hot_matter"
+    },
+    "3": {
+      "item": "murray:hot_matter"
+    },
+    "4": {
+      "item": "minecraft:netherite_block"
+    },
+    "5": {
+      "item": "murray:hot_matter"
+    },
+    "6": {
+      "item": "murray:hot_matter"
+    },
+    "7": {
+      "item": "murray:hot_matter"
+    },
+    "8": {
+      "item": "murray:hot_matter"
+    }
+  },
+  "result": {
+    "item": "murray:the_sun_in_a_box",
+    "count": 1
+  }
+}

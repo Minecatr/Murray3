@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Blocks.SPONGE#0"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Blocks.SPONGE#0"
+      },
+      {
+        "value": "CUSTOM:CorruptionBlock"
+      },
+      {
+        "value": "Blocks.SPONGE#0"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Blocks.SPONGE#0"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Silica"
+    },
+    "name": "silica_recipe",
+    "namespace": "mod"
+  }
+}

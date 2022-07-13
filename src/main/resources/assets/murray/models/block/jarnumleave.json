@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "murray:blocks/jarnumleave",
+    "particle": "murray:blocks/jarnumleave"
+  }
+}

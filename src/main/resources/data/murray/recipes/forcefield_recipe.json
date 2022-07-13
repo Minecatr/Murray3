@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:water_armor_chestplate"
+    },
+    "1": {
+      "item": "murray:magnet_b"
+    },
+    "2": {
+      "item": "murray:water_armor_leggings"
+    },
+    "3": {
+      "item": "murray:magnet_b"
+    },
+    "4": {
+      "item": "murray:steel_ingot"
+    },
+    "5": {
+      "item": "murray:magnet_b"
+    },
+    "6": {
+      "item": "murray:water_armor_helmet"
+    },
+    "7": {
+      "item": "murray:magnet_b"
+    },
+    "8": {
+      "item": "murray:water_armor_boots"
+    }
+  },
+  "result": {
+    "item": "murray:forcefield",
+    "count": 1
+  }
+}

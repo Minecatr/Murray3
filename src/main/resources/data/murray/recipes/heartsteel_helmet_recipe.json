@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "1": {
+      "item": "murray:energy_chip"
+    },
+    "2": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "3": {
+      "item": "murray:defense_chip"
+    },
+    "4": {
+      "item": "murray:steel_armor_helmet"
+    },
+    "5": {
+      "item": "murray:defense_chip"
+    }
+  },
+  "result": {
+    "item": "murray:heartsteel_helmet",
+    "count": 1
+  }
+}

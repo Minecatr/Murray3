@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Blocks.PACKED_ICE"
+      },
+      {
+        "value": "CUSTOM:SteelArmor.legs"
+      },
+      {
+        "value": "Blocks.PACKED_ICE"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Frost.legs"
+    },
+    "name": "frost_leggings_recipe",
+    "namespace": "mod"
+  }
+}

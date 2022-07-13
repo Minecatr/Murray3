@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "murray:trail_ice",
+    "murray:enderium_infused_stone",
+    "murray:drill",
+    "murray:deposit",
+    "murray:computer",
+    "murray:magnetite_ore",
+    "murray:magnetite_block",
+    "murray:magnet_a",
+    "murray:magnet_b",
+    "murray:venus_stone",
+    "murray:advanced_computer",
+    "murray:magnetic_disassembler",
+    "murray:one_way",
+    "murray:one_way_door"
+  ]
+}

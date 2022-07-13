@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "utility:block/port"
+    },
+    "facing=east": {
+      "model": "utility:block/port",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "utility:block/port",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "utility:block/port",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "utility:block/port",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "utility:block/port",
+      "x": 90
+    }
+  }
+}

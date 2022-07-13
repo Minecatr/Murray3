@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "CUSTOM:MagnetiteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FlightChip"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagnetiteArmor.helmet"
+    },
+    "name": "magnetite_helmet_recipe",
+    "namespace": "mod"
+  }
+}

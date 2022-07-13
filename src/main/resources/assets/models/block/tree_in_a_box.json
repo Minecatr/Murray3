@@ -1,0 +1,8 @@
+{
+  "parent": "utility:custom/tree_in_a_box",
+  "textures": {
+    "all": "utility:blocks/tree_in_a_box",
+    "particle": "utility:blocks/tree_in_a_box",
+    "0": "utility:blocks/tree_in_a_box"
+  }
+}

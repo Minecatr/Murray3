@@ -1,0 +1,9 @@
+{
+  "parent": "murray:custom/rift",
+  "textures": {
+    "all": "murray:blocks/rift",
+    "particle": "murray:blocks/rift",
+    "0": "murray:blocks/rift",
+    "1": "murray:blocks/black"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_2": "glass",
+        "m_1": "iron_block",
+        "m_0": "red_concrete"
+      },
+      "name": "default"
+    }
+  }
+}

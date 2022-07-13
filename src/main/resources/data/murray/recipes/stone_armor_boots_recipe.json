@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stone"
+    },
+    "2": {
+      "item": "minecraft:stone"
+    },
+    "3": {
+      "item": "minecraft:stone"
+    },
+    "5": {
+      "item": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "murray:stone_armor_boots",
+    "count": 1
+  }
+}

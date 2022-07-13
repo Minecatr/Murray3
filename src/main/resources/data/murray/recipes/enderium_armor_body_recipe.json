@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "addition": {
+    "item": "murray:enderium_ingot"
+  },
+  "result": {
+    "item": "murray:enderium_armor_chestplate"
+  }
+}

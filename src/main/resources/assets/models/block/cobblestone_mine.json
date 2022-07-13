@@ -1,0 +1,9 @@
+{
+  "parent": "utility:custom/creative_generator",
+  "textures": {
+    "all": "utility:blocks/cobblestone",
+    "particle": "utility:blocks/cobblestone",
+    "1": "utility:blocks/cobblestone",
+    "2": "utility:blocks/port_glass"
+  }
+}

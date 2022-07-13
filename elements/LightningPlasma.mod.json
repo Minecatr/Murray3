@@ -1,0 +1,43 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "plasma_cannon_6",
+    "customModelName": "Normal",
+    "name": "Lightning Plasma",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "item.trident.return"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "CooldownFast"
+    },
+    "bulletPower": 2.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modellaser_v2",
+    "customBulletModelTexture": "yellow_laser.png",
+    "onBulletHitsEntity": {
+      "name": "LightningPlasmaBulletHitsLivingEntity"
+    }
+  }
+}

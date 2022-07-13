@@ -1,0 +1,165 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 168,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 240,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 240,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "linesremovedleft.png",
+          "use1Xscale": false,
+          "name": "linesremovedleft.png",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diagonalline.png",
+          "use1Xscale": false,
+          "name": "diagonalline.png",
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diagonalline.png",
+          "use1Xscale": false,
+          "name": "diagonalline.png",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diagonalline.png",
+          "use1Xscale": false,
+          "name": "diagonalline.png",
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ininout.png",
+          "use1Xscale": false,
+          "name": "ininout.png",
+          "x": 240,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magnetite_block.png",
+          "use1Xscale": false,
+          "name": "magnetite_block.png",
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diamond.png",
+          "use1Xscale": false,
+          "name": "diamond.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redstone_block.png",
+          "use1Xscale": false,
+          "name": "redstone_block.png",
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lapis_block.png",
+          "use1Xscale": false,
+          "name": "lapis_block.png",
+          "x": 150,
+          "y": 98
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

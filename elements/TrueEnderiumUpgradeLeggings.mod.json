@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:EnderiumArmor.legs"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EnderGem"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:TrueEnderium.legs"
+    },
+    "name": "true_enderium_upgrade_leggings",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "murray:plasmasteel_chestplate"
+    },
+    {
+      "item": "murray:plasmasteel_helmet"
+    },
+    {
+      "item": "murray:plasmasteel_leggings"
+    },
+    {
+      "item": "murray:plasmasteel_boots"
+    }
+  ],
+  "result": {
+    "item": "murray:plasmasteel_case",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "murray:blocks/oak_planks",
+    "up": "murray:blocks/oak_planks",
+    "north": "murray:blocks/miniwatermill",
+    "east": "murray:blocks/miniwatermill",
+    "south": "murray:blocks/miniwatermill",
+    "west": "murray:blocks/miniwatermill",
+    "particle": "murray:blocks/oak_planks"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz"
+    },
+    "1": {
+      "item": "murray:energy_chip"
+    },
+    "2": {
+      "item": "minecraft:quartz"
+    },
+    "3": {
+      "item": "murray:speed_chip"
+    },
+    "4": {
+      "item": "murray:steel_armor_helmet"
+    },
+    "5": {
+      "item": "murray:speed_chip"
+    }
+  },
+  "result": {
+    "item": "murray:electristeel_helmet",
+    "count": 1
+  }
+}

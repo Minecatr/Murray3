@@ -1,0 +1,22 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_forcefield",
+    "name": "Forcefield",
+    "description": "We Can Dream by Creo",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:forcefield"
+    },
+    "specialInfo": [
+      "makes a forcefield when right clicked in the air"
+    ],
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "ForcefieldRightClickedInAir"
+    }
+  }
+}

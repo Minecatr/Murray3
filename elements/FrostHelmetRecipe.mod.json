@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Blocks.PACKED_ICE"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": "CUSTOM:SteelArmor.helmet"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Frost.helmet"
+    },
+    "name": "frost_helmet_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "murray:block/magnetic_disassembler"
+    },
+    "facing=east": {
+      "model": "murray:block/magnetic_disassembler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "murray:block/magnetic_disassembler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "murray:block/magnetic_disassembler",
+      "y": 270
+    }
+  }
+}

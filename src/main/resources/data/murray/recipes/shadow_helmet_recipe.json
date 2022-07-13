@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "1": {
+      "item": "murray:steel_armor_helmet"
+    },
+    "2": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "murray:energy_chip"
+    },
+    "5": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "murray:shadow_helmet",
+    "count": 1
+  }
+}

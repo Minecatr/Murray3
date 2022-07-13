@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.FLINT_AND_STEEL"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "CUSTOM:FireChip"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Items.CROSSBOW"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RedPlasma"
+    },
+    "name": "red_plasma_recipe",
+    "namespace": "mod"
+  }
+}

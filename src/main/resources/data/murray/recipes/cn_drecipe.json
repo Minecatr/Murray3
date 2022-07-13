@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:chest"
+    },
+    "1": {
+      "item": "minecraft:piston"
+    },
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "minecraft:piston"
+    },
+    "4": {
+      "item": "minecraft:tnt"
+    },
+    "5": {
+      "item": "minecraft:piston"
+    },
+    "6": {
+      "item": "minecraft:chest"
+    },
+    "7": {
+      "item": "minecraft:piston"
+    },
+    "8": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "murray:cnd",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "utility:custom/conveyor_wall",
+  "textures": {
+    "all": "utility:blocks/glass",
+    "particle": "utility:blocks/glass",
+    "0": "utility:blocks/glass"
+  }
+}

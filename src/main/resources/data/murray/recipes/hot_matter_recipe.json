@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:fire_chip"
+    },
+    "1": {
+      "item": "murray:fire_chip"
+    },
+    "2": {
+      "item": "murray:fire_chip"
+    },
+    "3": {
+      "item": "murray:fire_chip"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "murray:fire_chip"
+    },
+    "6": {
+      "item": "murray:fire_chip"
+    },
+    "7": {
+      "item": "murray:fire_chip"
+    },
+    "8": {
+      "item": "murray:fire_chip"
+    }
+  },
+  "result": {
+    "item": "murray:hot_matter",
+    "count": 1
+  }
+}

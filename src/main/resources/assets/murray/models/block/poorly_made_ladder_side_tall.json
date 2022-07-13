@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "murray:blocks/poorly_made_ladder",
+    "particle": "murray:blocks/poorly_made_ladder"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:tnt"
+    },
+    "2": {
+      "item": "murray:attack_chip"
+    },
+    "4": {
+      "item": "murray:energy_chip"
+    },
+    "5": {
+      "item": "minecraft:tnt"
+    },
+    "6": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "murray:chomp",
+    "count": 1
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "true_netherite_helmet",
+    "enableBody": true,
+    "textureBody": "true_netherite_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "true_netherite_leggings",
+    "enableBoots": true,
+    "textureBoots": "true_netherite_boots",
+    "onHelmetTick": {
+      "name": "TrueNetheriteEvent"
+    },
+    "onBodyTick": {
+      "name": "TrueNetheriteEvent"
+    },
+    "onLeggingsTick": {
+      "name": "TrueNetheriteEvent"
+    },
+    "onBootsTick": {
+      "name": "TrueNetheriteEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "true_netherite_",
+    "helmetName": "True Netherite Helmet",
+    "bodyName": "True Netherite Body",
+    "leggingsName": "True Netherite Leggings",
+    "bootsName": "True Netherite Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 5,
+    "damageValueBody": 8,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 5,
+    "enchantability": 20,
+    "toughness": 2.0,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": "entity.zombie.attack_iron_door"
+    },
+    "repairItems": []
+  }
+}

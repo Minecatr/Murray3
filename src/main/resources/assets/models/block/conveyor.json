@@ -1,0 +1,9 @@
+{
+  "parent": "utility:custom/conveyor1",
+  "textures": {
+    "all": "utility:blocks/conveyor",
+    "particle": "utility:blocks/conveyor",
+    "0": "utility:blocks/conveyor",
+    "missing": "utility:blocks/black"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "murray:blocks/trail_ice",
+    "particle": "murray:blocks/trail_ice"
+  }
+}

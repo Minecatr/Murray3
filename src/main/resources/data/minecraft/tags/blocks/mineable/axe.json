@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "murray:corrupted_crate",
+    "murray:brute_crate",
+    "murray:ornate_crate",
+    "murray:vex_crate"
+  ]
+}

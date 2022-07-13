@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "murray:enderium_armor_chestplate"
+  },
+  "addition": {
+    "item": "murray:ender_gem"
+  },
+  "result": {
+    "item": "murray:true_enderium_chestplate"
+  }
+}

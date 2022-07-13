@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:blue_ice"
+    },
+    "2": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "4": {
+      "item": "murray:fire_chip"
+    },
+    "5": {
+      "item": "minecraft:blue_ice"
+    },
+    "6": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "7": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "8": {
+      "item": "minecraft:crossbow"
+    }
+  },
+  "result": {
+    "item": "murray:blue_plasma",
+    "count": 1
+  }
+}

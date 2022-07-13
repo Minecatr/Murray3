@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:steel_nugget"
+    },
+    "1": {
+      "item": "murray:steel_nugget"
+    },
+    "2": {
+      "item": "murray:steel_nugget"
+    },
+    "3": {
+      "item": "murray:steel_nugget"
+    },
+    "4": {
+      "item": "murray:steel_nugget"
+    },
+    "5": {
+      "item": "murray:steel_nugget"
+    },
+    "6": {
+      "item": "murray:steel_nugget"
+    },
+    "7": {
+      "item": "murray:steel_nugget"
+    },
+    "8": {
+      "item": "murray:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "murray:steel_ingot",
+    "count": 1
+  }
+}

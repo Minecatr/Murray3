@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "murray:blocks/iron_block",
+    "up": "murray:blocks/iron_block",
+    "north": "murray:blocks/advanced_computer",
+    "east": "murray:blocks/iron_block",
+    "south": "murray:blocks/iron_block",
+    "west": "murray:blocks/iron_block",
+    "particle": "murray:blocks/iron_block"
+  }
+}

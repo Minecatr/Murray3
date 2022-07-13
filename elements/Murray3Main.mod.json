@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Murray3 Main",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "MainKeybind"
+    }
+  }
+}

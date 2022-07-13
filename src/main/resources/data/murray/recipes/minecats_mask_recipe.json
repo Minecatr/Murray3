@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "murray:steel_ingot"
+    },
+    {
+      "item": "murray:steel_ingot"
+    },
+    {
+      "item": "murray:corrupt_particle"
+    },
+    {
+      "item": "murray:steel_armor_helmet"
+    },
+    {
+      "item": "murray:energy_chip"
+    },
+    {
+      "item": "murray:defense_chip"
+    },
+    {
+      "item": "minecraft:gray_wool"
+    },
+    {
+      "item": "murray:speed_chip"
+    }
+  ],
+  "result": {
+    "item": "murray:minecat_helmet",
+    "count": 1
+  }
+}

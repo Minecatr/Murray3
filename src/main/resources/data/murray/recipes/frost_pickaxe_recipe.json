@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:blue_ice"
+    },
+    "2": {
+      "item": "murray:energy_chip"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:blue_ice"
+    },
+    "6": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "murray:frost_pickaxe",
+    "count": 1
+  }
+}

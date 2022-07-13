@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.CHAINMAIL_CHESTPLATE"
+      },
+      {
+        "value": "Items.IRON_CHESTPLATE"
+      },
+      {
+        "value": "Items.GOLDEN_CHESTPLATE"
+      },
+      {
+        "value": "Items.LEATHER_CHESTPLATE"
+      },
+      {
+        "value": "CUSTOM:EnergyChip"
+      },
+      {
+        "value": "Items.DIAMOND_CHESTPLATE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHERITE_CHESTPLATE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Rainbow.body"
+    },
+    "name": "rainbow_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

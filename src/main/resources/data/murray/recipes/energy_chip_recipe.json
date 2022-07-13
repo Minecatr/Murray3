@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "murray:chip"
+    }
+  ],
+  "result": {
+    "item": "murray:energy_chip",
+    "count": 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "murray:defense_chip"
+    },
+    "4": {
+      "item": "murray:steel_armor_chestplate"
+    },
+    "5": {
+      "item": "murray:defense_chip"
+    },
+    "6": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "7": {
+      "item": "murray:energy_chip"
+    },
+    "8": {
+      "item": "minecraft:glistering_melon_slice"
+    }
+  },
+  "result": {
+    "item": "murray:heartsteel_chestplate",
+    "count": 1
+  }
+}
