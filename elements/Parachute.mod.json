@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "red_concrete",
+    "texture": "parachute",
     "customModelName": "Normal",
-    "name": "Moltron Rocket",
+    "name": "Parachute",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "TRANSPORTATION"
@@ -24,20 +24,18 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "Main Keybind to go up"
-    ],
+    "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "MoltronRocketRightClicked"
+    "onItemInUseTick": {
+      "name": "ParachuteItemInHandTick"
     },
     "hasDispenseBehavior": false,
     "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

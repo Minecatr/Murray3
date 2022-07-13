@@ -36,7 +36,7 @@ public class MoltronRocketItemItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("MAKE SURE OFFHAND IS EMPTY WHEN USING!"));
+		list.add(new TextComponent("Main Keybind to go up"));
 	}
 
 	@Override

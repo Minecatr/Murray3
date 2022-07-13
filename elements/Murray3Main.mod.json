@@ -6,7 +6,7 @@
     "keyBindingName": "Murray3 Main",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
-      "name": "MainKeybind"
+      "name": "Murray3MainOnKeyPressed"
     }
   }
 }

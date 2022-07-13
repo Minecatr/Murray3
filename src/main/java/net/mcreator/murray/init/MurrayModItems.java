@@ -39,6 +39,7 @@ import net.mcreator.murray.item.PlasmasteelMk2Item;
 import net.mcreator.murray.item.PlasmasteelItem;
 import net.mcreator.murray.item.PlasmasteelCaseItem;
 import net.mcreator.murray.item.PlasmaKatanaItem;
+import net.mcreator.murray.item.ParachuteItem;
 import net.mcreator.murray.item.OrangePlasmaItem;
 import net.mcreator.murray.item.NinjaItem;
 import net.mcreator.murray.item.NetherGemItem;
@@ -273,6 +274,7 @@ public class MurrayModItems {
 			() -> new PlasmasteelMk2Item.Leggings());
 	public static final RegistryObject<Item> PLASMASTEEL_MK_2_BOOTS = REGISTRY.register("plasmasteel_mk_2_boots",
 			() -> new PlasmasteelMk2Item.Boots());
+	public static final RegistryObject<Item> PARACHUTE = REGISTRY.register("parachute", () -> new ParachuteItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

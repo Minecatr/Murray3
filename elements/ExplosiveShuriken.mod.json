@@ -31,7 +31,7 @@
     "bulletItemTexture": {
       "value": ""
     },
-    "bulletModel": "Modelshuriken",
+    "bulletModel": "Modelshuriken_v2",
     "customBulletModelTexture": "explosive_shuriken_projectile.png",
     "onBulletHitsBlock": {
       "name": "RedPlasmaBulletHitsLivingEntity"

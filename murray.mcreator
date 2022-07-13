@@ -55,26 +55,6 @@
       "registry_name": "murray_3_main"
     },
     {
-      "name": "MainKeybind",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "main_keybind",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Minecat",
       "type": "armor",
       "sortid": 11,
@@ -829,22 +809,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "explosive_shuriken"
-    },
-    {
-      "name": "NinjaHelmetTickEvent",
-      "type": "procedure",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ninja_helmet_tick_event",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "ChompSpit",
@@ -2023,6 +1987,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           }
         ]
       }
@@ -3941,6 +3913,82 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "Murray3MainOnKeyPressed",
+      "type": "procedure",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "murray_3_main_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NinjaHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ninja_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ParachuteItemInHandTick",
+      "type": "procedure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parachute_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Parachute",
+      "type": "item",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parachute"
+    },
+    {
+      "name": "ParachuteRecipe",
+      "type": "recipe",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parachute_recipe"
     }
   ],
   "variable_elements": [],
@@ -4083,6 +4131,7 @@
       "item.murray.wood_armor_helmet": "Wood Helmet",
       "item.murray.green_plasma": "Green Plasma",
       "block.murray.magnetic_disassembler": "Magnetic Disassembler",
+      "item.murray.parachute": "Parachute",
       "subtitles.copicat": "copicat",
       "item.murray.x_zswap": "XZswap",
       "item.murray.plasmasteel_helmet": "Plasmasteel Helmet",
@@ -4171,14 +4220,14 @@
   "workspaceSettings": {
     "modid": "murray",
     "modName": "Murray3",
-    "version": "1.0.0",
-    "description": "Many ops armor mod powrd by sols!11!!",
+    "version": "1.2.0",
+    "description": "Murray3 mod has many fun blocks with many options for late game armor. This mod is called Murray3 not because this is the third Murray mod but because this mod was suggested by my brother Murray and this mod is 3 mods combined, EmmTech, Utility, and, Minecatr\u0027s Random Stuff.",
     "author": "Minecat, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "murray3",
+    "modPicture": "m3",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

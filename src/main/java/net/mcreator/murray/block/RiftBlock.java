@@ -51,7 +51,7 @@ public class RiftBlock extends Block {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		RiftEntityCollidesInTheBlockProcedure.execute(entity);
+		RiftEntityCollidesInTheBlockProcedure.execute(pos.getX(), pos.getZ(), entity);
 	}
 
 	@OnlyIn(Dist.CLIENT)

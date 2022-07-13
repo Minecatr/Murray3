@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.murray.procedures.MainKeybindProcedure;
+import net.mcreator.murray.procedures.Murray3MainOnKeyPressedProcedure;
 import net.mcreator.murray.MurrayMod;
 
 import java.util.function.Supplier;
@@ -52,7 +52,7 @@ public class Murray3MainMessage {
 			return;
 		if (type == 0) {
 
-			MainKeybindProcedure.execute(world, entity);
+			Murray3MainOnKeyPressedProcedure.execute(world, x, z, entity);
 		}
 	}
 

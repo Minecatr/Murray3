@@ -1,17 +1,17 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="MIT License"
+license="Academic Free License v3.0"
 
 [[mods]]
 modId="murray"
-version="1.0.0"
+version="1.2.0"
 displayName="Murray3"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="Minecat, MCreator"
 description='''
-Many ops armor mod powrd by sols!11!!
+Murray3 mod has many fun blocks with many options for late game armor. This mod is called Murray3 not because this is the third Murray mod but because this mod was suggested by my brother Murray and this mod is 3 mods combined, EmmTech, Utility, and, Minecatr's Random Stuff.
 '''
 
 [[dependencies.murray]]

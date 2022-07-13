@@ -31,7 +31,7 @@
     "bulletItemTexture": {
       "value": ""
     },
-    "bulletModel": "Modelshuriken",
+    "bulletModel": "Modelshuriken_v2",
     "customBulletModelTexture": "shuriken_projectile.png"
   }
 }
