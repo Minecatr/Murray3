@@ -35,6 +35,7 @@ import net.mcreator.murray.item.RedPlasmaItem;
 import net.mcreator.murray.item.RainbowItem;
 import net.mcreator.murray.item.RacerItem;
 import net.mcreator.murray.item.PurplePlasmaItem;
+import net.mcreator.murray.item.PlasmasteelMk2Item;
 import net.mcreator.murray.item.PlasmasteelItem;
 import net.mcreator.murray.item.PlasmasteelCaseItem;
 import net.mcreator.murray.item.PlasmaKatanaItem;
@@ -264,6 +265,14 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> JARNUMFRUIT = REGISTRY.register("jarnumfruit", () -> new JarnumfruitItem());
 	public static final RegistryObject<Item> JARNUMLEAVE = block(MurrayModBlocks.JARNUMLEAVE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> POORLY_MADE_LADDER = block(MurrayModBlocks.POORLY_MADE_LADDER, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> PLASMASTEEL_MK_2_HELMET = REGISTRY.register("plasmasteel_mk_2_helmet",
+			() -> new PlasmasteelMk2Item.Helmet());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_2_CHESTPLATE = REGISTRY.register("plasmasteel_mk_2_chestplate",
+			() -> new PlasmasteelMk2Item.Chestplate());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_2_LEGGINGS = REGISTRY.register("plasmasteel_mk_2_leggings",
+			() -> new PlasmasteelMk2Item.Leggings());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_2_BOOTS = REGISTRY.register("plasmasteel_mk_2_boots",
+			() -> new PlasmasteelMk2Item.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
