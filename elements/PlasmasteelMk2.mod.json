@@ -17,13 +17,13 @@
       "name": "PlasmasteelBootsTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "plasmasteel_mk2_",
-    "helmetName": "Plasmasteel Helmet",
-    "bodyName": "Plasmasteel Body",
-    "leggingsName": "Plasmasteel Leggings",
-    "bootsName": "Plasmasteel Boots",
+    "helmetName": "Plasmasteel Helmet Mk.2",
+    "bodyName": "Plasmasteel Body Mk.2",
+    "leggingsName": "Plasmasteel Leggings Mk.2",
+    "bootsName": "Plasmasteel Boots Mk.2",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

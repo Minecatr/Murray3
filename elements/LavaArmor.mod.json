@@ -23,7 +23,7 @@
       "name": "LavaArmorProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "lava_",
     "helmetName": "Lava Helmet",

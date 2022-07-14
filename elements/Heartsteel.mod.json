@@ -17,7 +17,7 @@
       "name": "HeartsteelBodyTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "heartsteel_",
     "helmetName": "Heartsteel Helmet",

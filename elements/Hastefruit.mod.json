@@ -8,7 +8,7 @@
     "name": "Hastefruit",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Murray3Misc"
     },
     "stackSize": 64,
     "enchantability": 0,

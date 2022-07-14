@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.murray.init.MurrayModTabs;
 import net.mcreator.murray.init.MurrayModItems;
 import net.mcreator.murray.init.MurrayModFeatures;
 import net.mcreator.murray.init.MurrayModEntities;
@@ -47,7 +48,7 @@ public class MurrayMod {
 	private static int messageID = 0;
 
 	public MurrayMod() {
-
+		MurrayModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MurrayModBlocks.REGISTRY.register(bus);
 		MurrayModItems.REGISTRY.register(bus);

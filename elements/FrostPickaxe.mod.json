@@ -8,7 +8,7 @@
     "name": "Frost Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 4,

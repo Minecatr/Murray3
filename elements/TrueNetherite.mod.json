@@ -23,7 +23,7 @@
       "name": "TrueNetheriteEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "true_netherite_",
     "helmetName": "True Netherite Helmet",

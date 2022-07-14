@@ -32,14 +32,14 @@
         "subtract": false
       }
     ],
-    "name": "Particle",
+    "name": "Sandworm",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 0.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Murray3Blocks"
     },
     "destroyTool": "shovel",
     "customDrop": {

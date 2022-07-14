@@ -3,7 +3,7 @@
     {
       "name": "PlasmasteelHelmetTickEvent",
       "type": "procedure",
-      "sortid": 1,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_helmet_tick_event",
@@ -19,7 +19,7 @@
     {
       "name": "PlasmasteelBootsTickEvent",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_boots_tick_event",
@@ -49,7 +49,7 @@
     {
       "name": "Murray3Main",
       "type": "keybind",
-      "sortid": 9,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "murray_3_main"
@@ -57,7 +57,7 @@
     {
       "name": "Minecat",
       "type": "armor",
-      "sortid": 11,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "minecat",
@@ -71,7 +71,7 @@
     {
       "name": "PlasmasteelCaseRightClickedInAir",
       "type": "procedure",
-      "sortid": 12,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_case_right_clicked_in_air",
@@ -107,7 +107,7 @@
     {
       "name": "PlasmasteelCase",
       "type": "item",
-      "sortid": 12,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_case"
@@ -115,7 +115,7 @@
     {
       "name": "OrangePlasma",
       "type": "rangeditem",
-      "sortid": 13,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_plasma"
@@ -123,7 +123,7 @@
     {
       "name": "PlasmasteelCaseRecipe",
       "type": "recipe",
-      "sortid": 14,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_case_recipe"
@@ -131,7 +131,7 @@
     {
       "name": "MinecatsMaskRecipe",
       "type": "recipe",
-      "sortid": 15,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "minecats_mask_recipe"
@@ -139,7 +139,7 @@
     {
       "name": "VenomGlaive",
       "type": "tool",
-      "sortid": 18,
+      "sortid": 3,
       "compiles": true,
       "locked_code": true,
       "registry_name": "venom_glaive"
@@ -147,7 +147,7 @@
     {
       "name": "OrangePlasmaBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_plasma_bullet_hits_living_entity",
@@ -163,7 +163,7 @@
     {
       "name": "VenomGlaiveEntitySwingsItem",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "venom_glaive_entity_swings_item",
@@ -179,7 +179,7 @@
     {
       "name": "Cooldown",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooldown",
@@ -199,7 +199,7 @@
     {
       "name": "GreenPlasma",
       "type": "rangeditem",
-      "sortid": 22,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plasma"
@@ -207,7 +207,7 @@
     {
       "name": "GreenPlasmaBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plasma_bullet_hits_living_entity",
@@ -227,7 +227,7 @@
     {
       "name": "VenomGlaiveRecipe",
       "type": "recipe",
-      "sortid": 24,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "venom_glaive_recipe"
@@ -235,7 +235,7 @@
     {
       "name": "OrangePlasmaRecipe",
       "type": "recipe",
-      "sortid": 25,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_plasma_recipe"
@@ -243,7 +243,7 @@
     {
       "name": "GreenPlasmaRecipe",
       "type": "recipe",
-      "sortid": 26,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plasma_recipe"
@@ -251,7 +251,7 @@
     {
       "name": "CactusArmor",
       "type": "armor",
-      "sortid": 27,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_armor",
@@ -265,7 +265,7 @@
     {
       "name": "CactusArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 28,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_armor_helmet_recipe"
@@ -273,7 +273,7 @@
     {
       "name": "CactusArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 29,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_armor_body_recipe"
@@ -281,7 +281,7 @@
     {
       "name": "CactusArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 30,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_armor_leggings_recipe"
@@ -289,7 +289,7 @@
     {
       "name": "CactusArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 31,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_armor_boots_recipe"
@@ -297,7 +297,7 @@
     {
       "name": "CactusArmorHelmetTickEvent",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_armor_helmet_tick_event",
@@ -325,7 +325,7 @@
     {
       "name": "BluePlasmaBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 34,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_plasma_bullet_hits_living_entity",
@@ -341,7 +341,7 @@
     {
       "name": "MinecatShields",
       "type": "procedure",
-      "sortid": 35,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "minecat_shields",
@@ -361,7 +361,7 @@
     {
       "name": "RedPlasma",
       "type": "rangeditem",
-      "sortid": 36,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_plasma"
@@ -369,7 +369,7 @@
     {
       "name": "RedPlasmaBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 37,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_plasma_bullet_hits_living_entity",
@@ -397,7 +397,7 @@
     {
       "name": "BluePlasmaRecipe",
       "type": "recipe",
-      "sortid": 38,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_plasma_recipe"
@@ -405,7 +405,7 @@
     {
       "name": "RedPlasmaRecipe",
       "type": "recipe",
-      "sortid": 39,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_plasma_recipe"
@@ -413,7 +413,7 @@
     {
       "name": "Frost",
       "type": "armor",
-      "sortid": 40,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost",
@@ -427,7 +427,7 @@
     {
       "name": "BlowAbility",
       "type": "rangeditem",
-      "sortid": 41,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blow_ability"
@@ -435,7 +435,7 @@
     {
       "name": "FrostHelmetTickEvent",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_helmet_tick_event",
@@ -451,7 +451,7 @@
     {
       "name": "FrostBootsTickEvent",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_boots_tick_event",
@@ -483,7 +483,7 @@
     {
       "name": "TrailIce",
       "type": "block",
-      "sortid": 44,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trail_ice"
@@ -491,7 +491,7 @@
     {
       "name": "TrailIceBlockAdded",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trail_ice_block_added",
@@ -519,7 +519,7 @@
     {
       "name": "MechStrikeRightClickedInAir",
       "type": "procedure",
-      "sortid": 47,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mech_strike_right_clicked_in_air",
@@ -551,7 +551,7 @@
     {
       "name": "MechStrike",
       "type": "item",
-      "sortid": 47,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mech_strike"
@@ -559,7 +559,7 @@
     {
       "name": "MoltronMech",
       "type": "livingentity",
-      "sortid": 49,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moltron_mech"
@@ -567,7 +567,7 @@
     {
       "name": "MechStrikeRecipe",
       "type": "recipe",
-      "sortid": 50,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mech_strike_recipe"
@@ -575,7 +575,7 @@
     {
       "name": "Racer",
       "type": "armor",
-      "sortid": 51,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "racer",
@@ -589,7 +589,7 @@
     {
       "name": "FrostBootsRecipe",
       "type": "recipe",
-      "sortid": 52,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_boots_recipe"
@@ -597,7 +597,7 @@
     {
       "name": "FrostLeggingsRecipe",
       "type": "recipe",
-      "sortid": 53,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_leggings_recipe"
@@ -605,7 +605,7 @@
     {
       "name": "FrostChestplateRecipe",
       "type": "recipe",
-      "sortid": 54,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_chestplate_recipe"
@@ -613,7 +613,7 @@
     {
       "name": "FrostHelmetRecipe",
       "type": "recipe",
-      "sortid": 55,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_helmet_recipe"
@@ -621,7 +621,7 @@
     {
       "name": "TeleportAbility",
       "type": "rangeditem",
-      "sortid": 56,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "teleport_ability"
@@ -629,7 +629,7 @@
     {
       "name": "TeleportAbilityBulletHitsBlock",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "teleport_ability_bullet_hits_block",
@@ -657,7 +657,7 @@
     {
       "name": "PurplePlasma",
       "type": "rangeditem",
-      "sortid": 58,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_plasma"
@@ -665,7 +665,7 @@
     {
       "name": "CooldownFast",
       "type": "procedure",
-      "sortid": 59,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooldown_fast",
@@ -685,7 +685,7 @@
     {
       "name": "Chomp",
       "type": "tool",
-      "sortid": 60,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chomp"
@@ -693,7 +693,7 @@
     {
       "name": "ChompRecipe",
       "type": "recipe",
-      "sortid": 63,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chomp_recipe"
@@ -701,7 +701,7 @@
     {
       "name": "PurplePlasmaRecipe",
       "type": "recipe",
-      "sortid": 64,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_plasma_recipe"
@@ -709,7 +709,7 @@
     {
       "name": "ChompLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chomp_living_entity_is_hit_with_tool",
@@ -737,7 +737,7 @@
     {
       "name": "Shadow",
       "type": "armor",
-      "sortid": 66,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadow",
@@ -751,7 +751,7 @@
     {
       "name": "ShadowLeggingsTickEvent",
       "type": "procedure",
-      "sortid": 67,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadow_leggings_tick_event",
@@ -783,7 +783,7 @@
     {
       "name": "Ninja",
       "type": "armor",
-      "sortid": 68,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ninja",
@@ -797,7 +797,7 @@
     {
       "name": "Shuriken",
       "type": "rangeditem",
-      "sortid": 69,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shuriken"
@@ -805,7 +805,7 @@
     {
       "name": "ExplosiveShuriken",
       "type": "rangeditem",
-      "sortid": 70,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "explosive_shuriken"
@@ -813,7 +813,7 @@
     {
       "name": "ChompSpit",
       "type": "rangeditem",
-      "sortid": 72,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chomp_spit"
@@ -821,7 +821,7 @@
     {
       "name": "ChompRightClickedInAir",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chomp_right_clicked_in_air",
@@ -845,7 +845,7 @@
     {
       "name": "PlasmaKatana",
       "type": "tool",
-      "sortid": 74,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasma_katana"
@@ -853,7 +853,7 @@
     {
       "name": "PlasmaKatanaLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasma_katana_living_entity_is_hit_with_tool",
@@ -869,7 +869,7 @@
     {
       "name": "ShadowHelmetRecipe",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadow_helmet_recipe"
@@ -877,7 +877,7 @@
     {
       "name": "ShadowChestplateRecipe",
       "type": "recipe",
-      "sortid": 77,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadow_chestplate_recipe"
@@ -885,7 +885,7 @@
     {
       "name": "ShadowLeggingsRecipe",
       "type": "recipe",
-      "sortid": 78,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadow_leggings_recipe"
@@ -893,7 +893,7 @@
     {
       "name": "ShadowBootsRecipe",
       "type": "recipe",
-      "sortid": 79,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadow_boots_recipe"
@@ -901,7 +901,7 @@
     {
       "name": "ShurikenRecipe",
       "type": "recipe",
-      "sortid": 80,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shuriken_recipe"
@@ -909,7 +909,7 @@
     {
       "name": "ExplosiveShurikenRecipe",
       "type": "recipe",
-      "sortid": 81,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "explosive_shuriken_recipe"
@@ -917,7 +917,7 @@
     {
       "name": "PlasmaKatanaRecipe",
       "type": "recipe",
-      "sortid": 82,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasma_katana_recipe"
@@ -925,7 +925,7 @@
     {
       "name": "NinjaHelmetRecipe",
       "type": "recipe",
-      "sortid": 83,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ninja_helmet_recipe"
@@ -933,7 +933,7 @@
     {
       "name": "NinjaChestplateRecipe",
       "type": "recipe",
-      "sortid": 84,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ninja_chestplate_recipe"
@@ -941,7 +941,7 @@
     {
       "name": "NinjaLeggingsRecipe",
       "type": "recipe",
-      "sortid": 85,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ninja_leggings_recipe"
@@ -949,7 +949,7 @@
     {
       "name": "NinjaBootsRecipe",
       "type": "recipe",
-      "sortid": 86,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ninja_boots_recipe"
@@ -957,7 +957,7 @@
     {
       "name": "Heartsteel",
       "type": "armor",
-      "sortid": 87,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartsteel",
@@ -971,7 +971,7 @@
     {
       "name": "HeartsteelBodyTickEvent",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartsteel_body_tick_event",
@@ -987,7 +987,7 @@
     {
       "name": "PlasmasteelHelmetRecipe",
       "type": "recipe",
-      "sortid": 89,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_helmet_recipe"
@@ -995,7 +995,7 @@
     {
       "name": "PlasmasteelChestplateRecipe",
       "type": "recipe",
-      "sortid": 90,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_chestplate_recipe"
@@ -1003,7 +1003,7 @@
     {
       "name": "PlasmasteelLeggingsRecipe",
       "type": "recipe",
-      "sortid": 91,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_leggings_recipe"
@@ -1011,7 +1011,7 @@
     {
       "name": "PlasmasteelBootsRecipe",
       "type": "recipe",
-      "sortid": 92,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_boots_recipe"
@@ -1019,7 +1019,7 @@
     {
       "name": "HeartsteelHelmetRecipe",
       "type": "recipe",
-      "sortid": 93,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartsteel_helmet_recipe"
@@ -1027,7 +1027,7 @@
     {
       "name": "HeartsteelChestplateRecipe",
       "type": "recipe",
-      "sortid": 94,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartsteel_chestplate_recipe"
@@ -1035,7 +1035,7 @@
     {
       "name": "HeartsteelLeggingsRecipe",
       "type": "recipe",
-      "sortid": 95,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartsteel_leggings_recipe"
@@ -1043,7 +1043,7 @@
     {
       "name": "HeartsteelBootsRecipe",
       "type": "recipe",
-      "sortid": 96,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartsteel_boots_recipe"
@@ -1051,7 +1051,7 @@
     {
       "name": "Electristeel",
       "type": "armor",
-      "sortid": 97,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel",
@@ -1065,7 +1065,7 @@
     {
       "name": "ElectristeelBodyTickEvent",
       "type": "procedure",
-      "sortid": 98,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel_body_tick_event",
@@ -1097,7 +1097,7 @@
     {
       "name": "ElectristeelBootsTickEvent",
       "type": "procedure",
-      "sortid": 99,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel_boots_tick_event",
@@ -1113,7 +1113,7 @@
     {
       "name": "LightningPlasma",
       "type": "rangeditem",
-      "sortid": 100,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightning_plasma"
@@ -1121,7 +1121,7 @@
     {
       "name": "LightningPlasmaBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 101,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightning_plasma_bullet_hits_living_entity",
@@ -1149,7 +1149,7 @@
     {
       "name": "LightningPlasmaRecipe",
       "type": "recipe",
-      "sortid": 102,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightning_plasma_recipe"
@@ -1157,7 +1157,7 @@
     {
       "name": "ElectristeelHelmetRecipe",
       "type": "recipe",
-      "sortid": 103,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel_helmet_recipe"
@@ -1165,7 +1165,7 @@
     {
       "name": "ElectristeelChestplateRecipe",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel_chestplate_recipe"
@@ -1173,7 +1173,7 @@
     {
       "name": "ElectristeelLeggingsRecipe",
       "type": "recipe",
-      "sortid": 105,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel_leggings_recipe"
@@ -1181,7 +1181,7 @@
     {
       "name": "ElectristeelBootsRecipe",
       "type": "recipe",
-      "sortid": 106,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electristeel_boots_recipe"
@@ -1189,7 +1189,7 @@
     {
       "name": "Heartstealer",
       "type": "tool",
-      "sortid": 107,
+      "sortid": 10,
       "compiles": true,
       "locked_code": true,
       "registry_name": "heartstealer"
@@ -1197,7 +1197,7 @@
     {
       "name": "HeartstealerLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 108,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartstealer_living_entity_is_hit_with_tool",
@@ -1213,7 +1213,7 @@
     {
       "name": "HeartstealerRecipe",
       "type": "recipe",
-      "sortid": 109,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heartstealer_recipe"
@@ -1221,7 +1221,7 @@
     {
       "name": "Rainbow",
       "type": "armor",
-      "sortid": 110,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow",
@@ -1235,7 +1235,7 @@
     {
       "name": "RainbowHelmetRecipe",
       "type": "recipe",
-      "sortid": 111,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow_helmet_recipe"
@@ -1243,7 +1243,7 @@
     {
       "name": "RainbowChestplateRecipe",
       "type": "recipe",
-      "sortid": 112,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow_chestplate_recipe"
@@ -1251,7 +1251,7 @@
     {
       "name": "RainbowLeggingsRecipe",
       "type": "recipe",
-      "sortid": 113,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow_leggings_recipe"
@@ -1259,7 +1259,7 @@
     {
       "name": "RainbowBootsRecipe",
       "type": "recipe",
-      "sortid": 114,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow_boots_recipe"
@@ -1267,7 +1267,7 @@
     {
       "name": "RacerHelmetRecipe",
       "type": "recipe",
-      "sortid": 115,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "racer_helmet_recipe"
@@ -1275,7 +1275,7 @@
     {
       "name": "RacerChestplateRecipe",
       "type": "recipe",
-      "sortid": 116,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "racer_chestplate_recipe"
@@ -1283,7 +1283,7 @@
     {
       "name": "RacerLeggingsRecipe",
       "type": "recipe",
-      "sortid": 117,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "racer_leggings_recipe"
@@ -1291,7 +1291,7 @@
     {
       "name": "RacerBootsRecipe",
       "type": "recipe",
-      "sortid": 118,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "racer_boots_recipe"
@@ -1299,7 +1299,7 @@
     {
       "name": "FlightEnablerItemInInventoryTick",
       "type": "procedure",
-      "sortid": 119,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flight_enabler_item_in_inventory_tick",
@@ -1319,7 +1319,7 @@
     {
       "name": "FlightEnabler",
       "type": "item",
-      "sortid": 119,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flight_enabler"
@@ -1327,7 +1327,7 @@
     {
       "name": "FlightEnablerRecipe",
       "type": "recipe",
-      "sortid": 120,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flight_enabler_recipe"
@@ -1335,7 +1335,7 @@
     {
       "name": "SteelNugget",
       "type": "item",
-      "sortid": 121,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_nugget"
@@ -1343,7 +1343,7 @@
     {
       "name": "SteelNuggetRecipe",
       "type": "recipe",
-      "sortid": 121,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_nugget_recipe"
@@ -1351,7 +1351,7 @@
     {
       "name": "SteelIngot",
       "type": "item",
-      "sortid": 122,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_ingot"
@@ -1359,7 +1359,7 @@
     {
       "name": "SteelIngotRecipe",
       "type": "recipe",
-      "sortid": 122,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_ingot_recipe"
@@ -1367,7 +1367,7 @@
     {
       "name": "SteelArmor",
       "type": "armor",
-      "sortid": 123,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_armor",
@@ -1381,7 +1381,7 @@
     {
       "name": "SteelArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 124,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_armor_helmet_recipe"
@@ -1389,7 +1389,7 @@
     {
       "name": "SteelArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 125,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_armor_body_recipe"
@@ -1397,7 +1397,7 @@
     {
       "name": "SteelArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 126,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_armor_leggings_recipe"
@@ -1405,7 +1405,7 @@
     {
       "name": "SteelArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 127,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_armor_boots_recipe"
@@ -1413,7 +1413,7 @@
     {
       "name": "FrostPickaxe",
       "type": "tool",
-      "sortid": 128,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_pickaxe"
@@ -1421,7 +1421,7 @@
     {
       "name": "FrostPickaxeRecipe",
       "type": "recipe",
-      "sortid": 129,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frost_pickaxe_recipe"
@@ -1429,7 +1429,7 @@
     {
       "name": "EnderiumInfusedStone",
       "type": "block",
-      "sortid": 130,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_infused_stone"
@@ -1437,7 +1437,7 @@
     {
       "name": "EnderiumIngot",
       "type": "item",
-      "sortid": 131,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_ingot"
@@ -1445,7 +1445,7 @@
     {
       "name": "EnderiumArmor",
       "type": "armor",
-      "sortid": 132,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_armor",
@@ -1459,7 +1459,7 @@
     {
       "name": "EnderiumArmorHelmetTickEvent",
       "type": "procedure",
-      "sortid": 133,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_armor_helmet_tick_event",
@@ -1475,7 +1475,7 @@
     {
       "name": "EnderiumArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 134,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_armor_helmet_recipe"
@@ -1483,7 +1483,7 @@
     {
       "name": "EnderiumArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 135,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_armor_body_recipe"
@@ -1491,7 +1491,7 @@
     {
       "name": "EnderiumArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 136,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_armor_leggings_recipe"
@@ -1499,7 +1499,7 @@
     {
       "name": "EnderiumArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 137,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_armor_boots_recipe"
@@ -1507,7 +1507,7 @@
     {
       "name": "EnderiumIngotRecipe",
       "type": "recipe",
-      "sortid": 138,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderium_ingot_recipe"
@@ -1515,7 +1515,7 @@
     {
       "name": "TrueNetherite",
       "type": "armor",
-      "sortid": 139,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_netherite",
@@ -1529,7 +1529,7 @@
     {
       "name": "TrueNetheriteEvent",
       "type": "procedure",
-      "sortid": 140,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_netherite_event",
@@ -1545,7 +1545,7 @@
     {
       "name": "TrueEnderium",
       "type": "armor",
-      "sortid": 141,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_enderium",
@@ -1559,7 +1559,7 @@
     {
       "name": "TrueEnderiumEvent",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_enderium_event",
@@ -1575,7 +1575,7 @@
     {
       "name": "UltraEndBow",
       "type": "rangeditem",
-      "sortid": 143,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultra_end_bow"
@@ -1583,7 +1583,7 @@
     {
       "name": "NetherGem",
       "type": "item",
-      "sortid": 144,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_gem"
@@ -1591,7 +1591,7 @@
     {
       "name": "EnderGem",
       "type": "item",
-      "sortid": 145,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ender_gem"
@@ -1599,7 +1599,7 @@
     {
       "name": "NetherGemRecipe",
       "type": "recipe",
-      "sortid": 146,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_gem_recipe"
@@ -1607,7 +1607,7 @@
     {
       "name": "EnderGemRecipe",
       "type": "recipe",
-      "sortid": 147,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ender_gem_recipe"
@@ -1615,7 +1615,7 @@
     {
       "name": "UltraEndBowRecipe",
       "type": "recipe",
-      "sortid": 148,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultra_end_bow_recipe"
@@ -1623,7 +1623,7 @@
     {
       "name": "UltraNetherAxe",
       "type": "tool",
-      "sortid": 149,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultra_nether_axe"
@@ -1631,7 +1631,7 @@
     {
       "name": "UltraNetherAxeRecipe",
       "type": "recipe",
-      "sortid": 150,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultra_nether_axe_recipe"
@@ -1639,7 +1639,7 @@
     {
       "name": "TrueNetheriteUpgradeHelmet",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_netherite_upgrade_helmet"
@@ -1647,7 +1647,7 @@
     {
       "name": "TrueNetheriteUpgradeChestplate",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_netherite_upgrade_chestplate"
@@ -1655,7 +1655,7 @@
     {
       "name": "TrueNetheriteUpgradeLeggings",
       "type": "recipe",
-      "sortid": 153,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_netherite_upgrade_leggings"
@@ -1663,7 +1663,7 @@
     {
       "name": "TrueNetheriteUpgradeBoots",
       "type": "recipe",
-      "sortid": 154,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_netherite_upgrade_boots"
@@ -1671,7 +1671,7 @@
     {
       "name": "TrueEnderiumUpgradeHelmet",
       "type": "recipe",
-      "sortid": 155,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_enderium_upgrade_helmet"
@@ -1679,7 +1679,7 @@
     {
       "name": "TrueEnderiumUpgradeChestplate",
       "type": "recipe",
-      "sortid": 156,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_enderium_upgrade_chestplate"
@@ -1687,7 +1687,7 @@
     {
       "name": "TrueEnderiumUpgradeLeggings",
       "type": "recipe",
-      "sortid": 157,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_enderium_upgrade_leggings"
@@ -1695,7 +1695,7 @@
     {
       "name": "TrueEnderiumUpgradeBoots",
       "type": "recipe",
-      "sortid": 158,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_enderium_upgrade_boots"
@@ -1703,7 +1703,7 @@
     {
       "name": "CorruptionGrassSpread",
       "type": "procedure",
-      "sortid": 159,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruption_grass_spread",
@@ -1731,7 +1731,7 @@
     {
       "name": "CorruptionGrass",
       "type": "block",
-      "sortid": 159,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruption_grass"
@@ -1739,7 +1739,7 @@
     {
       "name": "ActiveCorruptionGrass",
       "type": "block",
-      "sortid": 160,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "active_corruption_grass"
@@ -1747,7 +1747,7 @@
     {
       "name": "Corrupt",
       "type": "procedure",
-      "sortid": 161,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupt",
@@ -1775,7 +1775,7 @@
     {
       "name": "Silica",
       "type": "block",
-      "sortid": 162,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "silica"
@@ -1783,7 +1783,7 @@
     {
       "name": "Sponge",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sponge",
@@ -1811,7 +1811,7 @@
     {
       "name": "Particle",
       "type": "block",
-      "sortid": 164,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "particle"
@@ -1819,7 +1819,7 @@
     {
       "name": "ParticleMove",
       "type": "procedure",
-      "sortid": 165,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "particle_move",
@@ -1847,7 +1847,7 @@
     {
       "name": "King",
       "type": "block",
-      "sortid": 166,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "king"
@@ -1855,7 +1855,7 @@
     {
       "name": "CorruptParticle",
       "type": "block",
-      "sortid": 167,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupt_particle"
@@ -1863,7 +1863,7 @@
     {
       "name": "KingOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 168,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "king_on_block_right_clicked",
@@ -1895,7 +1895,7 @@
     {
       "name": "CorruptParticleMove",
       "type": "procedure",
-      "sortid": 169,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupt_particle_move",
@@ -1923,7 +1923,7 @@
     {
       "name": "CorruptParticleBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 170,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupt_particle_block_destroyed_by_player",
@@ -1951,7 +1951,7 @@
     {
       "name": "CorruptFields",
       "type": "biome",
-      "sortid": 171,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupt_fields"
@@ -1959,7 +1959,7 @@
     {
       "name": "Corruption",
       "type": "dimension",
-      "sortid": 171,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruption",
@@ -1970,7 +1970,7 @@
     {
       "name": "Rift",
       "type": "block",
-      "sortid": 172,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rift"
@@ -1978,7 +1978,7 @@
     {
       "name": "RiftEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 173,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rift_entity_collides_in_the_block",
@@ -2002,7 +2002,7 @@
     {
       "name": "RiftRecipe",
       "type": "recipe",
-      "sortid": 174,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rift_recipe"
@@ -2010,7 +2010,7 @@
     {
       "name": "Drill",
       "type": "block",
-      "sortid": 175,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drill"
@@ -2018,7 +2018,7 @@
     {
       "name": "DrillUpdateTick",
       "type": "procedure",
-      "sortid": 176,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drill_update_tick",
@@ -2046,7 +2046,7 @@
     {
       "name": "RiftAltRecipe",
       "type": "recipe",
-      "sortid": 177,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rift_alt_recipe"
@@ -2054,7 +2054,7 @@
     {
       "name": "Deposit",
       "type": "block",
-      "sortid": 178,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deposit"
@@ -2062,7 +2062,7 @@
     {
       "name": "BlocksCorruptedCrate",
       "type": "loottable",
-      "sortid": 180,
+      "sortid": 236,
       "compiles": true,
       "locked_code": true,
       "registry_name": "blocks_corrupted_crate"
@@ -2070,7 +2070,7 @@
     {
       "name": "CorruptedCrate",
       "type": "block",
-      "sortid": 180,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_crate"
@@ -2078,7 +2078,7 @@
     {
       "name": "CorruptedCrateBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 181,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_crate_block_destroyed_by_player",
@@ -2106,7 +2106,7 @@
     {
       "name": "BruteCrate",
       "type": "block",
-      "sortid": 182,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brute_crate"
@@ -2114,7 +2114,7 @@
     {
       "name": "BruteSpawn",
       "type": "procedure",
-      "sortid": 183,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brute_spawn",
@@ -2142,7 +2142,7 @@
     {
       "name": "OrnateCrate",
       "type": "block",
-      "sortid": 184,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ornate_crate"
@@ -2150,7 +2150,7 @@
     {
       "name": "VexCrate",
       "type": "block",
-      "sortid": 185,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vex_crate"
@@ -2158,7 +2158,7 @@
     {
       "name": "PurpleSoldier",
       "type": "livingentity",
-      "sortid": 186,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_soldier"
@@ -2166,7 +2166,7 @@
     {
       "name": "Vexx",
       "type": "livingentity",
-      "sortid": 187,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vexx"
@@ -2174,7 +2174,7 @@
     {
       "name": "Brute",
       "type": "livingentity",
-      "sortid": 188,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brute"
@@ -2182,7 +2182,7 @@
     {
       "name": "DrillRecipe",
       "type": "recipe",
-      "sortid": 189,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drill_recipe"
@@ -2190,7 +2190,7 @@
     {
       "name": "AttackChip",
       "type": "item",
-      "sortid": 190,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "attack_chip"
@@ -2198,7 +2198,7 @@
     {
       "name": "FireChip",
       "type": "item",
-      "sortid": 191,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_chip"
@@ -2206,7 +2206,7 @@
     {
       "name": "SpeedChip",
       "type": "item",
-      "sortid": 192,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "speed_chip"
@@ -2214,7 +2214,7 @@
     {
       "name": "EnergyChip",
       "type": "item",
-      "sortid": 193,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energy_chip"
@@ -2222,7 +2222,7 @@
     {
       "name": "DefenseChip",
       "type": "item",
-      "sortid": 194,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "defense_chip"
@@ -2230,7 +2230,7 @@
     {
       "name": "FlightChip",
       "type": "item",
-      "sortid": 195,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flight_chip"
@@ -2238,7 +2238,7 @@
     {
       "name": "Chip",
       "type": "item",
-      "sortid": 196,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chip"
@@ -2246,7 +2246,7 @@
     {
       "name": "ChipRecipe",
       "type": "recipe",
-      "sortid": 197,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chip_recipe"
@@ -2254,7 +2254,7 @@
     {
       "name": "FlightChipRecipe",
       "type": "recipe",
-      "sortid": 198,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flight_chip_recipe"
@@ -2262,7 +2262,7 @@
     {
       "name": "DefenseChipRecipe",
       "type": "recipe",
-      "sortid": 199,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "defense_chip_recipe"
@@ -2270,7 +2270,7 @@
     {
       "name": "EnergyChipRecipe",
       "type": "recipe",
-      "sortid": 200,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energy_chip_recipe"
@@ -2278,7 +2278,7 @@
     {
       "name": "SpeedChipRecipe",
       "type": "recipe",
-      "sortid": 201,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "speed_chip_recipe"
@@ -2286,7 +2286,7 @@
     {
       "name": "HeatChipRecipe",
       "type": "recipe",
-      "sortid": 202,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heat_chip_recipe"
@@ -2294,7 +2294,7 @@
     {
       "name": "AttackChipRecipe",
       "type": "recipe",
-      "sortid": 203,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "attack_chip_recipe"
@@ -2302,7 +2302,7 @@
     {
       "name": "StoneArmor",
       "type": "armor",
-      "sortid": 204,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_armor",
@@ -2316,7 +2316,7 @@
     {
       "name": "StoneArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 205,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_armor_helmet_recipe"
@@ -2324,7 +2324,7 @@
     {
       "name": "StoneArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 206,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_armor_body_recipe"
@@ -2332,7 +2332,7 @@
     {
       "name": "StoneArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 207,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_armor_leggings_recipe"
@@ -2340,7 +2340,7 @@
     {
       "name": "StoneArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 208,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_armor_boots_recipe"
@@ -2348,7 +2348,7 @@
     {
       "name": "WoodArmor",
       "type": "armor",
-      "sortid": 209,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_armor",
@@ -2362,7 +2362,7 @@
     {
       "name": "WoodArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 210,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_armor_helmet_recipe"
@@ -2370,7 +2370,7 @@
     {
       "name": "WoodArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 211,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_armor_body_recipe"
@@ -2378,7 +2378,7 @@
     {
       "name": "WoodArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 212,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_armor_leggings_recipe"
@@ -2386,7 +2386,7 @@
     {
       "name": "WoodArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 213,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_armor_boots_recipe"
@@ -2394,7 +2394,7 @@
     {
       "name": "LavaArmor",
       "type": "armor",
-      "sortid": 214,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_armor",
@@ -2408,7 +2408,7 @@
     {
       "name": "LavaArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 215,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_armor_helmet_recipe"
@@ -2416,7 +2416,7 @@
     {
       "name": "LavaArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 216,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_armor_body_recipe"
@@ -2424,7 +2424,7 @@
     {
       "name": "LavaArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 217,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_armor_leggings_recipe"
@@ -2432,7 +2432,7 @@
     {
       "name": "LavaArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 218,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_armor_boots_recipe"
@@ -2440,7 +2440,7 @@
     {
       "name": "WaterArmor",
       "type": "armor",
-      "sortid": 219,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_armor",
@@ -2454,7 +2454,7 @@
     {
       "name": "WaterArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 220,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_armor_helmet_recipe"
@@ -2462,7 +2462,7 @@
     {
       "name": "WaterArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 221,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_armor_body_recipe"
@@ -2470,7 +2470,7 @@
     {
       "name": "WaterArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 222,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_armor_leggings_recipe"
@@ -2478,7 +2478,7 @@
     {
       "name": "WaterArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 223,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_armor_boots_recipe"
@@ -2486,7 +2486,7 @@
     {
       "name": "WaterArmorProcedure",
       "type": "procedure",
-      "sortid": 224,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_armor_procedure",
@@ -2502,7 +2502,7 @@
     {
       "name": "MagnetiteSword",
       "type": "tool",
-      "sortid": 225,
+      "sortid": 27,
       "compiles": true,
       "locked_code": true,
       "registry_name": "magnetite_sword"
@@ -2510,7 +2510,7 @@
     {
       "name": "LavaArmorProcedure",
       "type": "procedure",
-      "sortid": 225,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_armor_procedure",
@@ -2526,7 +2526,7 @@
     {
       "name": "MagnetiteSwordLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 226,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_sword_living_entity_is_hit_with_tool",
@@ -2558,7 +2558,7 @@
     {
       "name": "MoltronRocket",
       "type": "livingentity",
-      "sortid": 227,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moltron_rocket"
@@ -2566,7 +2566,7 @@
     {
       "name": "ComputerOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 228,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "computer_on_block_right_clicked",
@@ -2598,7 +2598,7 @@
     {
       "name": "Computer",
       "type": "block",
-      "sortid": 228,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "computer"
@@ -2606,7 +2606,7 @@
     {
       "name": "Minecoin",
       "type": "item",
-      "sortid": 229,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "minecoin"
@@ -2614,7 +2614,7 @@
     {
       "name": "MagnetiteIngot",
       "type": "item",
-      "sortid": 230,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_ingot"
@@ -2622,7 +2622,7 @@
     {
       "name": "MagnetiteOre",
       "type": "block",
-      "sortid": 231,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_ore"
@@ -2630,7 +2630,7 @@
     {
       "name": "MagnetiteBlock",
       "type": "block",
-      "sortid": 232,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_block"
@@ -2638,7 +2638,7 @@
     {
       "name": "MagnetiteOreBlockRecipe",
       "type": "recipe",
-      "sortid": 233,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_ore_block_recipe"
@@ -2646,7 +2646,7 @@
     {
       "name": "MagnetiteBlockOreRecipe",
       "type": "recipe",
-      "sortid": 234,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_block_ore_recipe"
@@ -2654,7 +2654,7 @@
     {
       "name": "MagnetiteOreSmelting",
       "type": "recipe",
-      "sortid": 235,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_ore_smelting"
@@ -2662,7 +2662,7 @@
     {
       "name": "MagnetA",
       "type": "block",
-      "sortid": 236,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnet_a"
@@ -2670,7 +2670,7 @@
     {
       "name": "MagnetB",
       "type": "block",
-      "sortid": 237,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnet_b"
@@ -2678,7 +2678,7 @@
     {
       "name": "MagnetiteSwordRecipe",
       "type": "recipe",
-      "sortid": 230,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_sword_recipe"
@@ -2686,7 +2686,7 @@
     {
       "name": "VenusStone",
       "type": "block",
-      "sortid": 238,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "venus_stone"
@@ -2694,7 +2694,7 @@
     {
       "name": "MeltingFields",
       "type": "biome",
-      "sortid": 238,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melting_fields"
@@ -2702,7 +2702,7 @@
     {
       "name": "Venus",
       "type": "dimension",
-      "sortid": 239,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "venus",
@@ -2713,7 +2713,7 @@
     {
       "name": "AdvancedComputer",
       "type": "block",
-      "sortid": 240,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_computer"
@@ -2721,7 +2721,7 @@
     {
       "name": "AdvancedInvest",
       "type": "procedure",
-      "sortid": 241,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_invest",
@@ -2749,7 +2749,7 @@
     {
       "name": "Investing",
       "type": "gui",
-      "sortid": 242,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "investing"
@@ -2757,7 +2757,7 @@
     {
       "name": "MoltronRocketRightClicked",
       "type": "procedure",
-      "sortid": 244,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moltron_rocket_right_clicked",
@@ -2789,7 +2789,7 @@
     {
       "name": "MoltronRocketItem",
       "type": "item",
-      "sortid": 245,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moltron_rocket_item"
@@ -2797,7 +2797,7 @@
     {
       "name": "MoltronRocketOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moltron_rocket_on_entity_tick_update",
@@ -2813,7 +2813,7 @@
     {
       "name": "MagnetiteArmor",
       "type": "armor",
-      "sortid": 247,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_armor",
@@ -2827,7 +2827,7 @@
     {
       "name": "MoltronRocketRecipe",
       "type": "recipe",
-      "sortid": 248,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moltron_rocket_recipe"
@@ -2835,7 +2835,7 @@
     {
       "name": "ComputerRecipe",
       "type": "recipe",
-      "sortid": 249,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "computer_recipe"
@@ -2843,7 +2843,7 @@
     {
       "name": "AdvancedComputerRecipe",
       "type": "recipe",
-      "sortid": 250,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_computer_recipe"
@@ -2851,7 +2851,7 @@
     {
       "name": "MagnetiteHelmetRecipe",
       "type": "recipe",
-      "sortid": 251,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_helmet_recipe"
@@ -2859,7 +2859,7 @@
     {
       "name": "MagnetiteChestplateRecipe",
       "type": "recipe",
-      "sortid": 252,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_chestplate_recipe"
@@ -2867,7 +2867,7 @@
     {
       "name": "MagnetiteLeggingsRecipe",
       "type": "recipe",
-      "sortid": 253,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_leggings_recipe"
@@ -2875,7 +2875,7 @@
     {
       "name": "MagnetiteBootsRecipe",
       "type": "recipe",
-      "sortid": 254,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_boots_recipe"
@@ -2883,7 +2883,7 @@
     {
       "name": "MagnetiteHelmetEvent",
       "type": "procedure",
-      "sortid": 255,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_helmet_event",
@@ -2899,7 +2899,7 @@
     {
       "name": "MagneticDisassembler",
       "type": "block",
-      "sortid": 256,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetic_disassembler"
@@ -2907,7 +2907,7 @@
     {
       "name": "MagneticDissasemblerGui",
       "type": "gui",
-      "sortid": 257,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetic_dissasembler_gui"
@@ -2915,7 +2915,7 @@
     {
       "name": "MagnetABRecipes",
       "type": "procedure",
-      "sortid": 258,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnet_ab_recipes",
@@ -2943,7 +2943,7 @@
     {
       "name": "MagneticDisassemblerRecipe",
       "type": "recipe",
-      "sortid": 259,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetic_disassembler_recipe"
@@ -2951,7 +2951,7 @@
     {
       "name": "MagnetiteChestplateEvent",
       "type": "procedure",
-      "sortid": 260,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_chestplate_event",
@@ -2971,7 +2971,7 @@
     {
       "name": "MagnetiteLeggingsEvent",
       "type": "procedure",
-      "sortid": 261,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_leggings_event",
@@ -2987,7 +2987,7 @@
     {
       "name": "MagnetiteBootsEvent",
       "type": "procedure",
-      "sortid": 262,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnetite_boots_event",
@@ -3019,7 +3019,7 @@
     {
       "name": "ExitRift",
       "type": "structure",
-      "sortid": 265,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "exit_rift"
@@ -3027,7 +3027,7 @@
     {
       "name": "PurpleDeposit",
       "type": "structure",
-      "sortid": 266,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_deposit"
@@ -3035,7 +3035,7 @@
     {
       "name": "PurpleFactory",
       "type": "structure",
-      "sortid": 267,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_factory"
@@ -3043,7 +3043,7 @@
     {
       "name": "BossTower1",
       "type": "structure",
-      "sortid": 268,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boss_tower_1"
@@ -3051,7 +3051,7 @@
     {
       "name": "BossTower2",
       "type": "structure",
-      "sortid": 269,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boss_tower_2"
@@ -3059,7 +3059,7 @@
     {
       "name": "FinalBossTower",
       "type": "structure",
-      "sortid": 270,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "final_boss_tower"
@@ -3067,7 +3067,7 @@
     {
       "name": "WoodenSolarPanelUpdateTick",
       "type": "procedure",
-      "sortid": 271,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_solar_panel_update_tick",
@@ -3095,7 +3095,7 @@
     {
       "name": "WoodenSolarPanel",
       "type": "block",
-      "sortid": 271,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_solar_panel"
@@ -3103,7 +3103,7 @@
     {
       "name": "MiniMill",
       "type": "block",
-      "sortid": 272,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_mill"
@@ -3111,7 +3111,7 @@
     {
       "name": "MiniMill2",
       "type": "block",
-      "sortid": 273,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_mill_2"
@@ -3119,7 +3119,7 @@
     {
       "name": "MiniMill2UpdateTick",
       "type": "procedure",
-      "sortid": 274,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_mill_2_update_tick",
@@ -3147,7 +3147,7 @@
     {
       "name": "MiniMillUpdateTick",
       "type": "procedure",
-      "sortid": 275,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_mill_update_tick",
@@ -3175,7 +3175,7 @@
     {
       "name": "TheSunInABox",
       "type": "block",
-      "sortid": 276,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_sun_in_a_box"
@@ -3183,7 +3183,7 @@
     {
       "name": "TheSunInABoxEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 277,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_sun_in_a_box_entity_collides_in_the_block",
@@ -3199,7 +3199,7 @@
     {
       "name": "TheSunInABoxUpdateTick",
       "type": "procedure",
-      "sortid": 277,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_sun_in_a_box_update_tick",
@@ -3227,7 +3227,7 @@
     {
       "name": "HotMatterItemInHandTick",
       "type": "procedure",
-      "sortid": 278,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hot_matter_item_in_hand_tick",
@@ -3243,7 +3243,7 @@
     {
       "name": "HotMatter",
       "type": "item",
-      "sortid": 278,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hot_matter"
@@ -3251,7 +3251,7 @@
     {
       "name": "HotMatterRecipe",
       "type": "recipe",
-      "sortid": 279,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hot_matter_recipe"
@@ -3259,7 +3259,7 @@
     {
       "name": "TheSunInABoxRecipe",
       "type": "recipe",
-      "sortid": 280,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_sun_in_a_box_recipe"
@@ -3267,7 +3267,7 @@
     {
       "name": "WoodenSolarPanelRecipe",
       "type": "recipe",
-      "sortid": 281,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_solar_panel_recipe"
@@ -3275,7 +3275,7 @@
     {
       "name": "MiniMillRecipe",
       "type": "recipe",
-      "sortid": 282,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_mill_recipe"
@@ -3283,7 +3283,7 @@
     {
       "name": "MiniMill2Recipe",
       "type": "recipe",
-      "sortid": 283,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_mill_2_recipe"
@@ -3291,7 +3291,7 @@
     {
       "name": "TreeInABoxUpdateTick",
       "type": "procedure",
-      "sortid": 284,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tree_in_a_box_update_tick",
@@ -3319,7 +3319,7 @@
     {
       "name": "TreeInABox",
       "type": "block",
-      "sortid": 284,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tree_in_a_box"
@@ -3327,7 +3327,7 @@
     {
       "name": "TreeInABoxRecipe",
       "type": "recipe",
-      "sortid": 285,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tree_in_a_box_recipe"
@@ -3335,7 +3335,7 @@
     {
       "name": "Scaffold",
       "type": "block",
-      "sortid": 286,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scaffold"
@@ -3343,7 +3343,7 @@
     {
       "name": "ScaffoldRecipe",
       "type": "recipe",
-      "sortid": 287,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scaffold_recipe"
@@ -3351,7 +3351,7 @@
     {
       "name": "ParticleRecipe",
       "type": "recipe",
-      "sortid": 288,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "registry_name": "particle_recipe"
@@ -3359,7 +3359,7 @@
     {
       "name": "ParticleOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 289,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "registry_name": "particle_on_block_right_clicked",
@@ -3391,7 +3391,7 @@
     {
       "name": "VexSpawn",
       "type": "procedure",
-      "sortid": 291,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vex_spawn",
@@ -3419,7 +3419,7 @@
     {
       "name": "Ornate",
       "type": "livingentity",
-      "sortid": 292,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ornate"
@@ -3427,7 +3427,7 @@
     {
       "name": "OrnateSpawn",
       "type": "procedure",
-      "sortid": 293,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ornate_spawn",
@@ -3455,7 +3455,7 @@
     {
       "name": "SandwormUpdateTick",
       "type": "procedure",
-      "sortid": 295,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandworm_update_tick",
@@ -3483,7 +3483,7 @@
     {
       "name": "SillicaRecipe",
       "type": "recipe",
-      "sortid": 296,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sillica_recipe"
@@ -3491,7 +3491,7 @@
     {
       "name": "SandwormRecipe",
       "type": "recipe",
-      "sortid": 297,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandworm_recipe"
@@ -3499,7 +3499,7 @@
     {
       "name": "OneWay",
       "type": "block",
-      "sortid": 298,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_way"
@@ -3507,7 +3507,7 @@
     {
       "name": "OneWayRecipe",
       "type": "recipe",
-      "sortid": 299,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_way_recipe"
@@ -3515,7 +3515,7 @@
     {
       "name": "OneWayDoor",
       "type": "block",
-      "sortid": 300,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_way_door"
@@ -3523,7 +3523,7 @@
     {
       "name": "OneWayDoorEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 301,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_way_door_entity_collides_in_the_block",
@@ -3555,7 +3555,7 @@
     {
       "name": "OneWayDoorRecipe",
       "type": "recipe",
-      "sortid": 302,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_way_door_recipe"
@@ -3563,7 +3563,7 @@
     {
       "name": "VexxesGun",
       "type": "rangeditem",
-      "sortid": 303,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vexxes_gun"
@@ -3571,7 +3571,7 @@
     {
       "name": "Forcefield",
       "type": "musicdisc",
-      "sortid": 304,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forcefield"
@@ -3579,7 +3579,7 @@
     {
       "name": "ForcefieldBlockBlockAdded",
       "type": "procedure",
-      "sortid": 305,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forcefield_block_block_added",
@@ -3607,7 +3607,7 @@
     {
       "name": "ForcefieldBlock",
       "type": "block",
-      "sortid": 305,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forcefield_block"
@@ -3615,7 +3615,7 @@
     {
       "name": "MagnetLighterRecipe",
       "type": "recipe",
-      "sortid": 306,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magnet_lighter_recipe"
@@ -3623,7 +3623,7 @@
     {
       "name": "ForcefieldRightClickedInAir",
       "type": "procedure",
-      "sortid": 306,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forcefield_right_clicked_in_air",
@@ -3659,7 +3659,7 @@
     {
       "name": "XZswapRightClickedInAir",
       "type": "procedure",
-      "sortid": 307,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "registry_name": "x_zswap_right_clicked_in_air",
@@ -3691,7 +3691,7 @@
     {
       "name": "XZswap",
       "type": "musicdisc",
-      "sortid": 307,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "x_zswap"
@@ -3699,7 +3699,7 @@
     {
       "name": "ForcefieldRecipe",
       "type": "recipe",
-      "sortid": 308,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forcefield_recipe"
@@ -3707,7 +3707,7 @@
     {
       "name": "XZswapRecipe",
       "type": "recipe",
-      "sortid": 309,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "registry_name": "x_zswap_recipe"
@@ -3715,7 +3715,7 @@
     {
       "name": "CNDGUI",
       "type": "gui",
-      "sortid": 310,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cndgui"
@@ -3723,7 +3723,7 @@
     {
       "name": "CNDRedstoneOn",
       "type": "procedure",
-      "sortid": 311,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cnd_redstone_on",
@@ -3751,7 +3751,7 @@
     {
       "name": "CND",
       "type": "block",
-      "sortid": 310,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cnd"
@@ -3759,7 +3759,7 @@
     {
       "name": "CNDrecipe",
       "type": "recipe",
-      "sortid": 312,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cn_drecipe"
@@ -3767,7 +3767,7 @@
     {
       "name": "HastefruitPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 313,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hastefruit_player_finishes_using_item",
@@ -3783,7 +3783,7 @@
     {
       "name": "Hastefruit",
       "type": "item",
-      "sortid": 313,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hastefruit"
@@ -3791,7 +3791,7 @@
     {
       "name": "Jarnumfruit",
       "type": "item",
-      "sortid": 314,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jarnumfruit"
@@ -3799,7 +3799,7 @@
     {
       "name": "JarnumleaveUpdateTick",
       "type": "procedure",
-      "sortid": 315,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jarnumleave_update_tick",
@@ -3827,7 +3827,7 @@
     {
       "name": "Jarnumleave",
       "type": "block",
-      "sortid": 314,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jarnumleave"
@@ -3835,7 +3835,7 @@
     {
       "name": "JarnumleaveRecipe",
       "type": "recipe",
-      "sortid": 316,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jarnumleave_recipe"
@@ -3843,7 +3843,7 @@
     {
       "name": "HastefruitRecipe",
       "type": "recipe",
-      "sortid": 317,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hastefruit_recipe"
@@ -3851,7 +3851,7 @@
     {
       "name": "PoorlyMadeLadder",
       "type": "block",
-      "sortid": 318,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poorly_made_ladder"
@@ -3859,7 +3859,7 @@
     {
       "name": "PoorlyMadeLadderRecipe",
       "type": "recipe",
-      "sortid": 319,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poorly_made_ladder_recipe"
@@ -3867,7 +3867,7 @@
     {
       "name": "PoorlyMadeLadderEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 320,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poorly_made_ladder_entity_collides_in_the_block",
@@ -3895,7 +3895,7 @@
     {
       "name": "PlasmasteelMk2",
       "type": "armor",
-      "sortid": 321,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plasmasteel_mk_2",
@@ -3909,7 +3909,7 @@
     {
       "name": "Murray3MainOnKeyPressed",
       "type": "procedure",
-      "sortid": 322,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "registry_name": "murray_3_main_on_key_pressed",
@@ -3937,7 +3937,7 @@
     {
       "name": "NinjaHelmetTickEvent",
       "type": "procedure",
-      "sortid": 323,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ninja_helmet_tick_event",
@@ -3953,7 +3953,7 @@
     {
       "name": "ParachuteItemInHandTick",
       "type": "procedure",
-      "sortid": 324,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "registry_name": "parachute_item_in_hand_tick",
@@ -3969,7 +3969,7 @@
     {
       "name": "Parachute",
       "type": "item",
-      "sortid": 324,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "parachute"
@@ -3977,7 +3977,7 @@
     {
       "name": "ParachuteRecipe",
       "type": "recipe",
-      "sortid": 325,
+      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "registry_name": "parachute_recipe"
@@ -3985,7 +3985,7 @@
     {
       "name": "FutureFloor",
       "type": "block",
-      "sortid": 326,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "future_floor"
@@ -3993,7 +3993,7 @@
     {
       "name": "FutureWall",
       "type": "block",
-      "sortid": 327,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "future_wall"
@@ -4001,7 +4001,7 @@
     {
       "name": "FutureBricks",
       "type": "block",
-      "sortid": 328,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "future_bricks"
@@ -4009,7 +4009,7 @@
     {
       "name": "FutureGlass",
       "type": "block",
-      "sortid": 329,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "future_glass"
@@ -4017,7 +4017,7 @@
     {
       "name": "SteelFields",
       "type": "biome",
-      "sortid": 330,
+      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_fields"
@@ -4025,7 +4025,7 @@
     {
       "name": "TechMania",
       "type": "dimension",
-      "sortid": 331,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tech_mania",
@@ -4036,7 +4036,7 @@
     {
       "name": "FutureTiles",
       "type": "block",
-      "sortid": 332,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "future_tiles"
@@ -4044,7 +4044,7 @@
     {
       "name": "GreenPlasmaMk2",
       "type": "rangeditem",
-      "sortid": 333,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plasma_mk_2"
@@ -4052,7 +4052,7 @@
     {
       "name": "Cool2",
       "type": "procedure",
-      "sortid": 334,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cool_2",
@@ -4076,7 +4076,7 @@
     {
       "name": "LimePlasmaBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 335,
+      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lime_plasma_bullet_hits_living_entity",
@@ -4096,7 +4096,7 @@
     {
       "name": "Xray",
       "type": "block",
-      "sortid": 336,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xray"
@@ -4104,7 +4104,7 @@
     {
       "name": "XrayRecipe",
       "type": "recipe",
-      "sortid": 337,
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xray_recipe"
@@ -4112,7 +4112,7 @@
     {
       "name": "GreenPlasmaMk2Recipe",
       "type": "recipe",
-      "sortid": 338,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plasma_mk_2_recipe"
@@ -4120,10 +4120,42 @@
     {
       "name": "Sandworm",
       "type": "block",
-      "sortid": 339,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandworm"
+    },
+    {
+      "name": "MiniFuturisticCity",
+      "type": "structure",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mini_futuristic_city"
+    },
+    {
+      "name": "Murray3HallOfArmor",
+      "type": "tab",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "murray_3_hall_of_armor"
+    },
+    {
+      "name": "Murray3Blocks",
+      "type": "tab",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "murray_3_blocks"
+    },
+    {
+      "name": "Murray3Misc",
+      "type": "tab",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "murray_3_misc"
     }
   ],
   "variable_elements": [],
@@ -4188,8 +4220,8 @@
       "item.murray.ninja_leggings": "Ninja Leggings",
       "block.murray.drill": "Drill",
       "block.murray.tree_in_a_box": "Tree In A Box",
-      "item.murray.plasmasteel_mk_2_helmet": "Plasmasteel Helmet",
-      "block.murray.sandworm": "Particle",
+      "item.murray.plasmasteel_mk_2_helmet": "Plasmasteel Helmet Mk.2",
+      "block.murray.sandworm": "Sandworm",
       "item.murray.purple_plasma": "Purple Plasma",
       "entity.murray.moltron_rocket": "Moltron Rocket",
       "item.murray.racer_leggings": "Racer Leggings",
@@ -4238,8 +4270,8 @@
       "item.murray.water_armor_leggings": "Water Leggings",
       "item.murray.steel_armor_chestplate": "Steel Chestplate",
       "biome.murray.melting_fields": "Melting Fields",
-      "item.murray.plasmasteel_mk_2_leggings": "Plasmasteel Leggings",
-      "item.murray.plasmasteel_mk_2_chestplate": "Plasmasteel Body",
+      "item.murray.plasmasteel_mk_2_leggings": "Plasmasteel Leggings Mk.2",
+      "item.murray.plasmasteel_mk_2_chestplate": "Plasmasteel Body Mk.2",
       "block.murray.ornate_crate": "Ornate Crate",
       "block.murray.the_sun_in_a_box": "The Sun In A Box",
       "key.murray.murray_3_main": "Murray3 Main",
@@ -4263,6 +4295,7 @@
       "item.murray.electristeel_boots": "Electristeel Boots",
       "block.murray.wooden_solar_panel": "Wooden Solar Panel",
       "item.murray.racer_chestplate": "Racer Chestplate",
+      "itemGroup.tabmurray_3_hall_of_armor": "Murray3 Hall Of Armor",
       "item.murray.plasmasteel_leggings": "Plasmasteel Leggings",
       "item.murray.true_enderium_helmet": "True Enderium Helmet",
       "item.murray.cactus_armor_boots": "Cactus Boots",
@@ -4286,7 +4319,7 @@
       "entity.murray.moltron_mech": "Moltron Mech",
       "item.murray.rainbow_chestplate": "Rainbow Chestplate",
       "item.murray.electristeel_helmet": "Electristeel Helmet",
-      "item.murray.plasmasteel_mk_2_boots": "Plasmasteel Boots",
+      "item.murray.plasmasteel_mk_2_boots": "Plasmasteel Boots Mk.2",
       "item.murray.frost_chestplate": "Frost Chestplate",
       "item.murray.stone_armor_helmet": "Stone Helmet",
       "item.murray.water_armor_helmet": "Water Helmet",
@@ -4317,6 +4350,7 @@
       "biome.murray.corrupt_fields": "Corrupt Fields",
       "item.murray.shadow_chestplate": "Shadow Chestplate",
       "item.murray.hastefruit": "Hastefruit",
+      "itemGroup.tabmurray_3_blocks": "Murray3 Blocks",
       "item.murray.mech_strike": "Mech Strike",
       "block.murray.xray": "Xray",
       "item.murray.green_plasma": "Green Plasma",
@@ -4336,6 +4370,7 @@
       "item.murray.blue_plasma": "Blue Plasma",
       "entity.murray.purple_soldier": "Purple Soldier",
       "item.murray.cactus_armor_chestplate": "Cactus Chestplate",
+      "itemGroup.tabmurray_3_misc": "Murray3 Misc",
       "block.murray.one_way_door": "One Way Door",
       "item.murray.orange_plasma": "Orange Plasma",
       "block.murray.future_bricks": "Future Bricks",

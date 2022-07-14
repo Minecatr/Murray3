@@ -23,7 +23,7 @@
       "name": "CactusArmorHelmetTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "cactus_",
     "helmetName": "Cactus Helmet",

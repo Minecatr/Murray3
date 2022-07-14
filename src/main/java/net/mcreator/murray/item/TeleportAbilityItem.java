@@ -13,11 +13,12 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.murray.init.MurrayModTabs;
 import net.mcreator.murray.entity.TeleportAbilityEntity;
 
 public class TeleportAbilityItem extends Item {
 	public TeleportAbilityItem() {
-		super(new Item.Properties().tab(null).durability(1000));
+		super(new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR).durability(1000));
 	}
 
 	@Override

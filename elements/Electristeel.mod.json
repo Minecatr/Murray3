@@ -20,7 +20,7 @@
       "name": "ElectristeelBootsTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "electristeel_",
     "helmetName": "Electristeel Helmet",

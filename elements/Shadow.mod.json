@@ -14,7 +14,7 @@
       "name": "ShadowLeggingsTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "shadow_",
     "helmetName": "Shadow Helmet",

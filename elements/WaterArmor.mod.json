@@ -23,7 +23,7 @@
       "name": "WaterArmorProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "water_",
     "helmetName": "Water Helmet",

@@ -7,7 +7,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
@@ -20,6 +19,7 @@ import net.mcreator.murray.procedures.PlasmasteelHelmetTickEventProcedure;
 import net.mcreator.murray.procedures.MagnetiteLeggingsEventProcedure;
 import net.mcreator.murray.procedures.MagnetiteChestplateEventProcedure;
 import net.mcreator.murray.procedures.MagnetiteBootsEventProcedure;
+import net.mcreator.murray.init.MurrayModTabs;
 
 public abstract class MagnetiteArmorItem extends ArmorItem {
 	public MagnetiteArmorItem(EquipmentSlot slot, Item.Properties properties) {
@@ -68,7 +68,7 @@ public abstract class MagnetiteArmorItem extends ArmorItem {
 
 	public static class Helmet extends MagnetiteArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -84,7 +84,7 @@ public abstract class MagnetiteArmorItem extends ArmorItem {
 
 	public static class Chestplate extends MagnetiteArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -100,7 +100,7 @@ public abstract class MagnetiteArmorItem extends ArmorItem {
 
 	public static class Leggings extends MagnetiteArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -116,7 +116,7 @@ public abstract class MagnetiteArmorItem extends ArmorItem {
 
 	public static class Boots extends MagnetiteArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override

@@ -7,7 +7,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
@@ -19,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.mcreator.murray.procedures.PlasmasteelHelmetTickEventProcedure;
 import net.mcreator.murray.procedures.ElectristeelBootsTickEventProcedure;
 import net.mcreator.murray.procedures.ElectristeelBodyTickEventProcedure;
+import net.mcreator.murray.init.MurrayModTabs;
 
 public abstract class ElectristeelItem extends ArmorItem {
 	public ElectristeelItem(EquipmentSlot slot, Item.Properties properties) {
@@ -67,7 +67,7 @@ public abstract class ElectristeelItem extends ArmorItem {
 
 	public static class Helmet extends ElectristeelItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -83,7 +83,7 @@ public abstract class ElectristeelItem extends ArmorItem {
 
 	public static class Chestplate extends ElectristeelItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -99,7 +99,7 @@ public abstract class ElectristeelItem extends ArmorItem {
 
 	public static class Leggings extends ElectristeelItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -110,7 +110,7 @@ public abstract class ElectristeelItem extends ArmorItem {
 
 	public static class Boots extends ElectristeelItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override

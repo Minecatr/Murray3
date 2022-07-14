@@ -7,13 +7,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.murray.init.MurrayModTabs;
 
 public abstract class StoneArmorItem extends ArmorItem {
 	public StoneArmorItem(EquipmentSlot slot, Item.Properties properties) {
@@ -62,7 +63,7 @@ public abstract class StoneArmorItem extends ArmorItem {
 
 	public static class Helmet extends StoneArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -73,7 +74,7 @@ public abstract class StoneArmorItem extends ArmorItem {
 
 	public static class Chestplate extends StoneArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -84,7 +85,7 @@ public abstract class StoneArmorItem extends ArmorItem {
 
 	public static class Leggings extends StoneArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override
@@ -95,7 +96,7 @@ public abstract class StoneArmorItem extends ArmorItem {
 
 	public static class Boots extends StoneArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
 		@Override

@@ -6,7 +6,6 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,12 +14,13 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.murray.init.MurrayModTabs;
 import net.mcreator.murray.init.MurrayModItems;
 import net.mcreator.murray.entity.ExplosiveShurikenEntity;
 
 public class ExplosiveShurikenItem extends Item {
 	public ExplosiveShurikenItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(64));
+		super(new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR).stacksTo(64));
 	}
 
 	@Override

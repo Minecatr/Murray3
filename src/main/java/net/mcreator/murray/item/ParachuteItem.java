@@ -6,14 +6,14 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.murray.procedures.ParachuteItemInHandTickProcedure;
+import net.mcreator.murray.init.MurrayModTabs;
 
 public class ParachuteItem extends Item {
 	public ParachuteItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_TRANSPORTATION).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_MISC).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

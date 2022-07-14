@@ -62,6 +62,7 @@ import net.mcreator.murray.MurrayMod;
 
 public class MurrayModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, MurrayMod.MODID);
+	public static final RegistryObject<Block> TECH_MANIA_PORTAL = REGISTRY.register("tech_mania_portal", () -> new TechManiaPortalBlock());
 	public static final RegistryObject<Block> TRAIL_ICE = REGISTRY.register("trail_ice", () -> new TrailIceBlock());
 	public static final RegistryObject<Block> ENDERIUM_INFUSED_STONE = REGISTRY.register("enderium_infused_stone",
 			() -> new EnderiumInfusedStoneBlock());
@@ -104,7 +105,6 @@ public class MurrayModBlocks {
 	public static final RegistryObject<Block> FUTURE_WALL = REGISTRY.register("future_wall", () -> new FutureWallBlock());
 	public static final RegistryObject<Block> FUTURE_BRICKS = REGISTRY.register("future_bricks", () -> new FutureBricksBlock());
 	public static final RegistryObject<Block> FUTURE_GLASS = REGISTRY.register("future_glass", () -> new FutureGlassBlock());
-	public static final RegistryObject<Block> TECH_MANIA_PORTAL = REGISTRY.register("tech_mania_portal", () -> new TechManiaPortalBlock());
 	public static final RegistryObject<Block> FUTURE_TILES = REGISTRY.register("future_tiles", () -> new FutureTilesBlock());
 	public static final RegistryObject<Block> XRAY = REGISTRY.register("xray", () -> new XrayBlock());
 	public static final RegistryObject<Block> SANDWORM = REGISTRY.register("sandworm", () -> new SandwormBlock());

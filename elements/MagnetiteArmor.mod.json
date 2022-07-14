@@ -23,7 +23,7 @@
       "name": "MagnetiteBootsEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "magnetite_",
     "helmetName": "Magnetite Helmet",

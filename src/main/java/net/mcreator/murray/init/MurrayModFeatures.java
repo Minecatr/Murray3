@@ -22,6 +22,7 @@ import net.mcreator.murray.world.features.ores.EnderiumInfusedStoneFeature;
 import net.mcreator.murray.world.features.ores.DepositFeature;
 import net.mcreator.murray.world.features.PurpleFactoryFeature;
 import net.mcreator.murray.world.features.PurpleDepositFeature;
+import net.mcreator.murray.world.features.MiniFuturisticCityFeature;
 import net.mcreator.murray.world.features.FinalBossTowerFeature;
 import net.mcreator.murray.world.features.ExitRiftFeature;
 import net.mcreator.murray.world.features.BossTower2Feature;
@@ -57,6 +58,9 @@ public class MurrayModFeatures {
 	public static final RegistryObject<Feature<?>> FINAL_BOSS_TOWER = register("final_boss_tower", FinalBossTowerFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, FinalBossTowerFeature.GENERATE_BIOMES,
 					FinalBossTowerFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MINI_FUTURISTIC_CITY = register("mini_futuristic_city", MiniFuturisticCityFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MiniFuturisticCityFeature.GENERATE_BIOMES,
+					MiniFuturisticCityFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

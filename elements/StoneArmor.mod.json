@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "stone_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "stone_",
     "helmetName": "Stone Helmet",

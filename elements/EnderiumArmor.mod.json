@@ -23,7 +23,7 @@
       "name": "EnderiumArmorHelmetTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Murray3HallOfArmor"
     },
     "armorTextureFile": "enderium_",
     "helmetName": "Enderium Helmet",

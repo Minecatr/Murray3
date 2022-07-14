@@ -8,7 +8,7 @@
     "name": "Parachute",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "TRANSPORTATION"
+      "value": "CUSTOM:Murray3Misc"
     },
     "stackSize": 1,
     "enchantability": 0,

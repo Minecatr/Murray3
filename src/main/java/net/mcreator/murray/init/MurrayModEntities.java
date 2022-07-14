@@ -41,6 +41,16 @@ import net.mcreator.murray.MurrayMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MurrayModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, MurrayMod.MODID);
+	public static final RegistryObject<EntityType<UltraEndBowEntity>> ULTRA_END_BOW = register("projectile_ultra_end_bow",
+			EntityType.Builder.<UltraEndBowEntity>of(UltraEndBowEntity::new, MobCategory.MISC).setCustomClientFactory(UltraEndBowEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RedPlasmaEntity>> RED_PLASMA = register("projectile_red_plasma",
+			EntityType.Builder.<RedPlasmaEntity>of(RedPlasmaEntity::new, MobCategory.MISC).setCustomClientFactory(RedPlasmaEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LightningPlasmaEntity>> LIGHTNING_PLASMA = register("projectile_lightning_plasma",
+			EntityType.Builder.<LightningPlasmaEntity>of(LightningPlasmaEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(LightningPlasmaEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<OrangePlasmaEntity>> ORANGE_PLASMA = register("projectile_orange_plasma",
 			EntityType.Builder.<OrangePlasmaEntity>of(OrangePlasmaEntity::new, MobCategory.MISC).setCustomClientFactory(OrangePlasmaEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -50,21 +60,6 @@ public class MurrayModEntities {
 	public static final RegistryObject<EntityType<BluePlasmaEntity>> BLUE_PLASMA = register("projectile_blue_plasma",
 			EntityType.Builder.<BluePlasmaEntity>of(BluePlasmaEntity::new, MobCategory.MISC).setCustomClientFactory(BluePlasmaEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RedPlasmaEntity>> RED_PLASMA = register("projectile_red_plasma",
-			EntityType.Builder.<RedPlasmaEntity>of(RedPlasmaEntity::new, MobCategory.MISC).setCustomClientFactory(RedPlasmaEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<BlowAbilityEntity>> BLOW_ABILITY = register("projectile_blow_ability",
-			EntityType.Builder.<BlowAbilityEntity>of(BlowAbilityEntity::new, MobCategory.MISC).setCustomClientFactory(BlowAbilityEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MoltronMechEntity>> MOLTRON_MECH = register("moltron_mech",
-			EntityType.Builder.<MoltronMechEntity>of(MoltronMechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MoltronMechEntity::new)
-
-					.sized(1f, 2f));
-	public static final RegistryObject<EntityType<TeleportAbilityEntity>> TELEPORT_ABILITY = register("projectile_teleport_ability",
-			EntityType.Builder.<TeleportAbilityEntity>of(TeleportAbilityEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(TeleportAbilityEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PurplePlasmaEntity>> PURPLE_PLASMA = register("projectile_purple_plasma",
 			EntityType.Builder.<PurplePlasmaEntity>of(PurplePlasmaEntity::new, MobCategory.MISC).setCustomClientFactory(PurplePlasmaEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -75,19 +70,40 @@ public class MurrayModEntities {
 			EntityType.Builder.<ExplosiveShurikenEntity>of(ExplosiveShurikenEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(ExplosiveShurikenEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GreenPlasmaMk2Entity>> GREEN_PLASMA_MK_2 = register("projectile_green_plasma_mk_2",
+			EntityType.Builder.<GreenPlasmaMk2Entity>of(GreenPlasmaMk2Entity::new, MobCategory.MISC).setCustomClientFactory(GreenPlasmaMk2Entity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<VexxesGunEntity>> VEXXES_GUN = register("projectile_vexxes_gun",
+			EntityType.Builder.<VexxesGunEntity>of(VexxesGunEntity::new, MobCategory.MISC).setCustomClientFactory(VexxesGunEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BlowAbilityEntity>> BLOW_ABILITY = register("projectile_blow_ability",
+			EntityType.Builder.<BlowAbilityEntity>of(BlowAbilityEntity::new, MobCategory.MISC).setCustomClientFactory(BlowAbilityEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TeleportAbilityEntity>> TELEPORT_ABILITY = register("projectile_teleport_ability",
+			EntityType.Builder.<TeleportAbilityEntity>of(TeleportAbilityEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(TeleportAbilityEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ChompSpitEntity>> CHOMP_SPIT = register("projectile_chomp_spit",
 			EntityType.Builder.<ChompSpitEntity>of(ChompSpitEntity::new, MobCategory.MISC).setCustomClientFactory(ChompSpitEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LightningPlasmaEntity>> LIGHTNING_PLASMA = register("projectile_lightning_plasma",
-			EntityType.Builder.<LightningPlasmaEntity>of(LightningPlasmaEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(LightningPlasmaEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<UltraEndBowEntity>> ULTRA_END_BOW = register("projectile_ultra_end_bow",
-			EntityType.Builder.<UltraEndBowEntity>of(UltraEndBowEntity::new, MobCategory.MISC).setCustomClientFactory(UltraEndBowEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MoltronMechEntity>> MOLTRON_MECH = register("moltron_mech",
+			EntityType.Builder.<MoltronMechEntity>of(MoltronMechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MoltronMechEntity::new)
+
+					.sized(1f, 2f));
+	public static final RegistryObject<EntityType<MoltronRocketEntity>> MOLTRON_ROCKET = register("moltron_rocket",
+			EntityType.Builder.<MoltronRocketEntity>of(MoltronRocketEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MoltronRocketEntity::new)
+
+					.sized(1f, 1f));
 	public static final RegistryObject<EntityType<PurpleSoldierEntity>> PURPLE_SOLDIER = register("purple_soldier",
 			EntityType.Builder.<PurpleSoldierEntity>of(PurpleSoldierEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PurpleSoldierEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<OrnateEntity>> ORNATE = register("ornate",
+			EntityType.Builder.<OrnateEntity>of(OrnateEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(OrnateEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<VexxEntity>> VEXX = register("vexx",
@@ -100,22 +116,6 @@ public class MurrayModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(BruteEntity::new)
 
 					.sized(0.6f, 1.95f));
-	public static final RegistryObject<EntityType<MoltronRocketEntity>> MOLTRON_ROCKET = register("moltron_rocket",
-			EntityType.Builder.<MoltronRocketEntity>of(MoltronRocketEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MoltronRocketEntity::new)
-
-					.sized(1f, 1f));
-	public static final RegistryObject<EntityType<OrnateEntity>> ORNATE = register("ornate",
-			EntityType.Builder.<OrnateEntity>of(OrnateEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(OrnateEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<VexxesGunEntity>> VEXXES_GUN = register("projectile_vexxes_gun",
-			EntityType.Builder.<VexxesGunEntity>of(VexxesGunEntity::new, MobCategory.MISC).setCustomClientFactory(VexxesGunEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<GreenPlasmaMk2Entity>> GREEN_PLASMA_MK_2 = register("projectile_green_plasma_mk_2",
-			EntityType.Builder.<GreenPlasmaMk2Entity>of(GreenPlasmaMk2Entity::new, MobCategory.MISC).setCustomClientFactory(GreenPlasmaMk2Entity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -125,21 +125,21 @@ public class MurrayModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			MoltronMechEntity.init();
+			MoltronRocketEntity.init();
 			PurpleSoldierEntity.init();
+			OrnateEntity.init();
 			VexxEntity.init();
 			BruteEntity.init();
-			MoltronRocketEntity.init();
-			OrnateEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MOLTRON_MECH.get(), MoltronMechEntity.createAttributes().build());
+		event.put(MOLTRON_ROCKET.get(), MoltronRocketEntity.createAttributes().build());
 		event.put(PURPLE_SOLDIER.get(), PurpleSoldierEntity.createAttributes().build());
+		event.put(ORNATE.get(), OrnateEntity.createAttributes().build());
 		event.put(VEXX.get(), VexxEntity.createAttributes().build());
 		event.put(BRUTE.get(), BruteEntity.createAttributes().build());
-		event.put(MOLTRON_ROCKET.get(), MoltronRocketEntity.createAttributes().build());
-		event.put(ORNATE.get(), OrnateEntity.createAttributes().build());
 	}
 }

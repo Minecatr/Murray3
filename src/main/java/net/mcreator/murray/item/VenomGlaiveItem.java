@@ -6,10 +6,10 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.murray.procedures.VenomGlaiveEntitySwingsItemProcedure;
+import net.mcreator.murray.init.MurrayModTabs;
 
 public class VenomGlaiveItem extends SwordItem {
 	public VenomGlaiveItem() {
@@ -37,7 +37,7 @@ public class VenomGlaiveItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		}, 3, -2.4f, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 	}
 
 	@Override
