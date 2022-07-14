@@ -124,6 +124,7 @@ public class MurrayModBlocks {
 			JarnumleaveBlock.registerRenderLayer();
 			PoorlyMadeLadderBlock.registerRenderLayer();
 			FutureGlassBlock.registerRenderLayer();
+			XrayBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent
