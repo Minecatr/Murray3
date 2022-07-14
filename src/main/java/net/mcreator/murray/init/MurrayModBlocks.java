@@ -27,6 +27,7 @@ import net.mcreator.murray.block.SilicaBlock;
 import net.mcreator.murray.block.ScaffoldBlock;
 import net.mcreator.murray.block.SandwormBlock;
 import net.mcreator.murray.block.RiftBlock;
+import net.mcreator.murray.block.PopupHouseBlock;
 import net.mcreator.murray.block.PoorlyMadeLadderBlock;
 import net.mcreator.murray.block.ParticleBlock;
 import net.mcreator.murray.block.OrnateCrateBlock;
@@ -108,6 +109,7 @@ public class MurrayModBlocks {
 	public static final RegistryObject<Block> FUTURE_TILES = REGISTRY.register("future_tiles", () -> new FutureTilesBlock());
 	public static final RegistryObject<Block> XRAY = REGISTRY.register("xray", () -> new XrayBlock());
 	public static final RegistryObject<Block> SANDWORM = REGISTRY.register("sandworm", () -> new SandwormBlock());
+	public static final RegistryObject<Block> POPUP_HOUSE = REGISTRY.register("popup_house", () -> new PopupHouseBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -124,7 +126,6 @@ public class MurrayModBlocks {
 			JarnumleaveBlock.registerRenderLayer();
 			PoorlyMadeLadderBlock.registerRenderLayer();
 			FutureGlassBlock.registerRenderLayer();
-			XrayBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent

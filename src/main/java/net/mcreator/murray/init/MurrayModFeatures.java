@@ -22,6 +22,7 @@ import net.mcreator.murray.world.features.ores.EnderiumInfusedStoneFeature;
 import net.mcreator.murray.world.features.ores.DepositFeature;
 import net.mcreator.murray.world.features.PurpleFactoryFeature;
 import net.mcreator.murray.world.features.PurpleDepositFeature;
+import net.mcreator.murray.world.features.PopUpHouseStructureFeature;
 import net.mcreator.murray.world.features.MiniFuturisticCityFeature;
 import net.mcreator.murray.world.features.FinalBossTowerFeature;
 import net.mcreator.murray.world.features.ExitRiftFeature;
@@ -61,6 +62,9 @@ public class MurrayModFeatures {
 	public static final RegistryObject<Feature<?>> MINI_FUTURISTIC_CITY = register("mini_futuristic_city", MiniFuturisticCityFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MiniFuturisticCityFeature.GENERATE_BIOMES,
 					MiniFuturisticCityFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> POP_UP_HOUSE_STRUCTURE = register("pop_up_house_structure", PopUpHouseStructureFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PopUpHouseStructureFeature.GENERATE_BIOMES,
+					PopUpHouseStructureFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

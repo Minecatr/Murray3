@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "murray:blocks/oak_planks",
+    "up": "murray:blocks/oak_planks",
+    "north": "murray:blocks/popup_house",
+    "east": "murray:blocks/popup_house_sides",
+    "south": "murray:blocks/popup_house_sides",
+    "west": "murray:blocks/popup_house_sides",
+    "particle": "murray:blocks/oak_planks"
+  }
+}

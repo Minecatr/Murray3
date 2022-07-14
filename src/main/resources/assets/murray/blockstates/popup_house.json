@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "murray:block/popup_house"
+    },
+    "facing=east": {
+      "model": "murray:block/popup_house",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "murray:block/popup_house",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "murray:block/popup_house",
+      "y": 270
+    }
+  }
+}

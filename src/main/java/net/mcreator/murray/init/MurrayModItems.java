@@ -286,6 +286,7 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> FUTURE_TILES = block(MurrayModBlocks.FUTURE_TILES, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
 	public static final RegistryObject<Item> XRAY = block(MurrayModBlocks.XRAY, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
 	public static final RegistryObject<Item> SANDWORM = block(MurrayModBlocks.SANDWORM, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
+	public static final RegistryObject<Item> POPUP_HOUSE = block(MurrayModBlocks.POPUP_HOUSE, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
