@@ -58,6 +58,7 @@ import net.mcreator.murray.item.HotMatterItem;
 import net.mcreator.murray.item.HeartsteelItem;
 import net.mcreator.murray.item.HeartstealerItem;
 import net.mcreator.murray.item.HastefruitItem;
+import net.mcreator.murray.item.GreenPlasmaMk2Item;
 import net.mcreator.murray.item.GreenPlasmaItem;
 import net.mcreator.murray.item.FrostPickaxeItem;
 import net.mcreator.murray.item.FrostItem;
@@ -255,7 +256,6 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> SCAFFOLD = block(MurrayModBlocks.SCAFFOLD, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ORNATE = REGISTRY.register("ornate_spawn_egg",
 			() -> new ForgeSpawnEggItem(MurrayModEntities.ORNATE, -3407617, -6750004, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SANDWORM = block(MurrayModBlocks.SANDWORM, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ONE_WAY = block(MurrayModBlocks.ONE_WAY, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ONE_WAY_DOOR = block(MurrayModBlocks.ONE_WAY_DOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> VEXXES_GUN = REGISTRY.register("vexxes_gun", () -> new VexxesGunItem());
@@ -282,6 +282,9 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> FUTURE_GLASS = block(MurrayModBlocks.FUTURE_GLASS, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> TECH_MANIA = REGISTRY.register("tech_mania", () -> new TechManiaItem());
 	public static final RegistryObject<Item> FUTURE_TILES = block(MurrayModBlocks.FUTURE_TILES, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> GREEN_PLASMA_MK_2 = REGISTRY.register("green_plasma_mk_2", () -> new GreenPlasmaMk2Item());
+	public static final RegistryObject<Item> XRAY = block(MurrayModBlocks.XRAY, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> SANDWORM = block(MurrayModBlocks.SANDWORM, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

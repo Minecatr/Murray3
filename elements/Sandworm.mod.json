@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "sandworm2",
+    "texture": "sandworm3",
     "textureTop": "silica",
     "textureLeft": "silica",
     "textureFront": "silica",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Sandworm",
+    "name": "Particle",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 0.5,
@@ -41,7 +41,7 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": "Blocks.SAND#0"
     },

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:steel_ingot"
+    },
+    "1": {
+      "item": "murray:xray"
+    },
+    "2": {
+      "item": "murray:steel_ingot"
+    },
+    "3": {
+      "item": "murray:energy_chip"
+    },
+    "4": {
+      "item": "murray:green_plasma"
+    },
+    "5": {
+      "item": "murray:energy_chip"
+    },
+    "6": {
+      "item": "murray:steel_ingot"
+    },
+    "7": {
+      "item": "murray:xray"
+    },
+    "8": {
+      "item": "murray:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "murray:green_plasma_mk_2",
+    "count": 1
+  }
+}

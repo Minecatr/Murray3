@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.murray.block.XrayBlock;
 import net.mcreator.murray.block.WoodenSolarPanelBlock;
 import net.mcreator.murray.block.VexCrateBlock;
 import net.mcreator.murray.block.VenusStoneBlock;
@@ -93,7 +94,6 @@ public class MurrayModBlocks {
 	public static final RegistryObject<Block> THE_SUN_IN_A_BOX = REGISTRY.register("the_sun_in_a_box", () -> new TheSunInABoxBlock());
 	public static final RegistryObject<Block> TREE_IN_A_BOX = REGISTRY.register("tree_in_a_box", () -> new TreeInABoxBlock());
 	public static final RegistryObject<Block> SCAFFOLD = REGISTRY.register("scaffold", () -> new ScaffoldBlock());
-	public static final RegistryObject<Block> SANDWORM = REGISTRY.register("sandworm", () -> new SandwormBlock());
 	public static final RegistryObject<Block> ONE_WAY = REGISTRY.register("one_way", () -> new OneWayBlock());
 	public static final RegistryObject<Block> ONE_WAY_DOOR = REGISTRY.register("one_way_door", () -> new OneWayDoorBlock());
 	public static final RegistryObject<Block> FORCEFIELD_BLOCK = REGISTRY.register("forcefield_block", () -> new ForcefieldBlockBlock());
@@ -106,6 +106,8 @@ public class MurrayModBlocks {
 	public static final RegistryObject<Block> FUTURE_GLASS = REGISTRY.register("future_glass", () -> new FutureGlassBlock());
 	public static final RegistryObject<Block> TECH_MANIA_PORTAL = REGISTRY.register("tech_mania_portal", () -> new TechManiaPortalBlock());
 	public static final RegistryObject<Block> FUTURE_TILES = REGISTRY.register("future_tiles", () -> new FutureTilesBlock());
+	public static final RegistryObject<Block> XRAY = REGISTRY.register("xray", () -> new XrayBlock());
+	public static final RegistryObject<Block> SANDWORM = REGISTRY.register("sandworm", () -> new SandwormBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

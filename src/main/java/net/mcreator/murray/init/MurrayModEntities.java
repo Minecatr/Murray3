@@ -29,6 +29,7 @@ import net.mcreator.murray.entity.OrangePlasmaEntity;
 import net.mcreator.murray.entity.MoltronRocketEntity;
 import net.mcreator.murray.entity.MoltronMechEntity;
 import net.mcreator.murray.entity.LightningPlasmaEntity;
+import net.mcreator.murray.entity.GreenPlasmaMk2Entity;
 import net.mcreator.murray.entity.GreenPlasmaEntity;
 import net.mcreator.murray.entity.ExplosiveShurikenEntity;
 import net.mcreator.murray.entity.ChompSpitEntity;
@@ -111,6 +112,9 @@ public class MurrayModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<VexxesGunEntity>> VEXXES_GUN = register("projectile_vexxes_gun",
 			EntityType.Builder.<VexxesGunEntity>of(VexxesGunEntity::new, MobCategory.MISC).setCustomClientFactory(VexxesGunEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GreenPlasmaMk2Entity>> GREEN_PLASMA_MK_2 = register("projectile_green_plasma_mk_2",
+			EntityType.Builder.<GreenPlasmaMk2Entity>of(GreenPlasmaMk2Entity::new, MobCategory.MISC).setCustomClientFactory(GreenPlasmaMk2Entity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

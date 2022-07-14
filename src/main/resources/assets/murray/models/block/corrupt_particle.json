@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "murray:blocks/corrupt",
-    "particle": "murray:blocks/corrupt"
+    "all": "murray:blocks/particle2",
+    "particle": "murray:blocks/particle2"
   }
 }

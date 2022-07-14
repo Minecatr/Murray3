@@ -3,9 +3,9 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "ultra_ender_crossbow",
+    "texture": "ae145b8c-d886-4382-b5fa-3e316d08e547",
     "customModelName": "Normal",
-    "name": "Ultra End Bow",
+    "name": "Green Plasma Mk.2",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
@@ -14,20 +14,20 @@
     "ammoItem": {
       "value": ""
     },
-    "shootConstantly": true,
+    "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "block.beacon.deactivate"
     },
     "hasGlow": false,
-    "animation": "crossbow",
+    "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "onRangedItemUsed": {
-      "name": "CooldownFast"
+      "name": "Cool2"
     },
-    "bulletPower": 1.0,
-    "bulletDamage": 4.0,
+    "bulletPower": 3.0,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
@@ -35,6 +35,9 @@
       "value": ""
     },
     "bulletModel": "Modellaser_v2",
-    "customBulletModelTexture": "ender_laser.png"
+    "customBulletModelTexture": "lime_laser.png",
+    "onBulletHitsEntity": {
+      "name": "LimePlasmaBulletHitsLivingEntity"
+    }
   }
 }
