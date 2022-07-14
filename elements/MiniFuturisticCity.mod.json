@@ -5,11 +5,11 @@
     "structure": "mini_futuristic_city",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 20000,
+    "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 3,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": -4,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
