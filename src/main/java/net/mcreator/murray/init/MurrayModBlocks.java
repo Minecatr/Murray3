@@ -21,6 +21,7 @@ import net.mcreator.murray.block.VenusStoneBlock;
 import net.mcreator.murray.block.TreeInABoxBlock;
 import net.mcreator.murray.block.TrailIceBlock;
 import net.mcreator.murray.block.TheSunInABoxBlock;
+import net.mcreator.murray.block.TechManiaPortalBlock;
 import net.mcreator.murray.block.SilicaBlock;
 import net.mcreator.murray.block.ScaffoldBlock;
 import net.mcreator.murray.block.SandwormBlock;
@@ -39,6 +40,11 @@ import net.mcreator.murray.block.MagnetBBlock;
 import net.mcreator.murray.block.MagnetABlock;
 import net.mcreator.murray.block.KingBlock;
 import net.mcreator.murray.block.JarnumleaveBlock;
+import net.mcreator.murray.block.FutureWallBlock;
+import net.mcreator.murray.block.FutureTilesBlock;
+import net.mcreator.murray.block.FutureGlassBlock;
+import net.mcreator.murray.block.FutureFloorBlock;
+import net.mcreator.murray.block.FutureBricksBlock;
 import net.mcreator.murray.block.ForcefieldBlockBlock;
 import net.mcreator.murray.block.EnderiumInfusedStoneBlock;
 import net.mcreator.murray.block.DrillBlock;
@@ -94,6 +100,12 @@ public class MurrayModBlocks {
 	public static final RegistryObject<Block> CND = REGISTRY.register("cnd", () -> new CNDBlock());
 	public static final RegistryObject<Block> JARNUMLEAVE = REGISTRY.register("jarnumleave", () -> new JarnumleaveBlock());
 	public static final RegistryObject<Block> POORLY_MADE_LADDER = REGISTRY.register("poorly_made_ladder", () -> new PoorlyMadeLadderBlock());
+	public static final RegistryObject<Block> FUTURE_FLOOR = REGISTRY.register("future_floor", () -> new FutureFloorBlock());
+	public static final RegistryObject<Block> FUTURE_WALL = REGISTRY.register("future_wall", () -> new FutureWallBlock());
+	public static final RegistryObject<Block> FUTURE_BRICKS = REGISTRY.register("future_bricks", () -> new FutureBricksBlock());
+	public static final RegistryObject<Block> FUTURE_GLASS = REGISTRY.register("future_glass", () -> new FutureGlassBlock());
+	public static final RegistryObject<Block> TECH_MANIA_PORTAL = REGISTRY.register("tech_mania_portal", () -> new TechManiaPortalBlock());
+	public static final RegistryObject<Block> FUTURE_TILES = REGISTRY.register("future_tiles", () -> new FutureTilesBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -109,6 +121,7 @@ public class MurrayModBlocks {
 			ForcefieldBlockBlock.registerRenderLayer();
 			JarnumleaveBlock.registerRenderLayer();
 			PoorlyMadeLadderBlock.registerRenderLayer();
+			FutureGlassBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent

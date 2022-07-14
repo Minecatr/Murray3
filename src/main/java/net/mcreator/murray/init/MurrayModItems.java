@@ -24,6 +24,7 @@ import net.mcreator.murray.item.UltraEndBowItem;
 import net.mcreator.murray.item.TrueNetheriteItem;
 import net.mcreator.murray.item.TrueEnderiumItem;
 import net.mcreator.murray.item.TeleportAbilityItem;
+import net.mcreator.murray.item.TechManiaItem;
 import net.mcreator.murray.item.StoneArmorItem;
 import net.mcreator.murray.item.SteelNuggetItem;
 import net.mcreator.murray.item.SteelIngotItem;
@@ -275,6 +276,12 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> PLASMASTEEL_MK_2_BOOTS = REGISTRY.register("plasmasteel_mk_2_boots",
 			() -> new PlasmasteelMk2Item.Boots());
 	public static final RegistryObject<Item> PARACHUTE = REGISTRY.register("parachute", () -> new ParachuteItem());
+	public static final RegistryObject<Item> FUTURE_FLOOR = block(MurrayModBlocks.FUTURE_FLOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FUTURE_WALL = block(MurrayModBlocks.FUTURE_WALL, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FUTURE_BRICKS = block(MurrayModBlocks.FUTURE_BRICKS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FUTURE_GLASS = block(MurrayModBlocks.FUTURE_GLASS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TECH_MANIA = REGISTRY.register("tech_mania", () -> new TechManiaItem());
+	public static final RegistryObject<Item> FUTURE_TILES = block(MurrayModBlocks.FUTURE_TILES, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

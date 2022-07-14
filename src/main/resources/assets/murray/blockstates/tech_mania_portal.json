@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "murray:block/tech_mania_portal_ew"
+    },
+    "axis=x": {
+      "model": "murray:block/tech_mania_portal_ns"
+    }
+  }
+}

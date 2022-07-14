@@ -14,6 +14,10 @@
     "murray:advanced_computer",
     "murray:magnetic_disassembler",
     "murray:one_way",
-    "murray:one_way_door"
+    "murray:one_way_door",
+    "murray:future_floor",
+    "murray:future_wall",
+    "murray:future_bricks",
+    "murray:future_tiles"
   ]
 }
