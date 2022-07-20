@@ -40,6 +40,7 @@ import net.mcreator.murray.item.PlasmasteelMk2Item;
 import net.mcreator.murray.item.PlasmasteelItem;
 import net.mcreator.murray.item.PlasmasteelCaseItem;
 import net.mcreator.murray.item.PlasmaKatanaItem;
+import net.mcreator.murray.item.PlasmaBraceletItem;
 import net.mcreator.murray.item.ParachuteItem;
 import net.mcreator.murray.item.OrangePlasmaItem;
 import net.mcreator.murray.item.NinjaItem;
@@ -287,6 +288,8 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> XRAY = block(MurrayModBlocks.XRAY, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
 	public static final RegistryObject<Item> SANDWORM = block(MurrayModBlocks.SANDWORM, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
 	public static final RegistryObject<Item> POPUP_HOUSE = block(MurrayModBlocks.POPUP_HOUSE, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
+	public static final RegistryObject<Item> PLASMA_BRACELET_CHESTPLATE = REGISTRY.register("plasma_bracelet_chestplate",
+			() -> new PlasmaBraceletItem.Chestplate());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
