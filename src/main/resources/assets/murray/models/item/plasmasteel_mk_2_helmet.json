@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "murray:items/plasmasteel_helmet"
+    "layer0": "murray:items/pshelmetmk2"
   }
 }

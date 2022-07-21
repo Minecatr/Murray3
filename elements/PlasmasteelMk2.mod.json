@@ -3,18 +3,18 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "plasmasteel_helmet",
+    "textureHelmet": "pshelmetmk2",
     "enableBody": true,
-    "textureBody": "plasmasteel_chestplate",
+    "textureBody": "psbodymk2",
     "enableLeggings": true,
-    "textureLeggings": "plasmasteel_leggings",
+    "textureLeggings": "psleggingsmk2",
     "enableBoots": true,
-    "textureBoots": "plasmasteel_boots",
+    "textureBoots": "psbootsmk2",
     "onHelmetTick": {
       "name": "PlasmasteelHelmetTickEvent"
     },
     "onBootsTick": {
-      "name": "PlasmasteelFlyMk2"
+      "name": "PlasmasteelBootsTickEvent"
     },
     "creativeTab": {
       "value": "CUSTOM:Murray3HallOfArmor"
