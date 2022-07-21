@@ -52,7 +52,7 @@ public class Murray3MainMessage {
 			return;
 		if (type == 0) {
 
-			Murray3MainOnKeyPressedProcedure.execute(world, x, z, entity);
+			Murray3MainOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

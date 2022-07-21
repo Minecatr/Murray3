@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PlasmasteelMk2.helmet"
+      },
+      {
+        "value": "CUSTOM:PlasmasteelMk2.body"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PlasmasteelMk2.legs"
+      },
+      {
+        "value": "CUSTOM:PlasmasteelMk2.boots"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PlasmaBracelet.body"
+    },
+    "name": "plasma_bracelet_recipe",
+    "namespace": "mod"
+  }
+}
