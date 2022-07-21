@@ -14,7 +14,7 @@
       "name": "PlasmasteelHelmetTickEvent"
     },
     "onBootsTick": {
-      "name": "PlasmasteelBootsTickEvent"
+      "name": "PlasmasteelFlyMk2"
     },
     "creativeTab": {
       "value": "CUSTOM:Murray3HallOfArmor"
