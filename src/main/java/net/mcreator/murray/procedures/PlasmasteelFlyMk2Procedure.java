@@ -22,12 +22,12 @@ public class PlasmasteelFlyMk2Procedure {
 						.getItem() == MurrayModItems.PLASMASTEEL_MK_2_CHESTPLATE.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.PLASMASTEEL_MK_2_HELMET.get()) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 3, 0, (false), (false)));
 			if (entity.isShiftKeyDown()) {
 				entity.setDeltaMovement(new Vec3((Math.sin(Math.toRadians(entity.getYRot() + 180)) * 1), (entity.getXRot() * (-0.025)),
 						(Math.cos(Math.toRadians(entity.getYRot())) * 1)));
 			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 3, 0, (false), (false)));
 		}
 	}
 }

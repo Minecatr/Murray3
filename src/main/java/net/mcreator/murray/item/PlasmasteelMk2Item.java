@@ -16,7 +16,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.murray.procedures.PlasmasteelHelmetTickEventProcedure;
-import net.mcreator.murray.procedures.PlasmasteelBootsTickEventProcedure;
+import net.mcreator.murray.procedures.PlasmasteelFlyMk2Procedure;
 import net.mcreator.murray.init.MurrayModTabs;
 
 public abstract class PlasmasteelMk2Item extends ArmorItem {
@@ -114,7 +114,7 @@ public abstract class PlasmasteelMk2Item extends ArmorItem {
 
 		@Override
 		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			PlasmasteelBootsTickEventProcedure.execute(entity);
+			PlasmasteelFlyMk2Procedure.execute(entity);
 		}
 	}
 }
