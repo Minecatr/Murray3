@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:steel_ingot"
+    },
+    "1": {
+      "item": "murray:plasmasteel_boots"
+    },
+    "2": {
+      "item": "murray:steel_ingot"
+    },
+    "3": {
+      "item": "murray:nether_gem"
+    },
+    "5": {
+      "item": "murray:nether_gem"
+    }
+  },
+  "result": {
+    "item": "murray:plasmasteel_mk_2_boots",
+    "count": 1
+  }
+}

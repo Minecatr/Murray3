@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:HotMatter"
+      },
+      {
+        "value": "CUSTOM:Plasmasteel.helmet"
+      },
+      {
+        "value": "CUSTOM:HotMatter"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NetherGem"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PlasmasteelMk2.helmet"
+    },
+    "name": "plasma_steel_mk_2_helmet_recipe",
+    "namespace": "mod"
+  }
+}

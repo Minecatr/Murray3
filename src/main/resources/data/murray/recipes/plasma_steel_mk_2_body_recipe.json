@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:steel_ingot"
+    },
+    "2": {
+      "item": "murray:steel_ingot"
+    },
+    "3": {
+      "item": "murray:hot_matter"
+    },
+    "4": {
+      "item": "murray:plasmasteel_chestplate"
+    },
+    "5": {
+      "item": "murray:hot_matter"
+    },
+    "6": {
+      "item": "murray:steel_ingot"
+    },
+    "7": {
+      "item": "murray:nether_gem"
+    },
+    "8": {
+      "item": "murray:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "murray:plasmasteel_mk_2_chestplate",
+    "count": 1
+  }
+}

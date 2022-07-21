@@ -80,6 +80,7 @@ import net.mcreator.murray.item.ChipItem;
 import net.mcreator.murray.item.CactusArmorItem;
 import net.mcreator.murray.item.BluePlasmaItem;
 import net.mcreator.murray.item.BlowAbilityItem;
+import net.mcreator.murray.item.BeanBurritoItem;
 import net.mcreator.murray.item.AttackChipItem;
 import net.mcreator.murray.MurrayMod;
 
@@ -290,6 +291,7 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> POPUP_HOUSE = block(MurrayModBlocks.POPUP_HOUSE, MurrayModTabs.TAB_MURRAY_3_BLOCKS);
 	public static final RegistryObject<Item> PLASMA_BRACELET_CHESTPLATE = REGISTRY.register("plasma_bracelet_chestplate",
 			() -> new PlasmaBraceletItem.Chestplate());
+	public static final RegistryObject<Item> BEAN_BURRITO = REGISTRY.register("bean_burrito", () -> new BeanBurritoItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

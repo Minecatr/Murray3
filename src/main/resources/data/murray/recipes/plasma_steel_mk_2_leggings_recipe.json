@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "murray:steel_ingot"
+    },
+    "1": {
+      "item": "murray:nether_gem"
+    },
+    "2": {
+      "item": "murray:steel_ingot"
+    },
+    "3": {
+      "item": "murray:hot_matter"
+    },
+    "4": {
+      "item": "murray:plasmasteel_leggings"
+    },
+    "5": {
+      "item": "murray:hot_matter"
+    },
+    "6": {
+      "item": "murray:steel_ingot"
+    },
+    "8": {
+      "item": "murray:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "murray:plasmasteel_mk_2_leggings",
+    "count": 1
+  }
+}
