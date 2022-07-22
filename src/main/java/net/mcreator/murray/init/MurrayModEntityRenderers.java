@@ -22,9 +22,11 @@ import net.mcreator.murray.client.renderer.OrnateRenderer;
 import net.mcreator.murray.client.renderer.OrangePlasmaRenderer;
 import net.mcreator.murray.client.renderer.MoltronRocketRenderer;
 import net.mcreator.murray.client.renderer.MoltronMechRenderer;
+import net.mcreator.murray.client.renderer.MagicSwordRenderer;
 import net.mcreator.murray.client.renderer.LightningPlasmaRenderer;
 import net.mcreator.murray.client.renderer.GreenPlasmaRenderer;
 import net.mcreator.murray.client.renderer.GreenPlasmaMk2Renderer;
+import net.mcreator.murray.client.renderer.FireballRenderer;
 import net.mcreator.murray.client.renderer.ExplosiveShurikenRenderer;
 import net.mcreator.murray.client.renderer.BruteRenderer;
 import net.mcreator.murray.client.renderer.BluePlasmaRenderer;
@@ -53,5 +55,7 @@ public class MurrayModEntityRenderers {
 		event.registerEntityRenderer(MurrayModEntities.ORNATE.get(), OrnateRenderer::new);
 		event.registerEntityRenderer(MurrayModEntities.VEXX.get(), VexxRenderer::new);
 		event.registerEntityRenderer(MurrayModEntities.BRUTE.get(), BruteRenderer::new);
+		event.registerEntityRenderer(MurrayModEntities.MAGIC_SWORD.get(), MagicSwordRenderer::new);
+		event.registerEntityRenderer(MurrayModEntities.FIREBALL.get(), FireballRenderer::new);
 	}
 }

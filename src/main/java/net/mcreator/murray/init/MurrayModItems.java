@@ -29,6 +29,7 @@ import net.mcreator.murray.item.StoneArmorItem;
 import net.mcreator.murray.item.SteelNuggetItem;
 import net.mcreator.murray.item.SteelIngotItem;
 import net.mcreator.murray.item.SteelArmorItem;
+import net.mcreator.murray.item.SpellbookItem;
 import net.mcreator.murray.item.SpeedChipItem;
 import net.mcreator.murray.item.ShurikenItem;
 import net.mcreator.murray.item.ShadowItem;
@@ -36,6 +37,9 @@ import net.mcreator.murray.item.RedPlasmaItem;
 import net.mcreator.murray.item.RainbowItem;
 import net.mcreator.murray.item.RacerItem;
 import net.mcreator.murray.item.PurplePlasmaItem;
+import net.mcreator.murray.item.PlasmasteelMk5Item;
+import net.mcreator.murray.item.PlasmasteelMk4Item;
+import net.mcreator.murray.item.PlasmasteelMk3Item;
 import net.mcreator.murray.item.PlasmasteelMk2Item;
 import net.mcreator.murray.item.PlasmasteelItem;
 import net.mcreator.murray.item.PlasmasteelCaseItem;
@@ -52,6 +56,7 @@ import net.mcreator.murray.item.MechStrikeItem;
 import net.mcreator.murray.item.MagnetiteSwordItem;
 import net.mcreator.murray.item.MagnetiteIngotItem;
 import net.mcreator.murray.item.MagnetiteArmorItem;
+import net.mcreator.murray.item.MagicSwordItem;
 import net.mcreator.murray.item.LightningPlasmaItem;
 import net.mcreator.murray.item.LavaArmorItem;
 import net.mcreator.murray.item.JarnumfruitItem;
@@ -66,6 +71,7 @@ import net.mcreator.murray.item.FrostItem;
 import net.mcreator.murray.item.ForcefieldItem;
 import net.mcreator.murray.item.FlightEnablerItem;
 import net.mcreator.murray.item.FlightChipItem;
+import net.mcreator.murray.item.FireballItem;
 import net.mcreator.murray.item.FireChipItem;
 import net.mcreator.murray.item.ExplosiveShurikenItem;
 import net.mcreator.murray.item.EnergyChipItem;
@@ -76,10 +82,12 @@ import net.mcreator.murray.item.ElectristeelItem;
 import net.mcreator.murray.item.DefenseChipItem;
 import net.mcreator.murray.item.ChompSpitItem;
 import net.mcreator.murray.item.ChompItem;
+import net.mcreator.murray.item.ChocolateMilkItem;
 import net.mcreator.murray.item.ChipItem;
 import net.mcreator.murray.item.CactusArmorItem;
 import net.mcreator.murray.item.BluePlasmaItem;
 import net.mcreator.murray.item.BlowAbilityItem;
+import net.mcreator.murray.item.BeansItem;
 import net.mcreator.murray.item.BeanBurritoItem;
 import net.mcreator.murray.item.AttackChipItem;
 import net.mcreator.murray.MurrayMod;
@@ -292,6 +300,35 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> PLASMA_BRACELET_CHESTPLATE = REGISTRY.register("plasma_bracelet_chestplate",
 			() -> new PlasmaBraceletItem.Chestplate());
 	public static final RegistryObject<Item> BEAN_BURRITO = REGISTRY.register("bean_burrito", () -> new BeanBurritoItem());
+	public static final RegistryObject<Item> BEANS = REGISTRY.register("beans", () -> new BeansItem());
+	public static final RegistryObject<Item> CHOCOLATE_MILK = REGISTRY.register("chocolate_milk", () -> new ChocolateMilkItem());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_3_HELMET = REGISTRY.register("plasmasteel_mk_3_helmet",
+			() -> new PlasmasteelMk3Item.Helmet());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_3_CHESTPLATE = REGISTRY.register("plasmasteel_mk_3_chestplate",
+			() -> new PlasmasteelMk3Item.Chestplate());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_3_LEGGINGS = REGISTRY.register("plasmasteel_mk_3_leggings",
+			() -> new PlasmasteelMk3Item.Leggings());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_3_BOOTS = REGISTRY.register("plasmasteel_mk_3_boots",
+			() -> new PlasmasteelMk3Item.Boots());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_4_HELMET = REGISTRY.register("plasmasteel_mk_4_helmet",
+			() -> new PlasmasteelMk4Item.Helmet());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_4_CHESTPLATE = REGISTRY.register("plasmasteel_mk_4_chestplate",
+			() -> new PlasmasteelMk4Item.Chestplate());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_4_LEGGINGS = REGISTRY.register("plasmasteel_mk_4_leggings",
+			() -> new PlasmasteelMk4Item.Leggings());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_4_BOOTS = REGISTRY.register("plasmasteel_mk_4_boots",
+			() -> new PlasmasteelMk4Item.Boots());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_5_HELMET = REGISTRY.register("plasmasteel_mk_5_helmet",
+			() -> new PlasmasteelMk5Item.Helmet());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_5_CHESTPLATE = REGISTRY.register("plasmasteel_mk_5_chestplate",
+			() -> new PlasmasteelMk5Item.Chestplate());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_5_LEGGINGS = REGISTRY.register("plasmasteel_mk_5_leggings",
+			() -> new PlasmasteelMk5Item.Leggings());
+	public static final RegistryObject<Item> PLASMASTEEL_MK_5_BOOTS = REGISTRY.register("plasmasteel_mk_5_boots",
+			() -> new PlasmasteelMk5Item.Boots());
+	public static final RegistryObject<Item> MAGIC_SWORD = REGISTRY.register("magic_sword", () -> new MagicSwordItem());
+	public static final RegistryObject<Item> SPELLBOOK = REGISTRY.register("spellbook", () -> new SpellbookItem());
+	public static final RegistryObject<Item> FIREBALL = REGISTRY.register("fireball", () -> new FireballItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

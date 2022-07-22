@@ -4380,6 +4380,74 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "MagicSword",
+      "type": "rangeditem",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_sword"
+    },
+    {
+      "name": "Spellbook",
+      "type": "item",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook"
+    },
+    {
+      "name": "Fireball",
+      "type": "rangeditem",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball"
+    },
+    {
+      "name": "FireballProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireballWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4439,6 +4507,7 @@
       "item.murray.frost_pickaxe": "Frost Pickaxe",
       "item.murray.magnetite_armor_helmet": "Magnetite Helmet",
       "item.murray.forcefield": "Forcefield",
+      "item.murray.magic_sword": "Magic Sword",
       "block.murray.rift": "Rift",
       "item.murray.venom_glaive": "Venom Glaive",
       "item.murray.ninja_leggings": "Ninja Leggings",
@@ -4463,7 +4532,7 @@
       "item.murray.red_plasma": "Red Plasma",
       "item.murray.enderium_armor_leggings": "Enderium Leggings",
       "block.murray.jarnumleave": "Jarnumleave",
-      "item.murray.plasma_bracelet_chestplate": "Plasma Braclet Body",
+      "item.murray.plasma_bracelet_chestplate": "Plasma Braclet",
       "item.murray.frost_leggings": "Frost Leggings",
       "item.murray.heartsteel_helmet": "Heartsteel Helmet",
       "block.murray.corrupt_particle": "Corrupt Particle",
@@ -4576,6 +4645,7 @@
       "block.murray.scaffold": "Scaffold",
       "block.murray.forcefield_block": "Forcefield Block",
       "item.murray.true_enderium_boots": "True Enderium Boots",
+      "item.murray.fireball": "Fireball",
       "item.murray.plasma_bracelet_boots": "Plasma Braclet Boots",
       "block.murray.future_tiles": "Future Tiles",
       "item.murray.plasmasteel_case": "Plasmasteel Case",
@@ -4604,6 +4674,7 @@
       "item.murray.beans": "Beans",
       "item.murray.plasmasteel_chestplate": "Plasmasteel Body",
       "item.murray.chomp_spit": "Chomp Ability",
+      "item.murray.spellbook": "Spellbook",
       "block.murray.popup_house": "Popup House",
       "item.murray.minecat_boots": "Feet Shields",
       "item.murray.plasmasteel_mk_3_leggings": "Plasmasteel Leggings Mk.3",

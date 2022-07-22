@@ -28,9 +28,11 @@ import net.mcreator.murray.entity.OrnateEntity;
 import net.mcreator.murray.entity.OrangePlasmaEntity;
 import net.mcreator.murray.entity.MoltronRocketEntity;
 import net.mcreator.murray.entity.MoltronMechEntity;
+import net.mcreator.murray.entity.MagicSwordEntity;
 import net.mcreator.murray.entity.LightningPlasmaEntity;
 import net.mcreator.murray.entity.GreenPlasmaMk2Entity;
 import net.mcreator.murray.entity.GreenPlasmaEntity;
+import net.mcreator.murray.entity.FireballEntity;
 import net.mcreator.murray.entity.ExplosiveShurikenEntity;
 import net.mcreator.murray.entity.ChompSpitEntity;
 import net.mcreator.murray.entity.BruteEntity;
@@ -116,6 +118,12 @@ public class MurrayModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(BruteEntity::new)
 
 					.sized(0.6f, 1.95f));
+	public static final RegistryObject<EntityType<MagicSwordEntity>> MAGIC_SWORD = register("projectile_magic_sword",
+			EntityType.Builder.<MagicSwordEntity>of(MagicSwordEntity::new, MobCategory.MISC).setCustomClientFactory(MagicSwordEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FireballEntity>> FIREBALL = register("projectile_fireball",
+			EntityType.Builder.<FireballEntity>of(FireballEntity::new, MobCategory.MISC).setCustomClientFactory(FireballEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
