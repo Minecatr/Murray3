@@ -76,10 +76,12 @@ import net.mcreator.murray.item.ElectristeelItem;
 import net.mcreator.murray.item.DefenseChipItem;
 import net.mcreator.murray.item.ChompSpitItem;
 import net.mcreator.murray.item.ChompItem;
+import net.mcreator.murray.item.ChocolateMilkItem;
 import net.mcreator.murray.item.ChipItem;
 import net.mcreator.murray.item.CactusArmorItem;
 import net.mcreator.murray.item.BluePlasmaItem;
 import net.mcreator.murray.item.BlowAbilityItem;
+import net.mcreator.murray.item.BeansItem;
 import net.mcreator.murray.item.BeanBurritoItem;
 import net.mcreator.murray.item.AttackChipItem;
 import net.mcreator.murray.MurrayMod;
@@ -292,6 +294,8 @@ public class MurrayModItems {
 	public static final RegistryObject<Item> PLASMA_BRACELET_CHESTPLATE = REGISTRY.register("plasma_bracelet_chestplate",
 			() -> new PlasmaBraceletItem.Chestplate());
 	public static final RegistryObject<Item> BEAN_BURRITO = REGISTRY.register("bean_burrito", () -> new BeanBurritoItem());
+	public static final RegistryObject<Item> BEANS = REGISTRY.register("beans", () -> new BeansItem());
+	public static final RegistryObject<Item> CHOCOLATE_MILK = REGISTRY.register("chocolate_milk", () -> new ChocolateMilkItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
