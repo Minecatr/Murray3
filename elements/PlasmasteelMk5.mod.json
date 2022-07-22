@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "pshelmetmk2",
+    "textureHelmet": "pshelmetmk5",
     "enableBody": true,
-    "textureBody": "psbodymk2",
+    "textureBody": "psbodymk5",
     "enableLeggings": true,
-    "textureLeggings": "psleggingsmk2",
+    "textureLeggings": "psleggingsmk5",
     "enableBoots": true,
-    "textureBoots": "psbootsmk2",
+    "textureBoots": "psbootsmk5",
     "onHelmetTick": {
       "name": "PlasmasteelHelmetTickEvent"
     },
