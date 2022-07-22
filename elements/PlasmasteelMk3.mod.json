@@ -1,0 +1,64 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "pshelmetmk2",
+    "enableBody": true,
+    "textureBody": "psbodymk2",
+    "enableLeggings": true,
+    "textureLeggings": "psleggingsmk2",
+    "enableBoots": true,
+    "textureBoots": "psbootsmk2",
+    "onHelmetTick": {
+      "name": "PlasmasteelHelmetTickEvent"
+    },
+    "onBootsTick": {
+      "name": "PlasmasteelFlyMk2"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Murray3HallOfArmor"
+    },
+    "armorTextureFile": "plasmasteel_mk3_",
+    "helmetName": "Plasmasteel Helmet Mk.3",
+    "bodyName": "Plasmasteel Body Mk.3",
+    "leggingsName": "Plasmasteel Leggings Mk.3",
+    "bootsName": "Plasmasteel Boots Mk.3",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 12,
+    "damageValueBody": 12,
+    "damageValueLeggings": 12,
+    "damageValueBoots": 12,
+    "enchantability": 20,
+    "toughness": 4.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "block.beacon.activate"
+    },
+    "repairItems": []
+  }
+}
