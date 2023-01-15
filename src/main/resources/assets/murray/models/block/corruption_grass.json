@@ -8,5 +8,6 @@
     "south": "murray:blocks/corruption_sides",
     "west": "murray:blocks/corruption_sides",
     "particle": "murray:blocks/dirt"
-  }
+  },
+  "render_type": "solid"
 }

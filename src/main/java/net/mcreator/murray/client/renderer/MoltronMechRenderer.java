@@ -15,6 +15,6 @@ public class MoltronMechRenderer extends MobRenderer<MoltronMechEntity, Modelmol
 
 	@Override
 	public ResourceLocation getTextureLocation(MoltronMechEntity entity) {
-		return new ResourceLocation("murray:textures/moltron_mech.png");
+		return new ResourceLocation("murray:textures/entities/moltron_mech.png");
 	}
 }

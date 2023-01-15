@@ -48,7 +48,6 @@ public class GreenPlasmaMk2Item extends Item {
 				GreenPlasmaMk2Entity entityarrow = GreenPlasmaMk2Entity.shoot(world, entity, world.getRandom(), 3f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				Cool2Procedure.execute(world, entity, itemstack);
 			}
 		}

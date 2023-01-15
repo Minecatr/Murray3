@@ -49,7 +49,6 @@ public class LightningPlasmaItem extends Item {
 				LightningPlasmaEntity entityarrow = LightningPlasmaEntity.shoot(world, entity, world.getRandom(), 2f, 0, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				CooldownFastProcedure.execute(entity, itemstack);
 				entity.releaseUsingItem();
 			}

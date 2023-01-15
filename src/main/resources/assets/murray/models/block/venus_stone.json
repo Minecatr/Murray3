@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/venus_stone",
     "particle": "murray:blocks/venus_stone"
-  }
+  },
+  "render_type": "solid"
 }

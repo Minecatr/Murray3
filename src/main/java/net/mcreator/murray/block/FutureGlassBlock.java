@@ -1,9 +1,6 @@
 
 package net.mcreator.murray.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
@@ -16,10 +13,6 @@ import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-
-import net.mcreator.murray.init.MurrayModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -57,10 +50,4 @@ public class FutureGlassBlock extends Block {
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MurrayModBlocks.FUTURE_GLASS.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

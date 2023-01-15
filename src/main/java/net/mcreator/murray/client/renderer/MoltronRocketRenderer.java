@@ -15,6 +15,6 @@ public class MoltronRocketRenderer extends MobRenderer<MoltronRocketEntity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(MoltronRocketEntity entity) {
-		return new ResourceLocation("murray:textures/moltron_rocket.png");
+		return new ResourceLocation("murray:textures/entities/moltron_rocket.png");
 	}
 }

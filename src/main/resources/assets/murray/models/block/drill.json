@@ -6,5 +6,6 @@
     "0": "murray:blocks/smooth_stone",
     "1": "murray:blocks/iron_block",
     "2": "murray:blocks/drill"
-  }
+  },
+  "render_type": "solid"
 }

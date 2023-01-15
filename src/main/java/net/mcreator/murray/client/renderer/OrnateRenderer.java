@@ -19,6 +19,6 @@ public class OrnateRenderer extends HumanoidMobRenderer<OrnateEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(OrnateEntity entity) {
-		return new ResourceLocation("murray:textures/7426615358c1c90acbe2ae23d3a3a2d6c2ace8c9.png");
+		return new ResourceLocation("murray:textures/entities/7426615358c1c90acbe2ae23d3a3a2d6c2ace8c9.png");
 	}
 }

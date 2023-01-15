@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class LightningPlasmaRenderer extends EntityRenderer<LightningPlasmaEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/yellow_laser.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/yellow_laser.png");
 	private final Modellaser_v2 model;
 
 	public LightningPlasmaRenderer(EntityRendererProvider.Context context) {

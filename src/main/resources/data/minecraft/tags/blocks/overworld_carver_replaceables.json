@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "murray:corruption_grass",
+    "minecraft:dirt",
+    "murray:venus_stone",
+    "minecraft:obsidian",
+    "murray:future_floor"
+  ]
+}

@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class MagicSwordRenderer extends EntityRenderer<MagicSwordEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/magic_sword.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/magic_sword.png");
 	private final ModelMagicSword model;
 
 	public MagicSwordRenderer(EntityRendererProvider.Context context) {

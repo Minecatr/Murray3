@@ -1,9 +1,6 @@
 
 package net.mcreator.murray.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,11 +12,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.murray.procedures.ForcefieldBlockBlockAddedProcedure;
-import net.mcreator.murray.init.MurrayModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -58,10 +52,4 @@ public class ForcefieldBlockBlock extends Block {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		ForcefieldBlockBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MurrayModBlocks.FORCEFIELD_BLOCK.get(), renderType -> renderType == RenderType.translucent());
-	}
-
 }

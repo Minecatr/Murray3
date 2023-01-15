@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/trail_ice",
     "particle": "murray:blocks/trail_ice"
-  }
+  },
+  "render_type": "solid"
 }

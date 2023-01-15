@@ -49,7 +49,6 @@ public class VexxesGunItem extends Item {
 				VexxesGunEntity entityarrow = VexxesGunEntity.shoot(world, entity, world.getRandom(), 5f, 3, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				CooldownFastProcedure.execute(entity, itemstack);
 				entity.releaseUsingItem();
 			}

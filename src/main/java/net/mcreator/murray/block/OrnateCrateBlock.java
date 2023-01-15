@@ -17,7 +17,7 @@ import net.mcreator.murray.procedures.OrnateSpawnProcedure;
 
 public class OrnateCrateBlock extends Block {
 	public OrnateCrateBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(2f, 10000f).requiresCorrectToolForDrops().noDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(2f, 10000f).requiresCorrectToolForDrops().noLootTable());
 	}
 
 	@Override

@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/future_tiles",
     "particle": "murray:blocks/future_tiles"
-  }
+  },
+  "render_type": "solid"
 }

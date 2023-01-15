@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/future_building_walls",
     "particle": "murray:blocks/future_building_walls"
-  }
+  },
+  "render_type": "solid"
 }

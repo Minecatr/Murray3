@@ -4,9 +4,6 @@
  */
 package net.mcreator.murray.init;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -22,7 +19,7 @@ public class MurrayModTabs {
 				return new ItemStack(MurrayModItems.PLASMASTEEL_HELMET.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -33,7 +30,7 @@ public class MurrayModTabs {
 				return new ItemStack(MurrayModBlocks.KING.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -44,7 +41,7 @@ public class MurrayModTabs {
 				return new ItemStack(MurrayModItems.CHIP.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}

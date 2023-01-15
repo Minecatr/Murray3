@@ -1,17 +1,16 @@
 package net.mcreator.murray.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.murray.init.MurrayModBlocks;
 
-import java.util.Random;
-
 public class JarnumleaveUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double random = 0;
-		random = Math.round(Mth.nextDouble(new Random(), 1, 5));
+		random = Math.round(Mth.nextDouble(RandomSource.create(), 1, 5));
 		if ((world.getBlockState(new BlockPos(x + 1, y - 1, z)).canOcclude() || world.getBlockState(new BlockPos(x - 1, y - 1, z)).canOcclude()
 				|| world.getBlockState(new BlockPos(x, y - 1, z + 1)).canOcclude() || world.getBlockState(new BlockPos(x, y - 1, z - 1)).canOcclude())
 				&& world.isEmptyBlock(new BlockPos(x, y - 1, z)) && random == 1) {

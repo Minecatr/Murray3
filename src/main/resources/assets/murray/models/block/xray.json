@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/8ec885fa-0054-4dbd-abf9-1649220ef9ca",
     "particle": "murray:blocks/8ec885fa-0054-4dbd-abf9-1649220ef9ca"
-  }
+  },
+  "render_type": "translucent"
 }

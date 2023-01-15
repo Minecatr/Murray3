@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ShurikenRenderer extends EntityRenderer<ShurikenEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/shuriken_projectile.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/shuriken_projectile.png");
 	private final Modelshuriken_v2 model;
 
 	public ShurikenRenderer(EntityRendererProvider.Context context) {

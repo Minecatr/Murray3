@@ -17,8 +17,8 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
@@ -26,7 +26,6 @@ import net.mcreator.murray.procedures.TheSunInABoxUpdateTickProcedure;
 import net.mcreator.murray.procedures.TheSunInABoxEntityCollidesInTheBlockProcedure;
 import net.mcreator.murray.block.entity.TheSunInABoxBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -42,7 +41,7 @@ public class TheSunInABoxBlock extends Block
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Generates power and lava insanely fast"));
+		list.add(Component.literal("Generates power and lava insanely fast"));
 	}
 
 	@Override
@@ -65,7 +64,7 @@ public class TheSunInABoxBlock extends Block
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();

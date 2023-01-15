@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.murray.init;
 
@@ -20,9 +20,9 @@ public class MurrayModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(MurrayModMenus.INVESTING, InvestingScreen::new);
-			MenuScreens.register(MurrayModMenus.MAGNETIC_DISSASEMBLER_GUI, MagneticDissasemblerGuiScreen::new);
-			MenuScreens.register(MurrayModMenus.CNDGUI, CNDGUIScreen::new);
+			MenuScreens.register(MurrayModMenus.INVESTING.get(), InvestingScreen::new);
+			MenuScreens.register(MurrayModMenus.MAGNETIC_DISSASEMBLER_GUI.get(), MagneticDissasemblerGuiScreen::new);
+			MenuScreens.register(MurrayModMenus.CNDGUI.get(), CNDGUIScreen::new);
 		});
 	}
 }

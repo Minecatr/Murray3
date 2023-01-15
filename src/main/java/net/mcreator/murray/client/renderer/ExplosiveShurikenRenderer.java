@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ExplosiveShurikenRenderer extends EntityRenderer<ExplosiveShurikenEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/explosive_shuriken_projectile.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/explosive_shuriken_projectile.png");
 	private final Modelshuriken_v2 model;
 
 	public ExplosiveShurikenRenderer(EntityRendererProvider.Context context) {

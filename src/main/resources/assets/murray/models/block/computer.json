@@ -8,5 +8,6 @@
     "south": "murray:blocks/iron_block",
     "west": "murray:blocks/iron_block",
     "particle": "murray:blocks/iron_block"
-  }
+  },
+  "render_type": "solid"
 }

@@ -8,5 +8,6 @@
     "south": "murray:blocks/popup_house_sides",
     "west": "murray:blocks/popup_house_sides",
     "particle": "murray:blocks/oak_planks"
-  }
+  },
+  "render_type": "solid"
 }

@@ -4,5 +4,6 @@
     "all": "murray:blocks/iron_block",
     "particle": "murray:blocks/iron_block",
     "0": "murray:blocks/iron_block"
-  }
+  },
+  "render_type": "solid"
 }

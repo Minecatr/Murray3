@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/magnetite_ore",
     "particle": "murray:blocks/magnetite_ore"
-  }
+  },
+  "render_type": "solid"
 }

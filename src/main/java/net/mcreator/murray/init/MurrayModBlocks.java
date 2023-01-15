@@ -7,10 +7,9 @@ package net.mcreator.murray.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -114,28 +113,12 @@ public class MurrayModBlocks {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
-		public static void clientSetup(FMLClientSetupEvent event) {
-			SilicaBlock.registerRenderLayer();
-			RiftBlock.registerRenderLayer();
-			DrillBlock.registerRenderLayer();
-			TreeInABoxBlock.registerRenderLayer();
-			ScaffoldBlock.registerRenderLayer();
-			OneWayBlock.registerRenderLayer();
-			OneWayDoorBlock.registerRenderLayer();
-			ForcefieldBlockBlock.registerRenderLayer();
-			JarnumleaveBlock.registerRenderLayer();
-			PoorlyMadeLadderBlock.registerRenderLayer();
-			FutureGlassBlock.registerRenderLayer();
-			XrayBlock.registerRenderLayer();
-		}
-
-		@SubscribeEvent
-		public static void blockColorLoad(ColorHandlerEvent.Block event) {
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			JarnumleaveBlock.blockColorLoad(event);
 		}
 
 		@SubscribeEvent
-		public static void itemColorLoad(ColorHandlerEvent.Item event) {
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 			JarnumleaveBlock.itemColorLoad(event);
 		}
 	}

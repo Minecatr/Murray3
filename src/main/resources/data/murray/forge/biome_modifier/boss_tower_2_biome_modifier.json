@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "murray:boss_tower_2",
+  "step": "surface_structures"
+}

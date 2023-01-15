@@ -20,7 +20,7 @@ import net.mcreator.murray.block.entity.AdvancedComputerBlockEntity;
 import net.mcreator.murray.MurrayMod;
 
 public class MurrayModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, MurrayMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MurrayMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> ADVANCED_COMPUTER = register("advanced_computer", MurrayModBlocks.ADVANCED_COMPUTER,
 			AdvancedComputerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MAGNETIC_DISASSEMBLER = register("magnetic_disassembler",

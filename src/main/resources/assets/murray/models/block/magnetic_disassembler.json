@@ -8,5 +8,6 @@
     "south": "murray:blocks/magnetite_machine",
     "west": "murray:blocks/magnetite_machine",
     "particle": "murray:blocks/magnetite_machine_top"
-  }
+  },
+  "render_type": "solid"
 }

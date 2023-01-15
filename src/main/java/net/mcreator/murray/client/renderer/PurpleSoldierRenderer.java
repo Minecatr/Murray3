@@ -19,6 +19,6 @@ public class PurpleSoldierRenderer extends HumanoidMobRenderer<PurpleSoldierEnti
 
 	@Override
 	public ResourceLocation getTextureLocation(PurpleSoldierEntity entity) {
-		return new ResourceLocation("murray:textures/70111152ca3b7f52c3dae86dc098bd448cd38ef4.png");
+		return new ResourceLocation("murray:textures/entities/70111152ca3b7f52c3dae86dc098bd448cd38ef4.png");
 	}
 }

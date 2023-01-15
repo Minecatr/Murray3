@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/kingparticle",
     "particle": "murray:blocks/kingparticle"
-  }
+  },
+  "render_type": "solid"
 }

@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/brute_crate",
     "particle": "murray:blocks/brute_crate"
-  }
+  },
+  "render_type": "solid"
 }

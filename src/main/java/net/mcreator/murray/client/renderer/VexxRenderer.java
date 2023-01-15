@@ -19,6 +19,6 @@ public class VexxRenderer extends HumanoidMobRenderer<VexxEntity, HumanoidModel<
 
 	@Override
 	public ResourceLocation getTextureLocation(VexxEntity entity) {
-		return new ResourceLocation("murray:textures/daeb81180e30c2a442f0ad2094d04dd15f1ea2b5.png");
+		return new ResourceLocation("murray:textures/entities/daeb81180e30c2a442f0ad2094d04dd15f1ea2b5.png");
 	}
 }

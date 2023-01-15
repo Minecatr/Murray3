@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/magnet_b",
     "particle": "murray:blocks/magnet_b"
-  }
+  },
+  "render_type": "solid"
 }

@@ -17,7 +17,7 @@ import net.mcreator.murray.procedures.VexSpawnProcedure;
 
 public class VexCrateBlock extends Block {
 	public VexCrateBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(2f, 10000f).requiresCorrectToolForDrops().noDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(2f, 10000f).requiresCorrectToolForDrops().noLootTable());
 	}
 
 	@Override

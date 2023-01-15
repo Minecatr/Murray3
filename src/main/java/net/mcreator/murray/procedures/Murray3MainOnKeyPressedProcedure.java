@@ -2,14 +2,13 @@ package net.mcreator.murray.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,6 +29,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.murray.init.MurrayModItems;
+import net.mcreator.murray.init.MurrayModEntities;
 import net.mcreator.murray.entity.TeleportAbilityEntity;
 import net.mcreator.murray.entity.RedPlasmaEntity;
 import net.mcreator.murray.entity.PurplePlasmaEntity;
@@ -40,6 +40,7 @@ import net.mcreator.murray.entity.LightningPlasmaEntity;
 import net.mcreator.murray.entity.GreenPlasmaEntity;
 import net.mcreator.murray.entity.ExplosiveShurikenEntity;
 import net.mcreator.murray.entity.BluePlasmaEntity;
+import net.mcreator.murray.MurrayMod;
 
 public class Murray3MainOnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -53,14 +54,46 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.PLASMASTEEL_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.PLASMASTEEL_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				OrangePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 4, 1, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new OrangePlasmaEntity(MurrayModEntities.ORANGE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 1, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 				.getItem() == MurrayModItems.MINECAT_HELMET.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				TeleportAbilityEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 4, 0, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new TeleportAbilityEntity(MurrayModEntities.TELEPORT_ABILITY.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 0, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
@@ -71,8 +104,24 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.FROST_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.FROST_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				BluePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 2, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new BluePlasmaEntity(MurrayModEntities.BLUE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 2, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
@@ -83,25 +132,121 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.SHADOW_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.SHADOW_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				PurplePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 5, (float) 0.5, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new PurplePlasmaEntity(MurrayModEntities.PURPLE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, (float) 0.5, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				PurplePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 4, (float) 0.5, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new PurplePlasmaEntity(MurrayModEntities.PURPLE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, (float) 0.5, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				PurplePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 3, (float) 0.5, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new PurplePlasmaEntity(MurrayModEntities.PURPLE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, (float) 0.5, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 3, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				PurplePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, (float) 0.5, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new PurplePlasmaEntity(MurrayModEntities.PURPLE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, (float) 0.5, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				PurplePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, (float) 0.5, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new PurplePlasmaEntity(MurrayModEntities.PURPLE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, (float) 0.5, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity.getVehicle()) instanceof MoltronMechEntity) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				RedPlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 3, 5, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new RedPlasmaEntity(MurrayModEntities.RED_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 5, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 3, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
@@ -112,14 +257,62 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.NINJA_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.NINJA_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				ExplosiveShurikenEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 3, 1, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new ExplosiveShurikenEntity(MurrayModEntities.EXPLOSIVE_SHURIKEN.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 1, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 3, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				ExplosiveShurikenEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new ExplosiveShurikenEntity(MurrayModEntities.EXPLOSIVE_SHURIKEN.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 1, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				ExplosiveShurikenEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 1, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new ExplosiveShurikenEntity(MurrayModEntities.EXPLOSIVE_SHURIKEN.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 1, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
@@ -143,11 +336,43 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.ELECTRISTEEL_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.ELECTRISTEEL_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				LightningPlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 0, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new LightningPlasmaEntity(MurrayModEntities.LIGHTNING_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 0, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				LightningPlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), -2, 0, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new LightningPlasmaEntity(MurrayModEntities.LIGHTNING_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 0, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, -2, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
@@ -158,144 +383,131 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.RAINBOW_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.RAINBOW_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				RedPlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new RedPlasmaEntity(MurrayModEntities.RED_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 1, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
-
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
+			MurrayMod.queueServerWork(4, () -> {
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level;
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new OrangePlasmaEntity(MurrayModEntities.ORANGE_PLASMA.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, 1, 0);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
-
-				private void run() {
-					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OrangePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
+				MurrayMod.queueServerWork(4, () -> {
+					{
+						Entity _shootFrom = entity;
+						Level projectileLevel = _shootFrom.level;
+						if (!projectileLevel.isClientSide()) {
+							Projectile _entityToSpawn = new Object() {
+								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+									AbstractArrow entityToSpawn = new LightningPlasmaEntity(MurrayModEntities.LIGHTNING_PLASMA.get(), level);
+									entityToSpawn.setOwner(shooter);
+									entityToSpawn.setBaseDamage(damage);
+									entityToSpawn.setKnockback(knockback);
+									entityToSpawn.setSilent(true);
+									return entityToSpawn;
+								}
+							}.getArrow(projectileLevel, entity, 1, 0);
+							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
 					}
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
+					MurrayMod.queueServerWork(4, () -> {
+						{
+							Entity _shootFrom = entity;
+							Level projectileLevel = _shootFrom.level;
+							if (!projectileLevel.isClientSide()) {
+								Projectile _entityToSpawn = new Object() {
+									public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+										AbstractArrow entityToSpawn = new GreenPlasmaEntity(MurrayModEntities.GREEN_PLASMA.get(), level);
+										entityToSpawn.setOwner(shooter);
+										entityToSpawn.setBaseDamage(damage);
+										entityToSpawn.setKnockback(knockback);
+										entityToSpawn.setSilent(true);
+										return entityToSpawn;
+									}
+								}.getArrow(projectileLevel, entity, 1, 0);
+								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+								projectileLevel.addFreshEntity(_entityToSpawn);
 							}
 						}
-
-						private void run() {
-							if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-								LightningPlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
+						MurrayMod.queueServerWork(4, () -> {
+							{
+								Entity _shootFrom = entity;
+								Level projectileLevel = _shootFrom.level;
+								if (!projectileLevel.isClientSide()) {
+									Projectile _entityToSpawn = new Object() {
+										public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+											AbstractArrow entityToSpawn = new BluePlasmaEntity(MurrayModEntities.BLUE_PLASMA.get(), level);
+											entityToSpawn.setOwner(shooter);
+											entityToSpawn.setBaseDamage(damage);
+											entityToSpawn.setKnockback(knockback);
+											entityToSpawn.setSilent(true);
+											return entityToSpawn;
+										}
+									}.getArrow(projectileLevel, entity, 1, 0);
+									_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+									_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+									projectileLevel.addFreshEntity(_entityToSpawn);
+								}
 							}
-							new Object() {
-								private int ticks = 0;
-								private float waitTicks;
-								private LevelAccessor world;
-
-								public void start(LevelAccessor world, int waitTicks) {
-									this.waitTicks = waitTicks;
-									MinecraftForge.EVENT_BUS.register(this);
-									this.world = world;
-								}
-
-								@SubscribeEvent
-								public void tick(TickEvent.ServerTickEvent event) {
-									if (event.phase == TickEvent.Phase.END) {
-										this.ticks += 1;
-										if (this.ticks >= this.waitTicks)
-											run();
+							MurrayMod.queueServerWork(4, () -> {
+								{
+									Entity _shootFrom = entity;
+									Level projectileLevel = _shootFrom.level;
+									if (!projectileLevel.isClientSide()) {
+										Projectile _entityToSpawn = new Object() {
+											public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+												AbstractArrow entityToSpawn = new PurplePlasmaEntity(MurrayModEntities.PURPLE_PLASMA.get(), level);
+												entityToSpawn.setOwner(shooter);
+												entityToSpawn.setBaseDamage(damage);
+												entityToSpawn.setKnockback(knockback);
+												entityToSpawn.setSilent(true);
+												return entityToSpawn;
+											}
+										}.getArrow(projectileLevel, entity, 1, 0);
+										_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+										_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2,
+												0);
+										projectileLevel.addFreshEntity(_entityToSpawn);
 									}
 								}
-
-								private void run() {
-									if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-										GreenPlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
-									}
-									new Object() {
-										private int ticks = 0;
-										private float waitTicks;
-										private LevelAccessor world;
-
-										public void start(LevelAccessor world, int waitTicks) {
-											this.waitTicks = waitTicks;
-											MinecraftForge.EVENT_BUS.register(this);
-											this.world = world;
-										}
-
-										@SubscribeEvent
-										public void tick(TickEvent.ServerTickEvent event) {
-											if (event.phase == TickEvent.Phase.END) {
-												this.ticks += 1;
-												if (this.ticks >= this.waitTicks)
-													run();
-											}
-										}
-
-										private void run() {
-											if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-												BluePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
-											}
-											new Object() {
-												private int ticks = 0;
-												private float waitTicks;
-												private LevelAccessor world;
-
-												public void start(LevelAccessor world, int waitTicks) {
-													this.waitTicks = waitTicks;
-													MinecraftForge.EVENT_BUS.register(this);
-													this.world = world;
-												}
-
-												@SubscribeEvent
-												public void tick(TickEvent.ServerTickEvent event) {
-													if (event.phase == TickEvent.Phase.END) {
-														this.ticks += 1;
-														if (this.ticks >= this.waitTicks)
-															run();
-													}
-												}
-
-												private void run() {
-													if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-														PurplePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 2, 1, 0);
-													}
-													MinecraftForge.EVENT_BUS.unregister(this);
-												}
-											}.start(world, 4);
-											MinecraftForge.EVENT_BUS.unregister(this);
-										}
-									}.start(world, 4);
-									MinecraftForge.EVENT_BUS.unregister(this);
-								}
-							}.start(world, 4);
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, 4);
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, 4);
+							});
+						});
+					});
+				});
+			});
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 				.getItem() == MurrayModItems.PLASMASTEEL_MK_2_HELMET.get()
@@ -305,8 +517,24 @@ public class Murray3MainOnKeyPressedProcedure {
 						.getItem() == MurrayModItems.PLASMASTEEL_MK_2_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 						.getItem() == MurrayModItems.PLASMASTEEL_MK_2_BOOTS.get()) {
-			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				OrangePlasmaEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 4, 2, 0);
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new OrangePlasmaEntity(MurrayModEntities.ORANGE_PLASMA.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 2, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if ((entity.getVehicle()) instanceof MoltronRocketEntity) {
@@ -323,8 +551,7 @@ public class Murray3MainOnKeyPressedProcedure {
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);
 					if (nextLevel != null) {
 						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-						_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
-								nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
+						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
 						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
@@ -355,8 +582,7 @@ public class Murray3MainOnKeyPressedProcedure {
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);
 					if (nextLevel != null) {
 						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-						_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
-								nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
+						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
 						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
@@ -378,27 +604,26 @@ public class Murray3MainOnKeyPressedProcedure {
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
 				.getItem() == MurrayModItems.PLASMA_BRACELET_CHESTPLATE.get()) {
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
-
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
+			MurrayMod.queueServerWork(5, () -> {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
+								SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
+								SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
-
-				private void run() {
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(2, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_CHESTPLATE.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_CHESTPLATE.get()));
+					}
+				}
+				MurrayMod.queueServerWork(5, () -> {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, new BlockPos(x, y, z),
@@ -408,148 +633,73 @@ public class Murray3MainOnKeyPressedProcedure {
 									SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
+					if (world instanceof Level _level && !_level.isClientSide()) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+								(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
 					{
 						Entity _entity = entity;
 						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(2, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_CHESTPLATE.get()));
+							_player.getInventory().armor.set(3, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_HELMET.get()));
 							_player.getInventory().setChanged();
 						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_CHESTPLATE.get()));
+							_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_HELMET.get()));
 						}
 					}
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
+									SoundSource.NEUTRAL, 1, 1, false);
 						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
+					}
+					if (world instanceof Level _level && !_level.isClientSide()) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+								(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(1, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_LEGGINGS.get()));
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_LEGGINGS.get()));
+						}
+					}
+					MurrayMod.queueServerWork(5, () -> {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x, y, z),
+										ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
+										SoundSource.NEUTRAL, 1, 1, false);
 							}
 						}
-
-						private void run() {
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, new BlockPos(x, y, z),
-											ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.NEUTRAL, 1,
-											1);
-								} else {
-									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
-											SoundSource.NEUTRAL, 1, 1, false);
-								}
-							}
-							if (world instanceof Level _level && !_level.isClientSide()) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-										(entity instanceof LivingEntity _entGetArmor
-												? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
-												: ItemStack.EMPTY));
-								entityToSpawn.setPickUpDelay(10);
-								_level.addFreshEntity(entityToSpawn);
-							}
-							{
-								Entity _entity = entity;
-								if (_entity instanceof Player _player) {
-									_player.getInventory().armor.set(3, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_HELMET.get()));
-									_player.getInventory().setChanged();
-								} else if (_entity instanceof LivingEntity _living) {
-									_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_HELMET.get()));
-								}
-							}
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, new BlockPos(x, y, z),
-											ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.NEUTRAL, 1,
-											1);
-								} else {
-									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
-											SoundSource.NEUTRAL, 1, 1, false);
-								}
-							}
-							if (world instanceof Level _level && !_level.isClientSide()) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-										(entity instanceof LivingEntity _entGetArmor
-												? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS)
-												: ItemStack.EMPTY));
-								entityToSpawn.setPickUpDelay(10);
-								_level.addFreshEntity(entityToSpawn);
-							}
-							{
-								Entity _entity = entity;
-								if (_entity instanceof Player _player) {
-									_player.getInventory().armor.set(1, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_LEGGINGS.get()));
-									_player.getInventory().setChanged();
-								} else if (_entity instanceof LivingEntity _living) {
-									_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_LEGGINGS.get()));
-								}
-							}
-							new Object() {
-								private int ticks = 0;
-								private float waitTicks;
-								private LevelAccessor world;
-
-								public void start(LevelAccessor world, int waitTicks) {
-									this.waitTicks = waitTicks;
-									MinecraftForge.EVENT_BUS.register(this);
-									this.world = world;
-								}
-
-								@SubscribeEvent
-								public void tick(TickEvent.ServerTickEvent event) {
-									if (event.phase == TickEvent.Phase.END) {
-										this.ticks += 1;
-										if (this.ticks >= this.waitTicks)
-											run();
-									}
-								}
-
-								private void run() {
-									if (world instanceof Level _level) {
-										if (!_level.isClientSide()) {
-											_level.playSound(null, new BlockPos(x, y, z),
-													ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
-													SoundSource.NEUTRAL, 1, 1);
-										} else {
-											_level.playLocalSound(x, y, z,
-													ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
-													SoundSource.NEUTRAL, 1, 1, false);
-										}
-									}
-									if (world instanceof Level _level && !_level.isClientSide()) {
-										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-												(entity instanceof LivingEntity _entGetArmor
-														? _entGetArmor.getItemBySlot(EquipmentSlot.FEET)
-														: ItemStack.EMPTY));
-										entityToSpawn.setPickUpDelay(10);
-										_level.addFreshEntity(entityToSpawn);
-									}
-									{
-										Entity _entity = entity;
-										if (_entity instanceof Player _player) {
-											_player.getInventory().armor.set(0, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_BOOTS.get()));
-											_player.getInventory().setChanged();
-										} else if (_entity instanceof LivingEntity _living) {
-											_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_BOOTS.get()));
-										}
-									}
-									MinecraftForge.EVENT_BUS.unregister(this);
-								}
-							}.start(world, 5);
-							MinecraftForge.EVENT_BUS.unregister(this);
+						if (world instanceof Level _level && !_level.isClientSide()) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+									(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
 						}
-					}.start(world, 5);
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, 5);
+						{
+							Entity _entity = entity;
+							if (_entity instanceof Player _player) {
+								_player.getInventory().armor.set(0, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_BOOTS.get()));
+								_player.getInventory().setChanged();
+							} else if (_entity instanceof LivingEntity _living) {
+								_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(MurrayModItems.PLASMASTEEL_MK_2_BOOTS.get()));
+							}
+						}
+					});
+				});
+			});
 		}
 	}
 }

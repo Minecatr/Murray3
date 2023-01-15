@@ -48,7 +48,6 @@ public class RedPlasmaItem extends Item {
 				RedPlasmaEntity entityarrow = RedPlasmaEntity.shoot(world, entity, world.getRandom(), 2f, 2, 2);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				CooldownProcedure.execute(entity, itemstack);
 			}
 		}

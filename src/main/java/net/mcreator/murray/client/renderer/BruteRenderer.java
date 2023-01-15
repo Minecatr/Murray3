@@ -15,6 +15,6 @@ public class BruteRenderer extends MobRenderer<BruteEntity, Modelirongolem_V2<Br
 
 	@Override
 	public ResourceLocation getTextureLocation(BruteEntity entity) {
-		return new ResourceLocation("murray:textures/brute.png");
+		return new ResourceLocation("murray:textures/entities/brute.png");
 	}
 }

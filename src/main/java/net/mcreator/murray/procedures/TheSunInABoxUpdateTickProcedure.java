@@ -1,9 +1,8 @@
 package net.mcreator.murray.procedures;
 
 import net.minecraftforge.fluids.capability.IFluidHandler;
-import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -16,13 +15,13 @@ public class TheSunInABoxUpdateTickProcedure {
 			BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 			int _amount = 10000;
 			if (_ent != null)
-				_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+				_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 		}
 		{
 			BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 			int _amount = 100;
 			if (_ent != null)
-				_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+				_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
 						.ifPresent(capability -> capability.fill(new FluidStack(Fluids.LAVA, _amount), IFluidHandler.FluidAction.EXECUTE));
 		}
 	}

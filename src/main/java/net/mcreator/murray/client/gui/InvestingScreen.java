@@ -33,7 +33,7 @@ public class InvestingScreen extends AbstractContainerScreen<InvestingMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/investing.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/screens/investing.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -50,7 +50,7 @@ public class InvestingScreen extends AbstractContainerScreen<InvestingMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/arrowgui.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/arrowgui.png"));
 		this.blit(ms, this.leftPos + 78, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();

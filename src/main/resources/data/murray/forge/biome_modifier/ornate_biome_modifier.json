@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "murray:corrupt_fields",
+  "spawners": {
+    "type": "murray:ornate",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

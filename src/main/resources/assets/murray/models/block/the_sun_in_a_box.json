@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/sun_in_a_box",
     "particle": "murray:blocks/sun_in_a_box"
-  }
+  },
+  "render_type": "solid"
 }

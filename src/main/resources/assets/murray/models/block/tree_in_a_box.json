@@ -4,5 +4,6 @@
     "all": "murray:blocks/tree_in_a_box",
     "particle": "murray:blocks/tree_in_a_box",
     "0": "murray:blocks/tree_in_a_box"
-  }
+  },
+  "render_type": "solid"
 }

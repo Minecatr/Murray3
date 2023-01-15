@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -21,7 +22,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.murray.procedures.ParticleMoveProcedure;
 import net.mcreator.murray.procedures.KingOnBlockRightClickedProcedure;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -50,7 +50,7 @@ public class KingBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();

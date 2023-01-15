@@ -1,9 +1,6 @@
 
 package net.mcreator.murray.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -17,11 +14,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.murray.procedures.PoorlyMadeLadderEntityCollidesInTheBlockProcedure;
-import net.mcreator.murray.init.MurrayModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -60,10 +54,4 @@ public class PoorlyMadeLadderBlock extends Block {
 		super.entityInside(blockstate, world, pos, entity);
 		PoorlyMadeLadderEntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MurrayModBlocks.POORLY_MADE_LADDER.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

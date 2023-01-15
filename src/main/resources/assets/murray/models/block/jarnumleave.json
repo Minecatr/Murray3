@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/jarnumleave",
     "particle": "murray:blocks/jarnumleave"
-  }
+  },
+  "render_type": "cutout"
 }

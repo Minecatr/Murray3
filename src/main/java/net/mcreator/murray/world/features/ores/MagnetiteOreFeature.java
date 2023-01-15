@@ -1,12 +1,7 @@
 
 package net.mcreator.murray.world.features.ores;
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
-import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType;
-import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
@@ -18,8 +13,6 @@ import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
@@ -32,7 +25,6 @@ import net.minecraft.core.Holder;
 import net.mcreator.murray.init.MurrayModBlocks;
 
 import java.util.Set;
-import java.util.Random;
 import java.util.List;
 
 public class MagnetiteOreFeature extends OreFeature {
@@ -43,17 +35,13 @@ public class MagnetiteOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new MagnetiteOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("murray:magnetite_ore", FEATURE,
-				new OreConfiguration(MagnetiteOreFeatureRuleTest.INSTANCE, MurrayModBlocks.MAGNETITE_ORE.get().defaultBlockState(), 7));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(MurrayModBlocks.VENUS_STONE.get().defaultBlockState()),
+						MurrayModBlocks.MAGNETITE_ORE.get().defaultBlockState())), 7));
 		PLACED_FEATURE = PlacementUtils.register("murray:magnetite_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(3), InSquarePlacement.spread(),
 				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
 			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("murray:venus")));
 
@@ -66,30 +54,5 @@ public class MagnetiteOreFeature extends OreFeature {
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
-	}
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	private static class MagnetiteOreFeatureRuleTest extends RuleTest {
-		static final MagnetiteOreFeatureRuleTest INSTANCE = new MagnetiteOreFeatureRuleTest();
-		private static final com.mojang.serialization.Codec<MagnetiteOreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		private static final RuleTestType<MagnetiteOreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
-
-		@SubscribeEvent
-		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("murray:magnetite_ore_match"), CUSTOM_MATCH);
-		}
-
-		private List<Block> base_blocks = null;
-
-		public boolean test(BlockState blockAt, Random random) {
-			if (base_blocks == null) {
-				base_blocks = List.of(MurrayModBlocks.VENUS_STONE.get());
-			}
-			return base_blocks.contains(blockAt.getBlock());
-		}
-
-		protected RuleTestType<?> getType() {
-			return CUSTOM_MATCH;
-		}
 	}
 }

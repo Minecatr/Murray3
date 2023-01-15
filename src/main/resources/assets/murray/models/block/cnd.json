@@ -8,5 +8,6 @@
     "south": "murray:blocks/cnd_side",
     "west": "murray:blocks/cnd_side",
     "particle": "murray:blocks/cnd_bottom"
-  }
+  },
+  "render_type": "solid"
 }

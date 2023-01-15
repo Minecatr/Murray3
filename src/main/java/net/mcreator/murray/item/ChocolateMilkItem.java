@@ -21,9 +21,4 @@ public class ChocolateMilkItem extends Item {
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.DRINK;
 	}
-
-	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 32;
-	}
 }

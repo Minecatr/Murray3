@@ -33,7 +33,7 @@ public class MagneticDissasemblerGuiScreen extends AbstractContainerScreen<Magne
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/magnetic_dissasembler_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/screens/magnetic_dissasembler_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -50,31 +50,31 @@ public class MagneticDissasemblerGuiScreen extends AbstractContainerScreen<Magne
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/linesremovedleft.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/linesremovedleft.png"));
 		this.blit(ms, this.leftPos + 42, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/diagonalline.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/diagonalline.png"));
 		this.blit(ms, this.leftPos + 60, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/diagonalline.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/diagonalline.png"));
 		this.blit(ms, this.leftPos + 78, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/diagonalline.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/diagonalline.png"));
 		this.blit(ms, this.leftPos + 96, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/ininout.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/ininout.png"));
 		this.blit(ms, this.leftPos + 114, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/magnetite_block.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/magnetite_block.png"));
 		this.blit(ms, this.leftPos + 24, this.topPos + 16, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/diamond.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/diamond.png"));
 		this.blit(ms, this.leftPos + 96, this.topPos + 16, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/redstone_block.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/redstone_block.png"));
 		this.blit(ms, this.leftPos + 24, this.topPos + 43, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/lapis_block.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("murray:textures/screens/lapis_block.png"));
 		this.blit(ms, this.leftPos + 24, this.topPos + 61, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();

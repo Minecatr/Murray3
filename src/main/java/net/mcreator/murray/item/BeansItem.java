@@ -2,7 +2,6 @@
 package net.mcreator.murray.item;
 
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 
@@ -14,10 +13,5 @@ public class BeansItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.2f)
 
 						.build()));
-	}
-
-	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 32;
 	}
 }

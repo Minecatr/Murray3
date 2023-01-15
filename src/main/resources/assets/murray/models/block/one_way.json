@@ -8,5 +8,6 @@
     "south": "murray:blocks/stone",
     "west": "murray:blocks/oneway_right",
     "particle": "murray:blocks/oneway_down"
-  }
+  },
+  "render_type": "translucent"
 }

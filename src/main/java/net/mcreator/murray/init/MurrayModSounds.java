@@ -4,29 +4,23 @@
  */
 package net.mcreator.murray.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import java.util.Map;
-import java.util.HashMap;
+import net.mcreator.murray.MurrayMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MurrayModSounds {
-	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
-	static {
-		REGISTRY.put(new ResourceLocation("murray", "copicat"), new SoundEvent(new ResourceLocation("murray", "copicat")));
-		REGISTRY.put(new ResourceLocation("murray", "corruption_fields"), new SoundEvent(new ResourceLocation("murray", "corruption_fields")));
-		REGISTRY.put(new ResourceLocation("murray", "xzswap"), new SoundEvent(new ResourceLocation("murray", "xzswap")));
-		REGISTRY.put(new ResourceLocation("murray", "forcefield"), new SoundEvent(new ResourceLocation("murray", "forcefield")));
-	}
-
-	@SubscribeEvent
-	public static void registerSounds(RegistryEvent.Register<SoundEvent> event) {
-		for (Map.Entry<ResourceLocation, SoundEvent> sound : REGISTRY.entrySet())
-			event.getRegistry().register(sound.getValue().setRegistryName(sound.getKey()));
-	}
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MurrayMod.MODID);
+	public static final RegistryObject<SoundEvent> COPICAT = REGISTRY.register("copicat",
+			() -> new SoundEvent(new ResourceLocation("murray", "copicat")));
+	public static final RegistryObject<SoundEvent> CORRUPTION_FIELDS = REGISTRY.register("corruption_fields",
+			() -> new SoundEvent(new ResourceLocation("murray", "corruption_fields")));
+	public static final RegistryObject<SoundEvent> XZSWAP = REGISTRY.register("xzswap",
+			() -> new SoundEvent(new ResourceLocation("murray", "xzswap")));
+	public static final RegistryObject<SoundEvent> FORCEFIELD = REGISTRY.register("forcefield",
+			() -> new SoundEvent(new ResourceLocation("murray", "forcefield")));
 }

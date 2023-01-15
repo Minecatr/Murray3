@@ -49,7 +49,6 @@ public class UltraEndBowItem extends Item {
 				UltraEndBowEntity entityarrow = UltraEndBowEntity.shoot(world, entity, world.getRandom(), 1f, 4, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				CooldownFastProcedure.execute(entity, itemstack);
 				entity.releaseUsingItem();
 			}

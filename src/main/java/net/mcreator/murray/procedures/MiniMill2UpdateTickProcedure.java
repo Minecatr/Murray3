@@ -1,6 +1,6 @@
 package net.mcreator.murray.procedures;
 
-import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -12,7 +12,7 @@ public class MiniMill2UpdateTickProcedure {
 			BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 			int _amount = 10;
 			if (_ent != null)
-				_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+				_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 		}
 	}
 }

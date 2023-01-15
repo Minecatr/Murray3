@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/sandworm3",
     "particle": "murray:blocks/sandworm3"
-  }
+  },
+  "render_type": "solid"
 }

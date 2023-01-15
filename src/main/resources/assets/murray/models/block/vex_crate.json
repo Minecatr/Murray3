@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/vex_crate",
     "particle": "murray:blocks/vex_crate"
-  }
+  },
+  "render_type": "solid"
 }

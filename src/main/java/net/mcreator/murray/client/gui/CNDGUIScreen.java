@@ -33,7 +33,7 @@ public class CNDGUIScreen extends AbstractContainerScreen<CNDGUIMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/cndgui.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/screens/cndgui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

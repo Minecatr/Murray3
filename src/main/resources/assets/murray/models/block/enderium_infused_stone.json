@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/enderium_infused_stone",
     "particle": "murray:blocks/enderium_infused_stone"
-  }
+  },
+  "render_type": "solid"
 }

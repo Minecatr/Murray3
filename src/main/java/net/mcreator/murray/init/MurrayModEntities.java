@@ -42,7 +42,7 @@ import net.mcreator.murray.MurrayMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MurrayModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, MurrayMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MurrayMod.MODID);
 	public static final RegistryObject<EntityType<UltraEndBowEntity>> ULTRA_END_BOW = register("projectile_ultra_end_bow",
 			EntityType.Builder.<UltraEndBowEntity>of(UltraEndBowEntity::new, MobCategory.MISC).setCustomClientFactory(UltraEndBowEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));

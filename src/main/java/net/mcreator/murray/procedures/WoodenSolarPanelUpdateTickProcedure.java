@@ -1,6 +1,6 @@
 package net.mcreator.murray.procedures;
 
-import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -17,7 +17,7 @@ public class WoodenSolarPanelUpdateTickProcedure {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				BlockEntity _ent = level.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityEnergy.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.canReceive()));
+					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
 		}.canReceiveEnergy(world, new BlockPos(x, y - 1, z))) {
@@ -25,7 +25,7 @@ public class WoodenSolarPanelUpdateTickProcedure {
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y - 1, z));
 				int _amount = 5;
 				if (_ent != null)
-					_ent.getCapability(CapabilityEnergy.ENERGY, Direction.UP).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 		}
 	}

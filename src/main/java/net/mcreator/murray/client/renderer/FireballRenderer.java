@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class FireballRenderer extends EntityRenderer<FireballEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/fireball.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/fireball.png");
 	private final ModelMagicSword model;
 
 	public FireballRenderer(EntityRendererProvider.Context context) {

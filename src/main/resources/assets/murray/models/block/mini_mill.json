@@ -8,5 +8,6 @@
     "south": "murray:blocks/miniwatermill",
     "west": "murray:blocks/miniwatermill",
     "particle": "murray:blocks/oak_planks"
-  }
+  },
+  "render_type": "solid"
 }

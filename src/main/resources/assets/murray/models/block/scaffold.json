@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/scaffold",
     "particle": "murray:blocks/scaffold"
-  }
+  },
+  "render_type": "translucent"
 }

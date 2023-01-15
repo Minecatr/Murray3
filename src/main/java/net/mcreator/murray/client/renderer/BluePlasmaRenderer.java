@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BluePlasmaRenderer extends EntityRenderer<BluePlasmaEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/blue_laser.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/blue_laser.png");
 	private final Modellaser_v2 model;
 
 	public BluePlasmaRenderer(EntityRendererProvider.Context context) {

@@ -8,5 +8,6 @@
     "south": "murray:blocks/oak_planks",
     "west": "murray:blocks/oak_planks",
     "particle": "murray:blocks/oak_planks"
-  }
+  },
+  "render_type": "solid"
 }

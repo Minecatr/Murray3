@@ -6,11 +6,10 @@ package net.mcreator.murray.init;
 
 import org.lwjgl.glfw.GLFW;
 
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.InputEvent;
-import net.minecraftforge.client.ClientRegistry;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.Minecraft;
@@ -21,24 +20,31 @@ import net.mcreator.murray.MurrayMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class MurrayModKeyMappings {
-	public static final KeyMapping MURRAY_3_MAIN = new KeyMapping("key.murray.murray_3_main", GLFW.GLFW_KEY_R, "key.categories.misc");
+	public static final KeyMapping MURRAY_3_MAIN = new KeyMapping("key.murray.murray_3_main", GLFW.GLFW_KEY_R, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				MurrayMod.PACKET_HANDLER.sendToServer(new Murray3MainMessage(0, 0));
+				Murray3MainMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
-	public static void registerKeyBindings(FMLClientSetupEvent event) {
-		ClientRegistry.registerKeyBinding(MURRAY_3_MAIN);
+	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
+		event.register(MURRAY_3_MAIN);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
 	public static class KeyEventListener {
 		@SubscribeEvent
-		public static void onKeyInput(InputEvent.KeyInputEvent event) {
+		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
-				if (event.getKey() == MURRAY_3_MAIN.getKey().getValue()) {
-					if (event.getAction() == GLFW.GLFW_PRESS) {
-						MurrayMod.PACKET_HANDLER.sendToServer(new Murray3MainMessage(0, 0));
-						Murray3MainMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-					}
-				}
+				MURRAY_3_MAIN.consumeClick();
 			}
 		}
 	}

@@ -8,5 +8,6 @@
     "south": "murray:blocks/miniairmill",
     "west": "murray:blocks/miniairmill",
     "particle": "murray:blocks/iron_block"
-  }
+  },
+  "render_type": "solid"
 }

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "murray:mini_futuristic_city",
+  "step": "surface_structures"
+}

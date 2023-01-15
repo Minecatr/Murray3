@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class PurplePlasmaRenderer extends EntityRenderer<PurplePlasmaEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/purple_laser.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/purple_laser.png");
 	private final Modellaser_v2 model;
 
 	public PurplePlasmaRenderer(EntityRendererProvider.Context context) {

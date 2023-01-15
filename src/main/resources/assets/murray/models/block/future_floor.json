@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/future_floor_path",
     "particle": "murray:blocks/future_floor_path"
-  }
+  },
+  "render_type": "solid"
 }

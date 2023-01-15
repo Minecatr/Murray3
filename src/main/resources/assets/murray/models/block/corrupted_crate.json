@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/corrupted_crate",
     "particle": "murray:blocks/corrupted_crate"
-  }
+  },
+  "render_type": "solid"
 }

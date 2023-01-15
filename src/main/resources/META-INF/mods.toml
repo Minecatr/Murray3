@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[43,)"
 license="Academic Free License v3.0"
 
 [[mods]]
@@ -17,7 +17,7 @@ Murray3 mod has many fun blocks with many options for late game armor. This mod 
 [[dependencies.murray]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 

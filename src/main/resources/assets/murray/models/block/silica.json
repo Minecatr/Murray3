@@ -3,5 +3,6 @@
   "textures": {
     "all": "murray:blocks/silica",
     "particle": "murray:blocks/silica"
-  }
+  },
+  "render_type": "translucent"
 }

@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class GreenPlasmaMk2Renderer extends EntityRenderer<GreenPlasmaMk2Entity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/lime_laser.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/lime_laser.png");
 	private final Modellaser_v2 model;
 
 	public GreenPlasmaMk2Renderer(EntityRendererProvider.Context context) {

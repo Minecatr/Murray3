@@ -1,12 +1,8 @@
 
 package net.mcreator.murray.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,15 +14,12 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.murray.procedures.DrillUpdateTickProcedure;
-import net.mcreator.murray.init.MurrayModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -48,8 +41,8 @@ public class DrillBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 0, 0, 16, 32, 16).move(offset.x, offset.y, offset.z);
+
+		return box(0, 0, 0, 16, 32, 16);
 	}
 
 	@Override
@@ -74,7 +67,7 @@ public class DrillBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -82,10 +75,5 @@ public class DrillBlock extends Block {
 
 		DrillUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 600);
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(MurrayModBlocks.DRILL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class UltraEndBowRenderer extends EntityRenderer<UltraEndBowEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("murray:textures/ender_laser.png");
+	private static final ResourceLocation texture = new ResourceLocation("murray:textures/entities/ender_laser.png");
 	private final Modellaser_v2 model;
 
 	public UltraEndBowRenderer(EntityRendererProvider.Context context) {

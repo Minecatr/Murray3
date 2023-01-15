@@ -2,7 +2,7 @@
 package net.mcreator.murray.item;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.client.IItemRenderProperties;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -23,6 +23,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.murray.init.MurrayModTabs;
 import net.mcreator.murray.client.model.Modelpsbraclet;
 
+import java.util.function.Consumer;
 import java.util.Map;
 import java.util.Collections;
 
@@ -76,11 +77,12 @@ public abstract class PlasmaBraceletItem extends ArmorItem {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(MurrayModTabs.TAB_MURRAY_3_HALL_OF_ARMOR));
 		}
 
-		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
-			consumer.accept(new IItemRenderProperties() {
+		@Override
+		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+			consumer.accept(new IClientItemExtensions() {
 				@Override
 				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body",
 							new Modelpsbraclet(Minecraft.getInstance().getEntityModels().bakeLayer(Modelpsbraclet.LAYER_LOCATION)).bone, "left_arm",
 							new Modelpsbraclet(Minecraft.getInstance().getEntityModels().bakeLayer(Modelpsbraclet.LAYER_LOCATION)).bone, "right_arm",
@@ -99,7 +101,7 @@ public abstract class PlasmaBraceletItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "murray:textures/psbraclet.png";
+			return "murray:textures/entities/psbraclet.png";
 		}
 	}
 }
